@@ -1,0 +1,1304 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Exercise A</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="General Physics">
+<meta property="book:author" content="Sunil Karna">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.11.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.49eb29f446982553.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.731d8387162b79c1.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.f4ab138da65f4203.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="changeme" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="calphysii.html"><span class="title">General Physics</span> <span class="subtitle">Volume II</span></a></h1>
+<p class="byline">Sunil Karna</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="backmatter-5.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec_first-examplesB.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch_first.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec_first-pot.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} 
+   \newcommand{\Z}{\mathbb Z} 
+   \newcommand{\Q}{\mathbb Q} 
+   \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="front-colophon.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-dedication"><div class="toc-title-box"><a href="frontmatter-4.html" class="internal"><span class="title">Dedication</span></a></div></li>
+<li class="toc-item toc-acknowledgement"><div class="toc-title-box"><a href="frontmatter-5.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="frontmatter-6.html" class="internal"><span class="title">Preface</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch_first.html" class="internal"><span class="codenumber">1</span> <span class="title">Electrostatics</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_first-intro.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Electrostatic Induction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_first-intro.html#subsec-charg_transf" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Methods of Transferring Charges:</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-intro.html#subsubsec-electroscope" class="internal"><span class="codenumber">1.1.1.1</span> <span class="title">Electrophorus:</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-intro.html#subsubsec-electrscp" class="internal"><span class="codenumber">1.1.1.2</span> <span class="title">Electroscope:</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_first-intro.html#subsec-coulmb_law" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Coulumb’s Law</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-intro.html#subsubsec-1d_colmb" class="internal"><span class="codenumber">1.1.2.1</span> <span class="title">Coulumb’s Law in One Dimension</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-intro.html#subsubsec-2d_colmb" class="internal"><span class="codenumber">1.1.2.2</span> <span class="title">Coulomb’s Law in Two and Three Dimensions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_first-intro.html#subsec-superp_th" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Principle of Superposition</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_first-el_field.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Electric Field</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_first-el_field.html#subsec-chrg_dist" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Electric Field of a Continuous Charge Distribution</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_first-examplesA.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Examples A</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_first-flux.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Electric Flux</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_first-flux.html#subsec-gauss" class="internal"><span class="codenumber">1.4.1</span> <span class="title">Gauss’s Law</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-flux.html#subsubsec-appl_gauss" class="internal"><span class="codenumber">1.4.1.1</span> <span class="title">Applications of Gauss’s Law</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_first-flux.html#subsec-sph_symmtr" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Cases of spherical symmetry:</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-flux.html#subsubsec-point_chrg" class="internal"><span class="codenumber">1.4.2.1</span> <span class="title">Electric field due to a point charge</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-flux.html#subsubsec-sph_chrg" class="internal"><span class="codenumber">1.4.2.2</span> <span class="title">Electric field due to a  spherical symmetric charged distribution</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-flux.html#subsubsec-hsph_chrg" class="internal"><span class="codenumber">1.4.2.3</span> <span class="title">Electric field due to a uniformly charged non-conducting hollow sphere</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_first-flux.html#subsec-cyl_symtr" class="internal"><span class="codenumber">1.4.3</span> <span class="title">Cases of cylindrical symmetry:</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-flux.html#subsubsec-long_wire" class="internal"><span class="codenumber">1.4.3.1</span> <span class="title">Electric field due to infinitely long charged conductor</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-flux.html#subsubsec-long_cyl" class="internal"><span class="codenumber">1.4.3.2</span> <span class="title">Electric field due to a uniform infinite cylindrical charge</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-flux.html#subsubsec-chrgd_sheet" class="internal"><span class="codenumber">1.4.3.3</span> <span class="title">Electric field due to infinite sheet of charge</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-flux.html#subsubsec-out_cond" class="internal"><span class="codenumber">1.4.3.4</span> <span class="title">Electric field just outside a charged conductor</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_first-examplesB.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Examples B</span></a></div></li>
+<li class="toc-item toc-exercises active"><div class="toc-title-box"><a href="ex_firstA.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Exercise A</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_first-pot.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Electric Potential</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_first-pot.html#subsec-capctrs" class="internal"><span class="codenumber">1.7.1</span> <span class="title">Capacitors</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-pot.html#subsubsec-cap_comb" class="internal"><span class="codenumber">1.7.1.1</span> <span class="title">Combination of Capacitors</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-pot.html#subsubsec-paralle_cap" class="internal"><span class="codenumber">1.7.1.2</span> <span class="title">Parallel-Plate Capacitor</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-pot.html#subsubsec-spher_cap" class="internal"><span class="codenumber">1.7.1.3</span> <span class="title">Spherical Capacitor</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-pot.html#subsubsec-cyl_cap" class="internal"><span class="codenumber">1.7.1.4</span> <span class="title">Cylindrical Capacitor</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_first-pot.html#subsec-enrgy_cap" class="internal"><span class="codenumber">1.7.2</span> <span class="title">Energy Stored in a Capacitor</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-pot.html#subsubsec-elf_enrgdenst" class="internal"><span class="codenumber">1.7.2.1</span> <span class="title">Electric Field Energy Density</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_first-pot.html#subsec-cap_enrgloss" class="internal"><span class="codenumber">1.7.3</span> <span class="title">Loss of Energy in Combining two Capacitors</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_first-examplesC.html" class="internal"><span class="codenumber">1.8</span> <span class="title">Examples C</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_firstB.html" class="internal"><span class="codenumber">1.9</span> <span class="title">Exercise B</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch_second.html" class="internal"><span class="codenumber">2</span> <span class="title">Electricity</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_second-intro.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Conduction Mechanism of Current in a Metal</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_second-intro.html#subsec-ohm_law" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Ohm’s Law:</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_second-intro.html#subsubsec-restvty" class="internal"><span class="codenumber">2.1.1.1</span> <span class="title">Resistivity or Specific Resistance, <span class="process-math">\(\rho\text{:}\)</span></span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_second-intro.html#subsubsec-temp_restvty" class="internal"><span class="codenumber">2.1.1.2</span> <span class="title">Temperature Coefficient of Resistivity</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_second-intro.html#subsubsec-el_power" class="internal"><span class="codenumber">2.1.1.3</span> <span class="title">Electrical Power:</span></a></div></li>
+</ul>
+</li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_second-examplesA.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Examples A</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_second-elcircuits.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Electrical Circuits</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_second-elcircuits.html#subsec-emf" class="internal"><span class="codenumber">2.3.1</span> <span class="title">A summary on internal resistance, emf, and terminal potential difference:</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_second-elcircuits.html#subsec-res_circt" class="internal"><span class="codenumber">2.3.2</span> <span class="title">Resistance Circuits:</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_second-elcircuits.html#subsubsec-res_comb" class="internal"><span class="codenumber">2.3.2.1</span> <span class="title">Combination of Resistances</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_second-elcircuits.html#subsec-maxptr" class="internal"><span class="codenumber">2.3.3</span> <span class="title">Maximum Power Transfer Theorem</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_second-elcircuits.html#subsec-el_instrmnt" class="internal"><span class="codenumber">2.3.4</span> <span class="title">Electrical Instruments:</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_second-kirchhf.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Kirchhoff’s Law</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_second-kirchhf.html#subsec-cir_anals" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Analysis of DC Electric Circuit</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_second-kirchhf.html#subsec-wheat_stone" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Wheat-Stone’s Bridge Circuit</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_second-kirchhf.html#subsec-chrg_dischrg" class="internal"><span class="codenumber">2.4.3</span> <span class="title">Charging and Discharging of a Capacitor</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_second-examplesB.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Examples B</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_second.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Exercise</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch_third.html" class="internal"><span class="codenumber">3</span> <span class="title">Magnetism</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_third-intro.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Magnetic Field</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_third-intro.html#subsec-mag_mater" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Magnetic Materials</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-intro.html#subsubsec-ferro" class="internal"><span class="codenumber">3.1.1.1</span> <span class="title">Ferromagnetic Material:</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-intro.html#subsubsec-para" class="internal"><span class="codenumber">3.1.1.2</span> <span class="title">Paramagnetic Material:</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-intro.html#subsubsec-dia" class="internal"><span class="codenumber">3.1.1.3</span> <span class="title">Diamagnetic Material:</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-intro.html#subsec-geo_mag" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Geomagnetism</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-intro.html#subsec-mag_force" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Magnetic Force on a Moving Charge</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-intro.html#subsec-lorentz" class="internal"><span class="codenumber">3.1.4</span> <span class="title">Electromagnetic Force on a Moving Charge (or Lorentz Force)</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_third-intro.html#subsec-mag_flux" class="internal"><span class="codenumber">3.1.5</span> <span class="title">Magnetic Flux, <span class="process-math">\(\Phi_{B}\)</span></span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-intro.html#subsubsec-gauss_mag" class="internal"><span class="codenumber">3.1.5.1</span> <span class="title">Gauss’s Law for Magnetism</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-intro.html#subsubsec-vel_select" class="internal"><span class="codenumber">3.1.5.2</span> <span class="title">Velocity Selector</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-intro.html#subsubsec-cyclotron" class="internal"><span class="codenumber">3.1.5.3</span> <span class="title">Cyclotron Frequency</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-intro.html#subsubsec-masspect" class="internal"><span class="codenumber">3.1.5.4</span> <span class="title">Mass Spectrometer</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-intro.html#subsubsec-Hall_effect" class="internal"><span class="codenumber">3.1.5.5</span> <span class="title">Hall Effect</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_third-Aforce.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Magnetic Forces on Currents</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-Aforce.html#subsec-ilb" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Magnetic Force on a Current Element</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_third-Aforce.html#subsec-IA" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Magnetic Dipole Moment of a Current Loop</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-Aforce.html#subsubsec-solenoid" class="internal"><span class="codenumber">3.2.2.1</span> <span class="title">Solenoid</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-Aforce.html#subsec-mag_torq" class="internal"><span class="codenumber">3.2.3</span> <span class="title">Magnetic Torque on a Current Loop</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-Aforce.html#subsec-mag_potE" class="internal"><span class="codenumber">3.2.4</span> <span class="title">Potential Energy of Magnetic Dipole</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_third-examplesA.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Examples A</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_third-magS.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Sources of Magnetic Fields</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_third-magS.html#subsec-magfld_movcharge" class="internal"><span class="codenumber">3.4.1</span> <span class="title">Magnetic Field of a Moving Charge:</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-magS.html#subsubsec-free_permblt" class="internal"><span class="codenumber">3.4.1.1</span> <span class="title">Permeability of Free Space, <span class="process-math">\(\mu_{o}\)</span></span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-magS.html#subsubsec-biot_savrt" class="internal"><span class="codenumber">3.4.1.2</span> <span class="title">Magnetic Field of a Current Element (Biot Savart Law)</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-magS.html#subsubsec-stwire_magf" class="internal"><span class="codenumber">3.4.1.3</span> <span class="title">Magnetic Field of a straight wire</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-magS.html#subsubsec-magcrnt_loop" class="internal"><span class="codenumber">3.4.1.4</span> <span class="title">Magnetic field due to a current loop</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-magS.html#subsubsec-helmholtz" class="internal"><span class="codenumber">3.4.1.5</span> <span class="title">Magnetic field at the center of a Helmholtz coil</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-magS.html#subsubsec-solenoid_curnt" class="internal"><span class="codenumber">3.4.1.6</span> <span class="title">Magnetic field at a point due to current carrying solenoid</span></a></div></li>
+</ul>
+</li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_third-ampre.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Amper’s Law</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-ampre.html#subsec-mag_longcond" class="internal"><span class="codenumber">3.5.1</span> <span class="title">Magnetic field  due to infinitely long current carrying  conductor</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-ampre.html#subsec-mag_sheetcond" class="internal"><span class="codenumber">3.5.2</span> <span class="title">Magnetic field  due to infinitely long current carrying flat sheet</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-ampre.html#subsec-mag_solnd" class="internal"><span class="codenumber">3.5.3</span> <span class="title">Magnetic field at a point due to infinitely long solenoid</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-ampre.html#subsec-mag_toroid" class="internal"><span class="codenumber">3.5.4</span> <span class="title">Magnetic field at a point due to toroid</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-ampre.html#subsec-mag_parallelcond" class="internal"><span class="codenumber">3.5.5</span> <span class="title">Magnetic Force between Parallel Wires</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_third-examplesB.html" class="internal"><span class="codenumber">3.6</span> <span class="title">Examples B</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_third-elmag.html" class="internal"><span class="codenumber">3.7</span> <span class="title">Electromagnetic Induction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsec-faraday" class="internal"><span class="codenumber">3.7.1</span> <span class="title">Faraday’s Law</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsec-lenz" class="internal"><span class="codenumber">3.7.2</span> <span class="title">Lenz’s Law</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsec-motional_emf" class="internal"><span class="codenumber">3.7.3</span> <span class="title">Motional Electromotive Force</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_third-elmag.html#subsec-induced_elf" class="internal"><span class="codenumber">3.7.4</span> <span class="title">Induced Electric Fields</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsubsec-eddy" class="internal"><span class="codenumber">3.7.4.1</span> <span class="title">Eddy Currents</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsubsec-genertr" class="internal"><span class="codenumber">3.7.4.2</span> <span class="title">Generator</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsubsec-skineffect" class="internal"><span class="codenumber">3.7.4.3</span> <span class="title">Skin Effect</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsubsec-supercond" class="internal"><span class="codenumber">3.7.4.4</span> <span class="title">Superconductivity</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_third-elmag.html#subsec-self_induct" class="internal"><span class="codenumber">3.7.5</span> <span class="title">Self-Inductance:</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsubsec-self_solenoid" class="internal"><span class="codenumber">3.7.5.1</span> <span class="title">Self-inductance of a solenoid:</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsubsec-mutual_ind" class="internal"><span class="codenumber">3.7.5.2</span> <span class="title">Mutual Inductance:</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsubsec-maf_fieldenergy" class="internal"><span class="codenumber">3.7.5.3</span> <span class="title">Magnetic-Field Energy</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsec-rlc" class="internal"><span class="codenumber">3.7.6</span> <span class="title">R-L Circuit</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsec-lc" class="internal"><span class="codenumber">3.7.7</span> <span class="title">L-C Circuit</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsec-lcr" class="internal"><span class="codenumber">3.7.8</span> <span class="title">L-C-R Circuit</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_third-examplesC.html" class="internal"><span class="codenumber">3.8</span> <span class="title">Examples C</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_third-accircuits.html" class="internal"><span class="codenumber">3.9</span> <span class="title">AC Circuits</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsec-rmsI" class="internal"><span class="codenumber">3.9.1</span> <span class="title">RMS value of emf or current</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_third-accircuits.html#subsec-complex_number" class="internal"><span class="codenumber">3.9.2</span> <span class="title">The Complex Number Method for A.C. Analysis</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsubsec-ZXY" class="internal"><span class="codenumber">3.9.2.1</span> <span class="title">Impedance, Reactance, and Admittance</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsubsec-acR" class="internal"><span class="codenumber">3.9.2.2</span> <span class="title">Resistance in an AC Circuit</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsubsec-acL" class="internal"><span class="codenumber">3.9.2.3</span> <span class="title">Inductance in an AC Circuit</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsubsec-acC" class="internal"><span class="codenumber">3.9.2.4</span> <span class="title">Capacitance in an AC Circuit</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsubsec-rlc_variation" class="internal"><span class="codenumber">3.9.2.5</span> <span class="title">Variation of reactance due to R, L and C with angular frequency <span class="process-math">\(\omega\)</span> in an AC circuit</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsubsec-acPower" class="internal"><span class="codenumber">3.9.2.6</span> <span class="title">Power in an AC Circuit</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsubsec-acRL" class="internal"><span class="codenumber">3.9.2.7</span> <span class="title">AC Circuit with Resistance and  Inductance in Series</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsubsec-acRC" class="internal"><span class="codenumber">3.9.2.8</span> <span class="title">AC Circuit with Resistance and  Capacitance in Series</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsubsec-acRLC_series" class="internal"><span class="codenumber">3.9.2.9</span> <span class="title">AC Circuit with Resistance,  Capacitance, and Inductance in Series</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsubsec-acRLC_parallel" class="internal"><span class="codenumber">3.9.2.10</span> <span class="title">AC Circuit with Resistance,  Capacitance, and Inductance in Parallel</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsec-transformer" class="internal"><span class="codenumber">3.9.3</span> <span class="title">Transformer</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsec-ac_preferential" class="internal"><span class="codenumber">3.9.4</span> <span class="title">AC is preferential over dc in power transmission</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_third-examplesD.html" class="internal"><span class="codenumber">3.10</span> <span class="title">Examples D</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_third.html" class="internal"><span class="codenumber">3.11</span> <span class="title">Exercise</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch_fourth.html" class="internal"><span class="codenumber">4</span> <span class="title">Waves and Acoustics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_fourth-intro.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Simple Harmonic Motion</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fourth-intro.html#subsec-shm_energy" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Energy in SHM</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_fourth-waves.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Waves</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fourth-waves.html#subsec-shm_wfn" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Simple harmonic wave function</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fourth-waves.html#subsubsec-wave_eq" class="internal"><span class="codenumber">4.2.1.1</span> <span class="title">Wave equation</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fourth-waves.html#subsubsec-waveeq_string" class="internal"><span class="codenumber">4.2.1.2</span> <span class="title">Wave Equation in Stretched String</span></a></div></li>
+</ul>
+</li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_fourth-examplesA.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Examples A</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_fourth-medwave.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Waves in a Medium</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fourth-medwave.html#subsec-speed_TW" class="internal"><span class="codenumber">4.4.1</span> <span class="title">Speed of a Transverse Wave</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fourth-medwave.html#subsec-speed_LW" class="internal"><span class="codenumber">4.4.2</span> <span class="title">Speed of a Longitudinal Wave</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fourth-medwave.html#subsec-energy_MW" class="internal"><span class="codenumber">4.4.3</span> <span class="title">Energy Transport in a Mechanical Wave</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fourth-medwave.html#subsec-interferMW" class="internal"><span class="codenumber">4.4.4</span> <span class="title">Interference of Mechanical Waves</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fourth-medwave.html#subsec-super_princple" class="internal"><span class="codenumber">4.4.5</span> <span class="title">Principle of Superposition</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fourth-medwave.html#subsec-prog_wave" class="internal"><span class="codenumber">4.4.6</span> <span class="title">Traveling Waves (or Progressive Waves):</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fourth-medwave.html#subsec-stand_wave" class="internal"><span class="codenumber">4.4.7</span> <span class="title">Standing Waves (or stationary waves):</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fourth-medwave.html#subsubsec-node_antinode" class="internal"><span class="codenumber">4.4.7.1</span> <span class="title">Position of nodes and antinodes</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_fourth-organ.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Musical Instruments</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fourth-organ.html#subsec-string" class="internal"><span class="codenumber">4.5.1</span> <span class="title">Stretched String</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fourth-organ.html#subsec-organ_pipe" class="internal"><span class="codenumber">4.5.2</span> <span class="title">Organ Pipe</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_fourth-sound.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Sound</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fourth-sound.html#subsec-echo" class="internal"><span class="codenumber">4.6.1</span> <span class="title">Reverberation and Echo</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fourth-sound.html#subsec-beatsf" class="internal"><span class="codenumber">4.6.2</span> <span class="title">Beats</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fourth-sound.html#subsec-dopplerefct" class="internal"><span class="codenumber">4.6.3</span> <span class="title">Doppler Effect</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fourth-sound.html#subsubsec-ssl" class="internal"><span class="codenumber">4.6.3.1</span> <span class="title">Stationary source and listener</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fourth-sound.html#subsubsec-smsl" class="internal"><span class="codenumber">4.6.3.2</span> <span class="title">Source is moving towards stationary listener</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fourth-sound.html#subsubsec-smaway_sl" class="internal"><span class="codenumber">4.6.3.3</span> <span class="title">Source is moving away from stationary listner</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fourth-sound.html#subsubsec-lmss" class="internal"><span class="codenumber">4.6.3.4</span> <span class="title">Listener is moving towards a stationary source</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fourth-sound.html#subsubsec-lmaway_ss" class="internal"><span class="codenumber">4.6.3.5</span> <span class="title">Listener is moving away from a stationary source</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fourth-sound.html#subsubsec-sl_eo" class="internal"><span class="codenumber">4.6.3.6</span> <span class="title">Source and listener move towards each other</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fourth-sound.html#subsubsec-slaway_eo" class="internal"><span class="codenumber">4.6.3.7</span> <span class="title">Source and listener move away from each other</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fourth-sound.html#subsec-sonic_boom" class="internal"><span class="codenumber">4.6.4</span> <span class="title">Sonic Boom</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_fourth-examplesB.html" class="internal"><span class="codenumber">4.7</span> <span class="title">Examples B</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_fourth.html" class="internal"><span class="codenumber">4.8</span> <span class="title">Exercise</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch_fifth.html" class="internal"><span class="codenumber">5</span> <span class="title">Optics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_fifth-intro.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Light</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-intro.html#subsec-speed_light" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Speed of Light</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-intro.html#subsec-huygens" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Huygens’s Principle</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_fifth-geoopt.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Geometrical Optics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsec-refl" class="internal"><span class="codenumber">5.2.1</span> <span class="title">Reflection</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-refl_laws" class="internal"><span class="codenumber">5.2.1.1</span> <span class="title">Laws of Reflection</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-reg_diff" class="internal"><span class="codenumber">5.2.1.2</span> <span class="title">Regular and Diffuse Reflection</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-image_pmirror" class="internal"><span class="codenumber">5.2.1.3</span> <span class="title">Image formed by a mirror</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-plan_mirror" class="internal"><span class="codenumber">5.2.1.4</span> <span class="title">Plane Mirror</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-inclined_mir" class="internal"><span class="codenumber">5.2.1.5</span> <span class="title">Inclined Mirrors</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsec-sp_mir" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Spherical Mirror</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-fr_rel" class="internal"><span class="codenumber">5.2.2.1</span> <span class="title">Relation between f and R</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-mir_form" class="internal"><span class="codenumber">5.2.2.2</span> <span class="title">Mirror Formula</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-lateral_magmir" class="internal"><span class="codenumber">5.2.2.3</span> <span class="title">Lateral Magnification, m</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-concave_image" class="internal"><span class="codenumber">5.2.2.4</span> <span class="title">Formation of Image by a Concave Mirror</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-convex_image" class="internal"><span class="codenumber">5.2.2.5</span> <span class="title">Formation of Image by a Convex Mirror</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsec-refraction" class="internal"><span class="codenumber">5.2.3</span> <span class="title">Refraction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-" class="internal"><span class="codenumber">5.2.3.1</span> <span class="title">Laws of Refraction</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-real_apprnt" class="internal"><span class="codenumber">5.2.3.2</span> <span class="title">Real and Apparent Depth</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-lateral_shift" class="internal"><span class="codenumber">5.2.3.3</span> <span class="title">Lateral Shift</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-reversblty_prncple" class="internal"><span class="codenumber">5.2.3.4</span> <span class="title">Principle of Reversibility of Light</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsec-tir" class="internal"><span class="codenumber">5.2.4</span> <span class="title">Total Internal Reflection</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-mirage" class="internal"><span class="codenumber">5.2.4.1</span> <span class="title">Mirage</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsec-prism_ref" class="internal"><span class="codenumber">5.2.5</span> <span class="title">Refraction through a Prism</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsec-srs_img" class="internal"><span class="codenumber">5.2.6</span> <span class="title">Image formed by Spherical Refracting Surfaces</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-srs_mag" class="internal"><span class="codenumber">5.2.6.1</span> <span class="title">Lateral or Transverse Magnification, m</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-longmag_srs" class="internal"><span class="codenumber">5.2.6.2</span> <span class="title">Longitudinal Magnification, L</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsec-thin_lens" class="internal"><span class="codenumber">5.2.7</span> <span class="title">Thin Lenses</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-lens_formula" class="internal"><span class="codenumber">5.2.7.1</span> <span class="title">Lens Formula</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-vexlens_img" class="internal"><span class="codenumber">5.2.7.2</span> <span class="title">Image formed by a convex lens</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-cavelens_img" class="internal"><span class="codenumber">5.2.7.3</span> <span class="title">Image formed by a concave lens</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsec-lensmakers" class="internal"><span class="codenumber">5.2.8</span> <span class="title">Lens Maker’s Formula</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-fr_dependence" class="internal"><span class="codenumber">5.2.8.1</span> <span class="title">Dependence of f of a lens on R of its surfaces</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-mindist_rimge" class="internal"><span class="codenumber">5.2.8.2</span> <span class="title">Minimum distance between object and its real image in a convex lens</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-eqf_thinlens" class="internal"><span class="codenumber">5.2.8.3</span> <span class="title">Equivalent focal length of two thin lenses</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_fifth-dispers.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Dispersion</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-dispers.html#subsec-achrom_prism" class="internal"><span class="codenumber">5.3.1</span> <span class="title">Deviation Without Dispersion (Achromatic Prism)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-dispers.html#subsec-diswdev1" class="internal"><span class="codenumber">5.3.2</span> <span class="title">Dispersion Without Deviation</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-dispers.html#subsec-chrom_abr" class="internal"><span class="codenumber">5.3.3</span> <span class="title">Chromatic Aberation in a Lens</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-dispers.html#subsubsec-achrom" class="internal"><span class="codenumber">5.3.3.1</span> <span class="title">Achromatism</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-dispers.html#subsec-rainbow" class="internal"><span class="codenumber">5.3.4</span> <span class="title">Rainbow</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-dispers.html#subsubsec-prainbow" class="internal"><span class="codenumber">5.3.4.1</span> <span class="title">Primary Rainbow</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-dispers.html#subsubsec-srainbow" class="internal"><span class="codenumber">5.3.4.2</span> <span class="title">Secondary Rainbow</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-dispers.html#subsec-scattering" class="internal"><span class="codenumber">5.3.5</span> <span class="title">Scattering</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_fifth-examplesA.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Examples A</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_fifth-examplesB.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Examples B</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_fifth-opinst.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Optical Instruments</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsec-camera" class="internal"><span class="codenumber">5.6.1</span> <span class="title">Camera</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-opinst.html#subsec-opvision" class="internal"><span class="codenumber">5.6.2</span> <span class="title">Optical Vision</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-myopia" class="internal"><span class="codenumber">5.6.2.1</span> <span class="title">Myopia:</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-hyperopia" class="internal"><span class="codenumber">5.6.2.2</span> <span class="title">Hypermetropia  (or hyperopia):</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-visangle" class="internal"><span class="codenumber">5.6.2.3</span> <span class="title">Visual Angle</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-magpower" class="internal"><span class="codenumber">5.6.2.4</span> <span class="title">Angular Magnification  (or Magnifying Power:)</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-opinst.html#subsec-microscope" class="internal"><span class="codenumber">5.6.3</span> <span class="title">Microscope</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-handlens" class="internal"><span class="codenumber">5.6.3.1</span> <span class="title">Simple Microscope</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-compmicros" class="internal"><span class="codenumber">5.6.3.2</span> <span class="title">Compound Microscope</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-opinst.html#subsec-telescope" class="internal"><span class="codenumber">5.6.4</span> <span class="title">Telescope</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-astrts" class="internal"><span class="codenumber">5.6.4.1</span> <span class="title">Astronomical Telescope</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-terrts" class="internal"><span class="codenumber">5.6.4.2</span> <span class="title">Terrestrial Telescope</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-galilots" class="internal"><span class="codenumber">5.6.4.3</span> <span class="title">Galileo’s Telescope</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-opinst.html#subsec-photmtry" class="internal"><span class="codenumber">5.6.5</span> <span class="title">Photometry</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-stcandle" class="internal"><span class="codenumber">5.6.5.1</span> <span class="title">Standard Candle</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-sangl" class="internal"><span class="codenumber">5.6.5.2</span> <span class="title">Solid Angle, <span class="process-math">\(\omega\)</span></span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-lumenflx" class="internal"><span class="codenumber">5.6.5.3</span> <span class="title">Luminous Flux, <span class="process-math">\(\phi\)</span></span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsec-isl" class="internal"><span class="codenumber">5.6.6</span> <span class="title">Inverse Square Law</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsec-iil" class="internal"><span class="codenumber">5.6.7</span> <span class="title">Intensity of Illumination</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-opinst.html#subsec-bsil" class="internal"><span class="codenumber">5.6.8</span> <span class="title">Brightness of a surface and illumination</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-bgsp" class="internal"><span class="codenumber">5.6.8.1</span> <span class="title">Bunsen’s Grease Spot Photometer</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_fifth-examplesC.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Examples C</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_fifth-physopt.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Physical Optics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-physopt.html#subsec-interfnc" class="internal"><span class="codenumber">5.8.1</span> <span class="title">Interference</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsubsec-coherent" class="internal"><span class="codenumber">5.8.1.1</span> <span class="title">Coherent Sources</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsubsec-phase_path" class="internal"><span class="codenumber">5.8.1.2</span> <span class="title">Phase Difference and Path Difference</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsec-inter_fringe" class="internal"><span class="codenumber">5.8.2</span> <span class="title">Theory of Interference Fringes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsec-thin_film" class="internal"><span class="codenumber">5.8.3</span> <span class="title">Thickness of Thin Sheet of Transparent Material</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-physopt.html#subsec-thinfilm_interf" class="internal"><span class="codenumber">5.8.4</span> <span class="title">Interference in Thin Films</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsubsec-thinf_interr" class="internal"><span class="codenumber">5.8.4.1</span> <span class="title">Interference due to Reflected Light in Thin Films</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsubsec-thinf_intert" class="internal"><span class="codenumber">5.8.4.2</span> <span class="title">Interference due to Transmitted Light in Thin Films</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsec-thinf_color" class="internal"><span class="codenumber">5.8.5</span> <span class="title">Colors of Thin Films</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-physopt.html#subsec-diffraction" class="internal"><span class="codenumber">5.8.6</span> <span class="title">Diffraction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsubsec-ssdiffrct" class="internal"><span class="codenumber">5.8.6.1</span> <span class="title">Single Slit Diffraction</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsubsec-issdiff" class="internal"><span class="codenumber">5.8.6.2</span> <span class="title">Intensity of Diffraction Pattern due to a Single Slit</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-physopt.html#subsec-dsdiffrc" class="internal"><span class="codenumber">5.8.7</span> <span class="title">Double Slits Diffraction</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsubsec-idsdiffrc" class="internal"><span class="codenumber">5.8.7.1</span> <span class="title">Intensity of Diffraction Pattern due to Double Slits</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsec-msdiffrc" class="internal"><span class="codenumber">5.8.8</span> <span class="title">Multiple Slits Diffraction</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-physopt.html#subsec-diffgrating" class="internal"><span class="codenumber">5.8.9</span> <span class="title">Diffraction Grating</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsubsec-grat_spectrom" class="internal"><span class="codenumber">5.8.9.1</span> <span class="title">Grating Spectrometer</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsubsec-resolv_power" class="internal"><span class="codenumber">5.8.9.2</span> <span class="title">Resolving Power</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsec-polrzn" class="internal"><span class="codenumber">5.8.10</span> <span class="title">Polarization</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_fifth-examplesD.html" class="internal"><span class="codenumber">5.9</span> <span class="title">Examples D</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_fifth.html" class="internal"><span class="codenumber">5.10</span> <span class="title">Exercise</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="append_math.html" class="internal"><span class="codenumber">A</span> <span class="title">Mathematical Relations</span></a></div></li>
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="append_physTable.html" class="internal"><span class="codenumber">B</span> <span class="title">Useful Data and Greek Letters</span></a></div></li>
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="backmatter-4.html" class="internal"><span class="codenumber">C</span> <span class="title">List of Symbols</span></a></div></li>
+<li class="toc-item toc-index"><div class="toc-title-box"><a href="backmatter-5.html" class="internal"><span class="title">Index</span></a></div></li>
+<li class="toc-item toc-references"><div class="toc-title-box"><a href="refs-list.html" class="internal"><span class="title">References</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-7.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="exercises" id="ex_firstA"><h2 class="heading hide-type">
+<span class="type">Exercises</span><span class="space"> </span><span class="codenumber">1.6</span><span class="space"> </span><span class="title">Exercise A</span>
+</h2>
+<section class="paragraphs" id="ex_firstA-2"><h3 class="heading"><span class="title">Coulomb’s Law.</span></h3>
+<article class="exercise exercise-like" id="ex_firstA-2-2"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
+<div class="para" id="ex_firstA-2-2-1">Calculate total positive charge and total negative charge on 5 g of nickel. Given: atomic mass and atomic number of Nickel are 58.69 amu and 28 amu, respectively.<div class="autopermalink" data-description="Paragraph"><a href="#ex_firstA-2-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 1.6.1"><a href="#ex_firstA-2-2" title="Copy heading and permalink for Exercise 1.6.1">🔗</a></div></article><article class="exercise exercise-like" id="ex_firstA-2-3"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
+<div class="para" id="ex_firstA-2-3-1">Write the process to determine the sign of a charged object using  electroscope if the electroscope is positively charged initially?<div class="autopermalink" data-description="Paragraph"><a href="#ex_firstA-2-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 1.6.2"><a href="#ex_firstA-2-3" title="Copy heading and permalink for Exercise 1.6.2">🔗</a></div></article><article class="exercise exercise-like" id="ex_firstA-2-4"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
+<div class="para logical" id="ex_firstA-2-4-1">
+<div class="para">Three electrical charges are arranged along the x-axis. The first charge is <span class="process-math">\(q_{1} = +10 \,\mu C \)</span> located at <span class="process-math">\(x_{1}= 1\, m\text{;}\)</span> the second charge is <span class="process-math">\(q_{2} = -20 \,\mu C\)</span> located at <span class="process-math">\(x_{2} = 2\, m\text{;}\)</span> and the third charge is <span class="process-math">\(q_{3} = 30 \,\mu C\)</span> located at a point where it experiences no electrical force.</div>
+<ol class="lower-alpha ol-marker-2" id="ex_firstA-2-4-1-6">
+<li id="ex_firstA-2-4-1-6-1">
+<div class="para" id="p-derived-ex_firstA-2-4-1-6-1">Where is the third charge located?</div>
+<div class="autopermalink" data-description="Item 1.6.3.a"><a href="#ex_firstA-2-4-1-6-1" title="Copy heading and permalink for Item 1.6.3.a">🔗</a></div>
+</li>
+<li id="ex_firstA-2-4-1-6-2">
+<div class="para" id="p-derived-ex_firstA-2-4-1-6-2">What is the electrical force on each of the other two charges?</div>
+<div class="autopermalink" data-description="Item 1.6.3.b"><a href="#ex_firstA-2-4-1-6-2" title="Copy heading and permalink for Item 1.6.3.b">🔗</a></div>
+</li>
+<li id="ex_firstA-2-4-1-6-3">
+<div class="para" id="p-derived-ex_firstA-2-4-1-6-3">What is the total electrical force on the system of three charges? Could this arrangement of charges be used to propel a spaceship through space? Why?</div>
+<div class="autopermalink" data-description="Item 1.6.3.c"><a href="#ex_firstA-2-4-1-6-3" title="Copy heading and permalink for Item 1.6.3.c">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex_firstA-2-4-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 1.6.3"><a href="#ex_firstA-2-4" title="Copy heading and permalink for Exercise 1.6.3">🔗</a></div></article><article class="exercise exercise-like" id="ex_firstA-2-5"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
+<div class="para" id="ex_firstA-2-5-1">Two electrical charges are arranged along the x-axis. The first charge is <span class="process-math">\(q_{1} = +100 e\)</span> located at <span class="process-math">\(x_{1} = -1 \,mm;\)</span> the second charge is <span class="process-math">\(q_{2} = -200 e\)</span> located at <span class="process-math">\(x_{2} = 2 \,mm.\)</span> If an electron is released from rest at the origin, what will be the magnitude and direction of its initial acceleration?<div class="autopermalink" data-description="Paragraph"><a href="#ex_firstA-2-5-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 1.6.4"><a href="#ex_firstA-2-5" title="Copy heading and permalink for Exercise 1.6.4">🔗</a></div></article><article class="exercise exercise-like" id="ex_firstA-2-6"><h4 class="heading"><span class="codenumber">5<span class="period">.</span></span></h4>
+<div class="para" id="ex_firstA-2-6-1">Two point charges are located on the positive x-axis of a coordinate system. Charge <span class="process-math">\(q_{1} = 1.00 \,nC\)</span> is located at <span class="process-math">\(x_{1} = 2.00 \,cm\)</span> and charge <span class="process-math">\(q_{2} =3.00 \,nC\)</span> is located at <span class="process-math">\(x_{2} = 4.00 \,cm\text{.}\)</span> What is the total force exerted by these two charges on a third charge <span class="process-math">\(q_{3} = 5.00 \,nC\)</span> located at the origin? Neglect gravitational force.<div class="autopermalink" data-description="Paragraph"><a href="#ex_firstA-2-6-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 1.6.5"><a href="#ex_firstA-2-6" title="Copy heading and permalink for Exercise 1.6.5">🔗</a></div></article><article class="exercise exercise-like" id="ex_firstA-2-7"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>
+<div class="para" id="ex_firstA-2-7-1">If all the electrons in one gram of hydrogen were placed at the south pole of the earth and all the protons at the north pole, what would be the electrical force between them? Express your answer in Newtons, then convert the answer to pounds. (The atomic mass of hydrogen is 1.00794, the radius of the earth is <span class="process-math">\(6.38 \times 10^{6} \,m,\)</span> and 1 N = 0.2248 lb.)<div class="autopermalink" data-description="Paragraph"><a href="#ex_firstA-2-7-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 1.6.6"><a href="#ex_firstA-2-7" title="Copy heading and permalink for Exercise 1.6.6">🔗</a></div></article><article class="exercise exercise-like" id="ex_firstA-2-8"><h4 class="heading"><span class="codenumber">7<span class="period">.</span></span></h4>
+<div class="para logical" id="ex_firstA-2-8-1">
+<div class="para">Two small copper spheres, each having a mass of 50 g, are separated by 2.00 m.</div>
+<ol class="lower-alpha ol-marker-2" id="ex_firstA-2-8-1-1">
+<li id="ex_firstA-2-8-1-1-1">
+<div class="para" id="p-derived-ex_firstA-2-8-1-1-1">How many electrons does each sphere contain? (The atomic mass of copper is 63.5 g/mole, and its atomic number is 29.)</div>
+<div class="autopermalink" data-description="Item 1.6.7.a"><a href="#ex_firstA-2-8-1-1-1" title="Copy heading and permalink for Item 1.6.7.a">🔗</a></div>
+</li>
+<li id="ex_firstA-2-8-1-1-2">
+<div class="para" id="p-derived-ex_firstA-2-8-1-1-2">How many electrons would have to be removed from one sphere and added to the other to cause an attractive force between the spheres of magnitude <span class="process-math">\(1.00\times 10^{4}\, N \text{?}\)</span>
+</div>
+<div class="autopermalink" data-description="Item 1.6.7.b"><a href="#ex_firstA-2-8-1-1-2" title="Copy heading and permalink for Item 1.6.7.b">🔗</a></div>
+</li>
+<li id="ex_firstA-2-8-1-1-3">
+<div class="para" id="p-derived-ex_firstA-2-8-1-1-3">What fraction of all the electrons in each sphere does this represent?</div>
+<div class="autopermalink" data-description="Item 1.6.7.c"><a href="#ex_firstA-2-8-1-1-3" title="Copy heading and permalink for Item 1.6.7.c">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex_firstA-2-8-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 1.6.7"><a href="#ex_firstA-2-8" title="Copy heading and permalink for Exercise 1.6.7">🔗</a></div></article><article class="exercise exercise-like" id="ex_firstA-2-9"><h4 class="heading"><span class="codenumber">8<span class="period">.</span></span></h4>
+<div class="para" id="ex_firstA-2-9-1">Two point charges are located on the y-axis as follows: charge <span class="process-math">\(q_{1} = +3.00 \,\mu C\)</span> at y = 50 cm, and charge <span class="process-math">\(q_{2}= -2.00 \,\mu C\)</span> at y = 0. What is the total force, magnitude, and direction exerted by these two charges on a third charge <span class="process-math">\(q_{3} = 5 \,\mu C\)</span> located at <span class="process-math">\(y = -40 \,cm\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex_firstA-2-9-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 1.6.8"><a href="#ex_firstA-2-9" title="Copy heading and permalink for Exercise 1.6.8">🔗</a></div></article><article class="exercise exercise-like" id="ex_firstA-2-10"><h4 class="heading"><span class="codenumber">9<span class="period">.</span></span></h4>
+<div class="para logical" id="ex_firstA-2-10-1">
+<div class="para">Four electrical charges are located at the corners of a square. The first charge is <span class="process-math">\(+10 \,\mu C \)</span> at (0,0), the second is <span class="process-math">\(-20 \,\mu C\)</span> at (1m,0), the third is <span class="process-math">\(+30 \,\mu C\)</span> at (1 m, 1 m), and the fourth is <span class="process-math">\(-40 \,\mu C\)</span> at (0, 1 m).</div>
+<ol class="lower-alpha ol-marker-2" id="ex_firstA-2-10-1-5">
+<li id="ex_firstA-2-10-1-5-1">
+<div class="para" id="p-derived-ex_firstA-2-10-1-5-1">What is the magnitude and direction of the electrical force on the <span class="process-math">\(10 \,\mu C\)</span> charge?</div>
+<div class="autopermalink" data-description="Item 1.6.9.a"><a href="#ex_firstA-2-10-1-5-1" title="Copy heading and permalink for Item 1.6.9.a">🔗</a></div>
+</li>
+<li id="ex_firstA-2-10-1-5-2">
+<div class="para" id="p-derived-ex_firstA-2-10-1-5-2">If gravity acts in the -y-direction and the first charge has a mass of 100 g, what is the magnitude and direction of the initial acceleration of the first mass if released from rest and allowed to move under the influence of gravitational and electrical forces.</div>
+<div class="autopermalink" data-description="Item 1.6.9.b"><a href="#ex_firstA-2-10-1-5-2" title="Copy heading and permalink for Item 1.6.9.b">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex_firstA-2-10-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 1.6.9"><a href="#ex_firstA-2-10" title="Copy heading and permalink for Exercise 1.6.9">🔗</a></div></article><article class="exercise exercise-like" id="ex_firstA-2-11"><h4 class="heading"><span class="codenumber">10<span class="period">.</span></span></h4>
+<div class="para" id="ex_firstA-2-11-1">Three equal charges of <span class="process-math">\(+10 \,nC \)</span> are located at the corners of an equilateral triangle whose sides are 10 cm long. What is the magnitude of the force experienced by each charge due to the others?<div class="autopermalink" data-description="Paragraph"><a href="#ex_firstA-2-11-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 1.6.10"><a href="#ex_firstA-2-11" title="Copy heading and permalink for Exercise 1.6.10">🔗</a></div></article><article class="exercise exercise-like" id="ex_firstA-2-12"><h4 class="heading"><span class="codenumber">11<span class="period">.</span></span></h4>
+<div class="para logical" id="ex_firstA-2-12-1">
+<div class="para">A positive charge q is placed on the +y axis at y = a, and a negative charge -q is placed at y = -a. A point charge Q is located along the x-axis.</div>
+<ol class="lower-alpha ol-marker-2" id="ex_firstA-2-12-1-1">
+<li id="ex_firstA-2-12-1-1-1">
+<div class="para" id="p-derived-ex_firstA-2-12-1-1-1">What is the magnitude and direction of the net electrical force on charge Q?</div>
+<div class="autopermalink" data-description="Item 1.6.11.a"><a href="#ex_firstA-2-12-1-1-1" title="Copy heading and permalink for Item 1.6.11.a">🔗</a></div>
+</li>
+<li id="ex_firstA-2-12-1-1-2">
+<div class="para" id="p-derived-ex_firstA-2-12-1-1-2">What does this become for x = 0?</div>
+<div class="autopermalink" data-description="Item 1.6.11.b"><a href="#ex_firstA-2-12-1-1-2" title="Copy heading and permalink for Item 1.6.11.b">🔗</a></div>
+</li>
+<li id="ex_firstA-2-12-1-1-3">
+<div class="para" id="p-derived-ex_firstA-2-12-1-1-3">Graph the x-component of this force <span class="process-math">\(F_{x}\)</span> versus x for <span class="process-math">\(-4a \lt x \lt 4a.\)</span>
+</div>
+<div class="autopermalink" data-description="Item 1.6.11.c"><a href="#ex_firstA-2-12-1-1-3" title="Copy heading and permalink for Item 1.6.11.c">🔗</a></div>
+</li>
+<li id="ex_firstA-2-12-1-1-4">
+<div class="para" id="p-derived-ex_firstA-2-12-1-1-4">Graph the y-component of this force <span class="process-math">\(F_{y}\)</span> versus x for the same interval.</div>
+<div class="autopermalink" data-description="Item 1.6.11.d"><a href="#ex_firstA-2-12-1-1-4" title="Copy heading and permalink for Item 1.6.11.d">🔗</a></div>
+</li>
+<li id="ex_firstA-2-12-1-1-5">
+<div class="para" id="p-derived-ex_firstA-2-12-1-1-5">Use your graph to estimate when the magnitude of F becomes a maximum. Approximately what is that maximum and for what value of x does it occur?</div>
+<div class="autopermalink" data-description="Item 1.6.11.e"><a href="#ex_firstA-2-12-1-1-5" title="Copy heading and permalink for Item 1.6.11.e">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex_firstA-2-12-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 1.6.11"><a href="#ex_firstA-2-12" title="Copy heading and permalink for Exercise 1.6.11">🔗</a></div></article><article class="exercise exercise-like" id="ex_firstA-2-13"><h4 class="heading"><span class="codenumber">12<span class="period">.</span></span></h4>
+<div class="para logical" id="ex_firstA-2-13-1">
+<div class="para">A rod of length 2a is symmetrically located on the y-axis as shown in the figure below. It has a total positive charge of Q. A point charge q is located along the x-axis at a distance x.</div>
+<ol class="lower-alpha ol-marker-2" id="ex_firstA-2-13-1-1">
+<li id="ex_firstA-2-13-1-1-1">
+<div class="para" id="p-derived-ex_firstA-2-13-1-1-1">Use calculus to find the force (magnitude and direction) on q due to Q.</div>
+<div class="autopermalink" data-description="Item 1.6.12.a"><a href="#ex_firstA-2-13-1-1-1" title="Copy heading and permalink for Item 1.6.12.a">🔗</a></div>
+</li>
+<li id="ex_firstA-2-13-1-1-2">
+<div class="para" id="p-derived-ex_firstA-2-13-1-1-2">What does this force become when <span class="process-math">\(x \lt \lt a?\)</span>
+</div>
+<div class="autopermalink" data-description="Item 1.6.12.b"><a href="#ex_firstA-2-13-1-1-2" title="Copy heading and permalink for Item 1.6.12.b">🔗</a></div>
+</li>
+<li id="ex_firstA-2-13-1-1-3">
+<div class="para" id="p-derived-ex_firstA-2-13-1-1-3">When <span class="process-math">\(x \gt \gt a?\)</span>
+</div>
+<div class="autopermalink" data-description="Item 1.6.12.c"><a href="#ex_firstA-2-13-1-1-3" title="Copy heading and permalink for Item 1.6.12.c">🔗</a></div>
+</li>
+<li id="ex_firstA-2-13-1-1-4">
+<div class="para" id="p-derived-ex_firstA-2-13-1-1-4">What is the magnitude of F when Q = 10 nC, q = 2 nC, and x = a = 10 cm?</div>
+<div class="autopermalink" data-description="Item 1.6.12.d"><a href="#ex_firstA-2-13-1-1-4" title="Copy heading and permalink for Item 1.6.12.d">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex_firstA-2-13-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 30%; margin-left: 35%; margin-right: 35%;"><img src="external/fig5.png" class="contained"></div>
+<div class="autopermalink" data-description="Exercise 1.6.12"><a href="#ex_firstA-2-13" title="Copy heading and permalink for Exercise 1.6.12">🔗</a></div></article><article class="exercise exercise-like" id="ex_firstA-2-14"><h4 class="heading"><span class="codenumber">13<span class="period">.</span></span></h4>
+<div class="para" id="ex_firstA-2-14-1">A thin but large flat sheet of material has a uniform charge Q per unit area A on its surface equal to <span class="process-math">\(\sigma= Q/A.\)</span> Use calculus to find the force on a charge q located at a distance x from that surface. <details id="ex_firstA-2-14-1-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para logical" id="ex_firstA-2-14-1-2-1">
+<div class="para">Set up a coordinate system with the x-axis perpendicular to the charged surface and use polar coordinates <span class="process-math">\((r,\theta)\)</span> to specify the location of an arbitrary charge element dq inside the surface. Use the results of Example 2 to express the element of electric field dF at x due to a ring of charge dq as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+dF = \frac{Q \,dq x}{4 \pi \epsilon_{o} (a^{2}+x^{2})^{3/2}} \hat{i}.
+\end{equation*}
+</div>
+<div class="para">Then express <span class="process-math">\(\,dq\)</span> in terms of a  and <span class="process-math">\(\,da\)</span> and integrate over a to obtain the final result.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex_firstA-2-14-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 1"><a href="#ex_firstA-2-14-1-2" title="Copy heading and permalink for Hint 1">🔗</a></div>
+</div></details><div class="autopermalink" data-description="Paragraph"><a href="#ex_firstA-2-14-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 1.6.13"><a href="#ex_firstA-2-14" title="Copy heading and permalink for Exercise 1.6.13">🔗</a></div></article><div class="autopermalink" data-description="Paragraphs: Coulomb’s Law"><a href="#ex_firstA-2" title="Copy heading and permalink for Paragraphs: Coulomb’s Law">🔗</a></div></section><section class="paragraphs" id="ex_firstA-3"><h3 class="heading"><span class="title">Electric Field.</span></h3>
+<article class="exercise exercise-like" id="ex_firstA-3-2"><h4 class="heading"><span class="codenumber">14<span class="period">.</span></span></h4>
+<div class="para logical" id="ex_firstA-3-2-1">
+<div class="para">A thin disk of radius R and uniform surface charge density (charge per unit area) s is centered on the origin in the y, z plane.</div>
+<ol class="lower-alpha ol-marker-2" id="ex_firstA-3-2-1-1">
+<li id="ex_firstA-3-2-1-1-1">
+<div class="para" id="p-derived-ex_firstA-3-2-1-1-1">Use calculus to find the electric field at an arbitrary point along the x-axis.</div>
+<div class="autopermalink" data-description="Item 1.6.14.a"><a href="#ex_firstA-3-2-1-1-1" title="Copy heading and permalink for Item 1.6.14.a">🔗</a></div>
+</li>
+<li id="ex_firstA-3-2-1-1-2">
+<div class="para" id="p-derived-ex_firstA-3-2-1-1-2">What is the electric field when <span class="process-math">\(x \lt \lt R?\)</span>
+</div>
+<div class="autopermalink" data-description="Item 1.6.14.b"><a href="#ex_firstA-3-2-1-1-2" title="Copy heading and permalink for Item 1.6.14.b">🔗</a></div>
+</li>
+<li id="ex_firstA-3-2-1-1-3">
+<div class="para" id="p-derived-ex_firstA-3-2-1-1-3">When <span class="process-math">\(x \gt \gt R?\)</span>
+</div>
+<div class="autopermalink" data-description="Item 1.6.14.c"><a href="#ex_firstA-3-2-1-1-3" title="Copy heading and permalink for Item 1.6.14.c">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex_firstA-3-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 1.6.14"><a href="#ex_firstA-3-2" title="Copy heading and permalink for Exercise 1.6.14">🔗</a></div></article><article class="exercise exercise-like" id="ex_firstA-3-3"><h4 class="heading"><span class="codenumber">15<span class="period">.</span></span></h4>
+<div class="para" id="ex_firstA-3-3-1">Draw approximate electric field lines for the charge distribution shown at right.<div class="autopermalink" data-description="Paragraph"><a href="#ex_firstA-3-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 30%; margin-left: 35%; margin-right: 35%;"><img src="external/fig9.png" class="contained"></div>
+<div class="autopermalink" data-description="Exercise 1.6.15"><a href="#ex_firstA-3-3" title="Copy heading and permalink for Exercise 1.6.15">🔗</a></div></article><article class="exercise exercise-like" id="ex_firstA-3-4"><h4 class="heading"><span class="codenumber">16<span class="period">.</span></span></h4>
+<div class="para logical" id="ex_firstA-3-4-1">
+<div class="para">The figure below shows an electric dipole located in an electric field directed to the right. The magnitude of the charge on each particle of the dipole is 2 nC, the distance between the particles is 10 cm, the angle <span class="process-math">\(\theta = 60^{o},\)</span> and the magnitude of the electric field is 50 N/C.   <div class="image-box" style="width: 30%; margin-left: 35%; margin-right: 35%;"><img src="external/fig10.png" class="contained"></div>
+</div>
+<ol class="lower-alpha ol-marker-2" id="ex_firstA-3-4-1-3">
+<li id="ex_firstA-3-4-1-3-1">
+<div class="para" id="p-derived-ex_firstA-3-4-1-3-1">What is the dipole moment of the dipole?</div>
+<div class="autopermalink" data-description="Item 1.6.16.a"><a href="#ex_firstA-3-4-1-3-1" title="Copy heading and permalink for Item 1.6.16.a">🔗</a></div>
+</li>
+<li id="ex_firstA-3-4-1-3-2">
+<div class="para" id="p-derived-ex_firstA-3-4-1-3-2">What is the torque on the dipole?</div>
+<div class="autopermalink" data-description="Item 1.6.16.b"><a href="#ex_firstA-3-4-1-3-2" title="Copy heading and permalink for Item 1.6.16.b">🔗</a></div>
+</li>
+<li id="ex_firstA-3-4-1-3-3">
+<div class="para" id="p-derived-ex_firstA-3-4-1-3-3">What is the potential energy of the dipole?</div>
+<div class="autopermalink" data-description="Item 1.6.16.c"><a href="#ex_firstA-3-4-1-3-3" title="Copy heading and permalink for Item 1.6.16.c">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex_firstA-3-4-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 1.6.16"><a href="#ex_firstA-3-4" title="Copy heading and permalink for Exercise 1.6.16">🔗</a></div></article><article class="exercise exercise-like" id="ex_firstA-3-5"><h4 class="heading"><span class="codenumber">17<span class="period">.</span></span></h4>
+<div class="para" id="ex_firstA-3-5-1">What is the electric field at point P due to the charges in the diagram at right if the length of the edges of the square is a = 0.1 m?<div class="autopermalink" data-description="Paragraph"><a href="#ex_firstA-3-5-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 30%; margin-left: 35%; margin-right: 35%;"><img src="external/fig11.png" class="contained"></div>
+<div class="autopermalink" data-description="Exercise 1.6.17"><a href="#ex_firstA-3-5" title="Copy heading and permalink for Exercise 1.6.17">🔗</a></div></article><article class="exercise exercise-like" id="ex_firstA-3-6"><h4 class="heading"><span class="codenumber">18<span class="period">.</span></span></h4>
+<div class="para logical" id="ex_firstA-3-6-1">
+<div class="para">A point charge <span class="process-math">\(q_{1} = +5 \,\mu C\)</span> is located at the point (2 m, 1 m), and a second point charge <span class="process-math">\(q_{2} = -3 \,\mu C\)</span> is located at the point (-2 m, -2 m). What are</div>
+<ol class="lower-alpha ol-marker-2" id="ex_firstA-3-6-1-3">
+<li id="ex_firstA-3-6-1-3-1">
+<div class="para" id="p-derived-ex_firstA-3-6-1-3-1">the magnitude and</div>
+<div class="autopermalink" data-description="Item 1.6.18.a"><a href="#ex_firstA-3-6-1-3-1" title="Copy heading and permalink for Item 1.6.18.a">🔗</a></div>
+</li>
+<li id="ex_firstA-3-6-1-3-2">
+<div class="para" id="p-derived-ex_firstA-3-6-1-3-2">the direction of the electric field at the origin?</div>
+<div class="autopermalink" data-description="Item 1.6.18.b"><a href="#ex_firstA-3-6-1-3-2" title="Copy heading and permalink for Item 1.6.18.b">🔗</a></div>
+</li>
+<li id="ex_firstA-3-6-1-3-3">
+<div class="para" id="p-derived-ex_firstA-3-6-1-3-3">What would be the force on a third charge <span class="process-math">\(q_{3} = 1 \,\mu C\)</span> if it were placed at the origin?</div>
+<div class="autopermalink" data-description="Item 1.6.18.c"><a href="#ex_firstA-3-6-1-3-3" title="Copy heading and permalink for Item 1.6.18.c">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex_firstA-3-6-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 1.6.18"><a href="#ex_firstA-3-6" title="Copy heading and permalink for Exercise 1.6.18">🔗</a></div></article><article class="exercise exercise-like" id="ex_firstA-3-7"><h4 class="heading"><span class="codenumber">19<span class="period">.</span></span></h4>
+<div class="para logical" id="ex_firstA-3-7-1">
+<div class="para">A uniform electric field of 1000 N/C is directed downward. An electron moving horizontally to the right enters the field with a speed of <span class="process-math">\(v_{o} = 1.00 \times 10^{6} \,m/s.\)</span>
+</div>
+<ol class="lower-alpha ol-marker-2" id="ex_firstA-3-7-1-2">
+<li id="ex_firstA-3-7-1-2-1">
+<div class="para" id="p-derived-ex_firstA-3-7-1-2-1">How long does it take for the electron to move 2 cm  across the field?</div>
+<div class="autopermalink" data-description="Item 1.6.19.a"><a href="#ex_firstA-3-7-1-2-1" title="Copy heading and permalink for Item 1.6.19.a">🔗</a></div>
+</li>
+<li id="ex_firstA-3-7-1-2-2">
+<div class="para" id="p-derived-ex_firstA-3-7-1-2-2">How far will it move vertically during this time interval?</div>
+<div class="autopermalink" data-description="Item 1.6.19.b"><a href="#ex_firstA-3-7-1-2-2" title="Copy heading and permalink for Item 1.6.19.b">🔗</a></div>
+</li>
+<li id="ex_firstA-3-7-1-2-3">
+<div class="para" id="p-derived-ex_firstA-3-7-1-2-3">What direction will it be traveling at the end of that time interval?</div>
+<div class="autopermalink" data-description="Item 1.6.19.c"><a href="#ex_firstA-3-7-1-2-3" title="Copy heading and permalink for Item 1.6.19.c">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex_firstA-3-7-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 1.6.19"><a href="#ex_firstA-3-7" title="Copy heading and permalink for Exercise 1.6.19">🔗</a></div></article><article class="exercise exercise-like" id="ex_firstA-3-8"><h4 class="heading"><span class="codenumber">20<span class="period">.</span></span></h4>
+<div class="para" id="ex_firstA-3-8-1">Find the electric field at the center of a square in a figure given aside, if <span class="process-math">\(q=1\times 10^{-8}\,C\)</span> and a = 5.0 cm.<div class="autopermalink" data-description="Paragraph"><a href="#ex_firstA-3-8-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 30%; margin-left: 35%; margin-right: 35%;"><img src="external/qsquare.png" class="contained"></div>
+<div class="autopermalink" data-description="Exercise 1.6.20"><a href="#ex_firstA-3-8" title="Copy heading and permalink for Exercise 1.6.20">🔗</a></div></article><article class="exercise exercise-like" id="ex_firstA-3-9"><h4 class="heading"><span class="codenumber">21<span class="period">.</span></span></h4>
+<div class="para logical" id="ex_firstA-3-9-1">
+<div class="para">A ring of charge <span class="process-math">\(Q\)</span> and radius <span class="process-math">\(a\)</span> lies in the y, z -plane and is centered on the origin.</div>
+<ol class="lower-alpha ol-marker-2" id="ex_firstA-3-9-1-3">
+<li id="ex_firstA-3-9-1-3-1">
+<div class="para" id="p-derived-ex_firstA-3-9-1-3-1">Use calculus to show that the electric field at any point along the x-axis is given by<div class="displaymath process-math">
+\begin{equation*}
+\vec{E}  =k\frac{Qx}{(x^{2}+a^{2})^{3/2}}\hat{i}.
+\end{equation*}
+</div>
+</div>
+<div class="autopermalink" data-description="Item 1.6.21.a"><a href="#ex_firstA-3-9-1-3-1" title="Copy heading and permalink for Item 1.6.21.a">🔗</a></div>
+</li>
+<li id="ex_firstA-3-9-1-3-2">
+<div class="para" id="p-derived-ex_firstA-3-9-1-3-2">What does this become when <span class="process-math">\(x \gt \gt a\text{?}\)</span>
+</div>
+<div class="autopermalink" data-description="Item 1.6.21.b"><a href="#ex_firstA-3-9-1-3-2" title="Copy heading and permalink for Item 1.6.21.b">🔗</a></div>
+</li>
+<li id="ex_firstA-3-9-1-3-3">
+<div class="para" id="p-derived-ex_firstA-3-9-1-3-3">When <span class="process-math">\(x \lt \lt a?\)</span>
+</div>
+<div class="autopermalink" data-description="Item 1.6.21.c"><a href="#ex_firstA-3-9-1-3-3" title="Copy heading and permalink for Item 1.6.21.c">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex_firstA-3-9-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 1.6.21"><a href="#ex_firstA-3-9" title="Copy heading and permalink for Exercise 1.6.21">🔗</a></div></article><article class="exercise exercise-like" id="ex_firstA-3-10"><h4 class="heading"><span class="codenumber">22<span class="period">.</span></span></h4>
+<div class="para logical" id="ex_firstA-3-10-1">
+<div class="para">A ring of charge <span class="process-math">\(Q\)</span> and radius <span class="process-math">\(a\)</span> lies in the y, z -plane and is centered on the origin. Its electric field at any point along the x-axis is given by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+E  =k\frac{Qx}{(x^{2}+a^{2})^{3/2}}\hat{i}
+\end{equation*}
+</div>
+<ol class="lower-alpha ol-marker-2" id="ex_firstA-3-10-1-4">
+<li id="ex_firstA-3-10-1-4-1">
+<div class="para" id="p-derived-ex_firstA-3-10-1-4-1">Use calculus to show that the electric field at a distance <span class="process-math">\(x\)</span> perpendicular to the center of a uniformly charged disk of radius <span class="process-math">\(R\)</span>is<div class="displaymath process-math">
+\begin{equation*}
+\vec{E}  =\frac{\sigma}{2\epsilon_{o}}\left(1-\frac{x}{\sqrt{R^{2}+x^{2}}}\right)\hat{i}
+\end{equation*}
+</div>where <span class="process-math">\(\sigma = Q/\pi R^{2}\)</span> is the charge per unit area.</div>
+<div class="autopermalink" data-description="Item 1.6.22.a"><a href="#ex_firstA-3-10-1-4-1" title="Copy heading and permalink for Item 1.6.22.a">🔗</a></div>
+</li>
+<li id="ex_firstA-3-10-1-4-2">
+<div class="para" id="p-derived-ex_firstA-3-10-1-4-2">What does this become when <span class="process-math">\(x \gt \gt R?\)</span>
+</div>
+<div class="autopermalink" data-description="Item 1.6.22.b"><a href="#ex_firstA-3-10-1-4-2" title="Copy heading and permalink for Item 1.6.22.b">🔗</a></div>
+</li>
+<li id="ex_firstA-3-10-1-4-3">
+<div class="para" id="p-derived-ex_firstA-3-10-1-4-3">When <span class="process-math">\(x \lt \lt R?\)</span>
+</div>
+<div class="autopermalink" data-description="Item 1.6.22.c"><a href="#ex_firstA-3-10-1-4-3" title="Copy heading and permalink for Item 1.6.22.c">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex_firstA-3-10-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 1.6.22"><a href="#ex_firstA-3-10" title="Copy heading and permalink for Exercise 1.6.22">🔗</a></div></article><article class="exercise exercise-like" id="ex_firstA-3-11"><h4 class="heading"><span class="codenumber">23<span class="period">.</span></span></h4>
+<div class="para logical" id="ex_firstA-3-11-1">
+<div class="para">An electric dipole is centered on the y -axis with the positive charge <span class="process-math">\(q\)</span> located at <span class="process-math">\(y = -d/2.\)</span>
+</div>
+<ol class="lower-alpha ol-marker-2" id="ex_firstA-3-11-1-3">
+<li id="ex_firstA-3-11-1-3-1">
+<div class="para" id="p-derived-ex_firstA-3-11-1-3-1">What is the electric field at a distance x along the x-axis?</div>
+<div class="autopermalink" data-description="Item 1.6.23.a"><a href="#ex_firstA-3-11-1-3-1" title="Copy heading and permalink for Item 1.6.23.a">🔗</a></div>
+</li>
+<li id="ex_firstA-3-11-1-3-2">
+<div class="para" id="p-derived-ex_firstA-3-11-1-3-2">What does this become for <span class="process-math">\(x \gt\gt d?\)</span>
+</div>
+<div class="autopermalink" data-description="Item 1.6.23.b"><a href="#ex_firstA-3-11-1-3-2" title="Copy heading and permalink for Item 1.6.23.b">🔗</a></div>
+</li>
+<li id="ex_firstA-3-11-1-3-3">
+<div class="para" id="p-derived-ex_firstA-3-11-1-3-3">For <span class="process-math">\(x \lt \lt d?\)</span>
+</div>
+<div class="autopermalink" data-description="Item 1.6.23.c"><a href="#ex_firstA-3-11-1-3-3" title="Copy heading and permalink for Item 1.6.23.c">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex_firstA-3-11-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 1.6.23"><a href="#ex_firstA-3-11" title="Copy heading and permalink for Exercise 1.6.23">🔗</a></div></article><article class="exercise exercise-like" id="ex_firstA-3-12"><h4 class="heading"><span class="codenumber">24<span class="period">.</span></span></h4>
+<div class="para logical" id="ex_firstA-3-12-1">
+<div class="para">An electric dipole is centered on the y-axis with the positive charge <span class="process-math">\(q\)</span> located at <span class="process-math">\(y = -d/2.\)</span>
+</div>
+<ol class="lower-alpha ol-marker-2" id="ex_firstA-3-12-1-3">
+<li id="ex_firstA-3-12-1-3-1">
+<div class="para" id="p-derived-ex_firstA-3-12-1-3-1">What is the electric field at a distance <span class="process-math">\(y\)</span> along the y-axis?</div>
+<div class="autopermalink" data-description="Item 1.6.24.a"><a href="#ex_firstA-3-12-1-3-1" title="Copy heading and permalink for Item 1.6.24.a">🔗</a></div>
+</li>
+<li id="ex_firstA-3-12-1-3-2">
+<div class="para" id="p-derived-ex_firstA-3-12-1-3-2">What does this become for <span class="process-math">\(y \gt \gt d?\)</span>
+</div>
+<div class="autopermalink" data-description="Item 1.6.24.b"><a href="#ex_firstA-3-12-1-3-2" title="Copy heading and permalink for Item 1.6.24.b">🔗</a></div>
+</li>
+<li id="ex_firstA-3-12-1-3-3">
+<div class="para" id="p-derived-ex_firstA-3-12-1-3-3">For <span class="process-math">\(y \lt \lt d?\)</span>
+</div>
+<div class="autopermalink" data-description="Item 1.6.24.c"><a href="#ex_firstA-3-12-1-3-3" title="Copy heading and permalink for Item 1.6.24.c">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex_firstA-3-12-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 1.6.24"><a href="#ex_firstA-3-12" title="Copy heading and permalink for Exercise 1.6.24">🔗</a></div></article><article class="exercise exercise-like" id="ex_firstA-3-13"><h4 class="heading"><span class="codenumber">25<span class="period">.</span></span></h4>
+<div class="para" id="ex_firstA-3-13-1">At what distance from a negative charge of  5.5 nC would the electric field strength be <span class="process-math">\(1.90 \times 10^{5} \,N/C\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex_firstA-3-13-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 1.6.25"><a href="#ex_firstA-3-13" title="Copy heading and permalink for Exercise 1.6.25">🔗</a></div></article><article class="exercise exercise-like" id="ex_firstA-3-14"><h4 class="heading"><span class="codenumber">26<span class="period">.</span></span></h4>
+<div class="para logical" id="ex_firstA-3-14-1">
+<div class="para">Two positive charges <span class="process-math">\(q\)</span> are located along the y -axis at <span class="process-math">\(y = +a\)</span> and <span class="process-math">\(y = -a,\)</span> respectively.</div>
+<ol class="lower-alpha ol-marker-2" id="ex_firstA-3-14-1-4">
+<li id="ex_firstA-3-14-1-4-1">
+<div class="para" id="p-derived-ex_firstA-3-14-1-4-1">What is the electric field at a distance x along the x-axis?</div>
+<div class="autopermalink" data-description="Item 1.6.26.a"><a href="#ex_firstA-3-14-1-4-1" title="Copy heading and permalink for Item 1.6.26.a">🔗</a></div>
+</li>
+<li id="ex_firstA-3-14-1-4-2">
+<div class="para" id="p-derived-ex_firstA-3-14-1-4-2">What does this become for <span class="process-math">\(x \gt \gt a?\)</span>
+</div>
+<div class="autopermalink" data-description="Item 1.6.26.b"><a href="#ex_firstA-3-14-1-4-2" title="Copy heading and permalink for Item 1.6.26.b">🔗</a></div>
+</li>
+<li id="ex_firstA-3-14-1-4-3">
+<div class="para" id="p-derived-ex_firstA-3-14-1-4-3">For <span class="process-math">\(x \lt \lt a?\)</span>
+</div>
+<div class="autopermalink" data-description="Item 1.6.26.c"><a href="#ex_firstA-3-14-1-4-3" title="Copy heading and permalink for Item 1.6.26.c">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex_firstA-3-14-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 1.6.26"><a href="#ex_firstA-3-14" title="Copy heading and permalink for Exercise 1.6.26">🔗</a></div></article><article class="exercise exercise-like" id="ex_firstA-3-15"><h4 class="heading"><span class="codenumber">27<span class="period">.</span></span></h4>
+<div class="para" id="ex_firstA-3-15-1">Find the electric field inside and outside of a sphere of radius <span class="process-math">\(R\text{,}\)</span> which carries a uniform volume charge density <span class="process-math">\(\rho\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex_firstA-3-15-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 1.6.27"><a href="#ex_firstA-3-15" title="Copy heading and permalink for Exercise 1.6.27">🔗</a></div></article><div class="autopermalink" data-description="Paragraphs: Electric Field"><a href="#ex_firstA-3" title="Copy heading and permalink for Paragraphs: Electric Field">🔗</a></div></section><section class="paragraphs" id="ex_firstA-4"><h3 class="heading"><span class="title">Electric Flux.</span></h3>
+<article class="exercise exercise-like" id="ex_firstA-4-2"><h4 class="heading"><span class="codenumber">28<span class="period">.</span></span></h4>
+<div class="para logical" id="ex_firstA-4-2-1">
+<div class="para">A uniform electric field of strength <span class="process-math">\(E = 100 \,N/C\)</span> is in the x, y - plane and directed above the +x - axis at an angle of <span class="process-math">\(30^{o}.\)</span>
+</div>
+<ol class="lower-alpha ol-marker-2" id="ex_firstA-4-2-1-3">
+<li id="ex_firstA-4-2-1-3-1">
+<div class="para" id="p-derived-ex_firstA-4-2-1-3-1">What is the electric flux through a surface of area <span class="process-math">\(10 \,m^{2}\)</span> whose normal is in the x-direction?</div>
+<div class="autopermalink" data-description="Item 1.6.28.a"><a href="#ex_firstA-4-2-1-3-1" title="Copy heading and permalink for Item 1.6.28.a">🔗</a></div>
+</li>
+<li id="ex_firstA-4-2-1-3-2">
+<div class="para" id="p-derived-ex_firstA-4-2-1-3-2">What is the electric flux through the surface area <span class="process-math">\(\vec{A} = 5 m^{2} (\hat{i} + \hat{j} + \hat{k})?\)</span>
+</div>
+<div class="autopermalink" data-description="Item 1.6.28.b"><a href="#ex_firstA-4-2-1-3-2" title="Copy heading and permalink for Item 1.6.28.b">🔗</a></div>
+</li>
+<li id="ex_firstA-4-2-1-3-3">
+<div class="para" id="p-derived-ex_firstA-4-2-1-3-3">What is the electric flux through a circle of radius 0.10 m located in the y, z plane? Is this last answer positive or negative? Why?</div>
+<div class="autopermalink" data-description="Item 1.6.28.c"><a href="#ex_firstA-4-2-1-3-3" title="Copy heading and permalink for Item 1.6.28.c">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex_firstA-4-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 1.6.28"><a href="#ex_firstA-4-2" title="Copy heading and permalink for Exercise 1.6.28">🔗</a></div></article><article class="exercise exercise-like" id="ex_firstA-4-3"><h4 class="heading"><span class="codenumber">29<span class="period">.</span></span></h4>
+<div class="para logical" id="ex_firstA-4-3-1">
+<div class="para">A uniform electric field</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\vec{E} = 100 \,N/C \hat{i}+ 200 \,N/C \hat{k} 
+\end{equation*}
+</div>
+<div class="para">is directed through a cube whose sides are of length 20 cm along the x, y, and z - axes. What is the electric flux through each of its faces?</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex_firstA-4-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 1.6.29"><a href="#ex_firstA-4-3" title="Copy heading and permalink for Exercise 1.6.29">🔗</a></div></article><article class="exercise exercise-like" id="ex_firstA-4-4"><h4 class="heading"><span class="codenumber">30<span class="period">.</span></span></h4>
+<div class="para logical" id="ex_firstA-4-4-1">
+<div class="para">The electric flux through a surface in the x, y - plane is <span class="process-math">\(-100 \,N.m^{2}/C.\)</span> If the electric field is <span class="process-math">\(100\, N/C\)</span> and in the direction <span class="process-math">\(\hat{i} - \hat{j} + 2\hat{k},\)</span>
+</div>
+<ol class="lower-alpha ol-marker-2" id="ex_firstA-4-4-1-4">
+<li id="ex_firstA-4-4-1-4-1">
+<div class="para" id="p-derived-ex_firstA-4-4-1-4-1">what is the area of the surface?</div>
+<div class="autopermalink" data-description="Item 1.6.30.a"><a href="#ex_firstA-4-4-1-4-1" title="Copy heading and permalink for Item 1.6.30.a">🔗</a></div>
+</li>
+<li id="ex_firstA-4-4-1-4-2">
+<div class="para" id="p-derived-ex_firstA-4-4-1-4-2">What is the direction of the normal to the surface?</div>
+<div class="autopermalink" data-description="Item 1.6.30.b"><a href="#ex_firstA-4-4-1-4-2" title="Copy heading and permalink for Item 1.6.30.b">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex_firstA-4-4-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 1.6.30"><a href="#ex_firstA-4-4" title="Copy heading and permalink for Exercise 1.6.30">🔗</a></div></article><article class="exercise exercise-like" id="ex_firstA-4-5"><h4 class="heading"><span class="codenumber">31<span class="period">.</span></span></h4>
+<div class="para logical" id="ex_firstA-4-5-1">
+<div class="para">An electric field is given by the equation</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\vec{E} = ax\hat{i} + by\hat{j},
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(a = 10 \,Nm/C \)</span> and <span class="process-math">\(b = 20 \,Nm/C.\)</span> What is the electric flux through a surface whose corners are at (0,0,0), (0,1m,0),  (0,1m,2), and (0,0,2m)?</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex_firstA-4-5-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 1.6.31"><a href="#ex_firstA-4-5" title="Copy heading and permalink for Exercise 1.6.31">🔗</a></div></article><div class="autopermalink" data-description="Paragraphs: Electric Flux"><a href="#ex_firstA-4" title="Copy heading and permalink for Paragraphs: Electric Flux">🔗</a></div></section><section class="paragraphs" id="ex_firstA-5"><h3 class="heading"><span class="title">Gauss’s Law.</span></h3>
+<article class="exercise exercise-like" id="ex_firstA-5-2"><h4 class="heading"><span class="codenumber">32<span class="period">.</span></span></h4>
+<div class="para logical" id="ex_firstA-5-2-1">
+<div class="para">The electrical field within a continuous distribution of charge is given by the equation</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\vec{E} = cx\hat{i} + cy\hat{j} + cz\hat{k},
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(c = 1\,N/C.m\)</span> is a constant, (x,y,z) are Cartesian coordinates, and (i,j,k) are the Cartesian unit vectors.</div>
+<ol class="lower-alpha ol-marker-2" id="ex_firstA-5-2-1-3">
+<li id="ex_firstA-5-2-1-3-1">
+<div class="para" id="p-derived-ex_firstA-5-2-1-3-1">Write the equation for <span class="process-math">\(\vec{E}\)</span> in terms of the position vector <span class="process-math">\(\vec{r}\text{.}\)</span> What kind of symmetry is associated with this function?</div>
+<div class="autopermalink" data-description="Item 1.6.32.a"><a href="#ex_firstA-5-2-1-3-1" title="Copy heading and permalink for Item 1.6.32.a">🔗</a></div>
+</li>
+<li id="ex_firstA-5-2-1-3-2">
+<div class="para" id="p-derived-ex_firstA-5-2-1-3-2">What is the electric flux through a spherical surface of radius 1 m centered at the origin of the coordinates? How much electrical charge is located inside this sphere?</div>
+<div class="autopermalink" data-description="Item 1.6.32.b"><a href="#ex_firstA-5-2-1-3-2" title="Copy heading and permalink for Item 1.6.32.b">🔗</a></div>
+</li>
+<li id="ex_firstA-5-2-1-3-3">
+<div class="para" id="p-derived-ex_firstA-5-2-1-3-3">What is the electric flux through a cube 1 m on a side centered at the origin of the coordinates? How much electrical charge is located inside this cube?</div>
+<div class="autopermalink" data-description="Item 1.6.32.c"><a href="#ex_firstA-5-2-1-3-3" title="Copy heading and permalink for Item 1.6.32.c">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex_firstA-5-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 1.6.32"><a href="#ex_firstA-5-2" title="Copy heading and permalink for Exercise 1.6.32">🔗</a></div></article><article class="exercise exercise-like" id="ex_firstA-5-3"><h4 class="heading"><span class="codenumber">33<span class="period">.</span></span></h4>
+<div class="para" id="ex_firstA-5-3-1">Prove that the electric field at a distance r from a point charge  q as derived from Coulomb’s law is the same as that derived from Gauss’s law.<div class="autopermalink" data-description="Paragraph"><a href="#ex_firstA-5-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 1.6.33"><a href="#ex_firstA-5-3" title="Copy heading and permalink for Exercise 1.6.33">🔗</a></div></article><article class="exercise exercise-like" id="ex_firstA-5-4"><h4 class="heading"><span class="codenumber">34<span class="period">.</span></span></h4>
+<div class="para" id="ex_firstA-5-4-1">Three charged objects carry the charges <span class="process-math">\(q_{1} = 10 \,nC,\quad q_{2} = -20 \,nC,\)</span> and <span class="process-math">\(q_{3} = 40 \,nC\text{,}\)</span> respectively and are located as shown in the figure below. What is the net electrical flux through each of the surfaces? <div class="image-box" style="width: 30%; margin-left: 35%; margin-right: 35%;"><img src="external/fig18.png" class="contained"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex_firstA-5-4-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 1.6.34"><a href="#ex_firstA-5-4" title="Copy heading and permalink for Exercise 1.6.34">🔗</a></div></article><article class="exercise exercise-like" id="ex_firstA-5-5"><h4 class="heading"><span class="codenumber">35<span class="period">.</span></span></h4>
+<div class="para logical" id="ex_firstA-5-5-1">
+<ol class="lower-alpha ol-marker-2" id="ex_firstA-5-5-1-1">
+<li id="ex_firstA-5-5-1-1-1">
+<div class="para" id="p-derived-ex_firstA-5-5-1-1-1">Use Gauss’s Law to calculate the electric field outside a single, isolated, large, flat sheet of charge whose surface charge density is <span class="process-math">\(\sigma\text{.}\)</span> Suppose two such charged sheets are placed side by side, parallel to one another.</div>
+<div class="autopermalink" data-description="Item 1.6.35.a"><a href="#ex_firstA-5-5-1-1-1" title="Copy heading and permalink for Item 1.6.35.a">🔗</a></div>
+</li>
+<li id="ex_firstA-5-5-1-1-2">
+<div class="para" id="p-derived-ex_firstA-5-5-1-1-2">What is the electric field between the two sheets?</div>
+<div class="autopermalink" data-description="Item 1.6.35.b"><a href="#ex_firstA-5-5-1-1-2" title="Copy heading and permalink for Item 1.6.35.b">🔗</a></div>
+</li>
+<li id="ex_firstA-5-5-1-1-3">
+<div class="para" id="p-derived-ex_firstA-5-5-1-1-3">What is the electric field outside the two sheets?</div>
+<div class="autopermalink" data-description="Item 1.6.35.c"><a href="#ex_firstA-5-5-1-1-3" title="Copy heading and permalink for Item 1.6.35.c">🔗</a></div>
+</li>
+<li id="ex_firstA-5-5-1-1-4">
+<div class="para" id="p-derived-ex_firstA-5-5-1-1-4">How does this result compare to that of a single, isolated, large conducting plate with a charge per unit area <span class="process-math">\(\sigma \)</span> on its surface?</div>
+<div class="autopermalink" data-description="Item 1.6.35.d"><a href="#ex_firstA-5-5-1-1-4" title="Copy heading and permalink for Item 1.6.35.d">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex_firstA-5-5-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 1.6.35"><a href="#ex_firstA-5-5" title="Copy heading and permalink for Exercise 1.6.35">🔗</a></div></article><article class="exercise exercise-like" id="ex_firstA-5-6"><h4 class="heading"><span class="codenumber">36<span class="period">.</span></span></h4>
+<div class="para logical" id="ex_firstA-5-6-1">
+<div class="para">A long straight coaxial cable consists of an inner conducting cylinder of radius an insulated from an outer coaxial cylinder of inner radius b and outer radius c. The inner cylinder has a uniform charge per unit length <span class="process-math">\(\lambda\)</span> and the outer cylinder has no net charge. Find</div>
+<ol class="lower-alpha ol-marker-2" id="ex_firstA-5-6-1-2">
+<li id="ex_firstA-5-6-1-2-1">
+<div class="para" id="p-derived-ex_firstA-5-6-1-2-1">the electric field at a point between the cylinders a distance r from the axis,</div>
+<div class="autopermalink" data-description="Item 1.6.36.a"><a href="#ex_firstA-5-6-1-2-1" title="Copy heading and permalink for Item 1.6.36.a">🔗</a></div>
+</li>
+<li id="ex_firstA-5-6-1-2-2">
+<div class="para" id="p-derived-ex_firstA-5-6-1-2-2">the electric field at a point outside the cylinders,</div>
+<div class="autopermalink" data-description="Item 1.6.36.b"><a href="#ex_firstA-5-6-1-2-2" title="Copy heading and permalink for Item 1.6.36.b">🔗</a></div>
+</li>
+<li id="ex_firstA-5-6-1-2-3">
+<div class="para" id="p-derived-ex_firstA-5-6-1-2-3">the charge per unit length on the inner surface of the outer cylinder, and</div>
+<div class="autopermalink" data-description="Item 1.6.36.c"><a href="#ex_firstA-5-6-1-2-3" title="Copy heading and permalink for Item 1.6.36.c">🔗</a></div>
+</li>
+<li id="ex_firstA-5-6-1-2-4">
+<div class="para" id="p-derived-ex_firstA-5-6-1-2-4">the charge per unit area on the outer surface of the outer cylinder.</div>
+<div class="autopermalink" data-description="Item 1.6.36.d"><a href="#ex_firstA-5-6-1-2-4" title="Copy heading and permalink for Item 1.6.36.d">🔗</a></div>
+</li>
+<li id="ex_firstA-5-6-1-2-5">
+<div class="para" id="p-derived-ex_firstA-5-6-1-2-5">Make a plot of E versus r for <span class="process-math">\(0 \lt r \lt 2c.\)</span>
+</div>
+<div class="autopermalink" data-description="Item 1.6.36.e"><a href="#ex_firstA-5-6-1-2-5" title="Copy heading and permalink for Item 1.6.36.e">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex_firstA-5-6-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 1.6.36"><a href="#ex_firstA-5-6" title="Copy heading and permalink for Exercise 1.6.36">🔗</a></div></article><article class="exercise exercise-like" id="ex_firstA-5-7"><h4 class="heading"><span class="codenumber">37<span class="period">.</span></span></h4>
+<div class="para" id="ex_firstA-5-7-1">A point charge of mass 10 g and charge 1 <span class="process-math">\(\mu C\)</span> is attached to a string 1 m long suspended from a vertical wall of uniform charge density <span class="process-math">\(\sigma = 100 \,\mu C/m^{2}.\)</span> What angle does the string make with the vertical wall?<div class="autopermalink" data-description="Paragraph"><a href="#ex_firstA-5-7-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 1.6.37"><a href="#ex_firstA-5-7" title="Copy heading and permalink for Exercise 1.6.37">🔗</a></div></article><article class="exercise exercise-like" id="ex_firstA-5-8"><h4 class="heading"><span class="codenumber">38<span class="period">.</span></span></h4>
+<div class="para logical" id="ex_firstA-5-8-1">
+<div class="para">In the given figure the electric field is everywhere in the x-direction and independent of y and z. However, it does depend on <span class="process-math">\(x\)</span> and in the plane <span class="process-math">\(x = 0\)</span> it has the value <span class="process-math">\(E = 500 \,N/C.\)</span> <div class="image-box" style="width: 30%; margin-left: 35%; margin-right: 35%;"><img src="external/fig19.png" class="contained"></div>
+</div>
+<ol class="lower-alpha ol-marker-2" id="ex_firstA-5-8-1-5">
+<li id="ex_firstA-5-8-1-5-1">
+<div class="para" id="p-derived-ex_firstA-5-8-1-5-1">What is the electric flux through the surface I?</div>
+<div class="autopermalink" data-description="Item 1.6.38.a"><a href="#ex_firstA-5-8-1-5-1" title="Copy heading and permalink for Item 1.6.38.a">🔗</a></div>
+</li>
+<li id="ex_firstA-5-8-1-5-2">
+<div class="para" id="p-derived-ex_firstA-5-8-1-5-2">Through surface II?</div>
+<div class="autopermalink" data-description="Item 1.6.38.b"><a href="#ex_firstA-5-8-1-5-2" title="Copy heading and permalink for Item 1.6.38.b">🔗</a></div>
+</li>
+<li id="ex_firstA-5-8-1-5-3">
+<div class="para" id="p-derived-ex_firstA-5-8-1-5-3">Through surface opposite I if there is a total positive charge of 36.6 nC within the volume of the rectangular solid shown?</div>
+<div class="autopermalink" data-description="Item 1.6.38.c"><a href="#ex_firstA-5-8-1-5-3" title="Copy heading and permalink for Item 1.6.38.c">🔗</a></div>
+</li>
+<li id="ex_firstA-5-8-1-5-4">
+<div class="para" id="p-derived-ex_firstA-5-8-1-5-4">Is the electric field produced only by charges within the slab, or is it also due to charges outside the slab?  How do you know?</div>
+<div class="autopermalink" data-description="Item 1.6.38.d"><a href="#ex_firstA-5-8-1-5-4" title="Copy heading and permalink for Item 1.6.38.d">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex_firstA-5-8-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 1.6.38"><a href="#ex_firstA-5-8" title="Copy heading and permalink for Exercise 1.6.38">🔗</a></div></article><article class="exercise exercise-like" id="ex_firstA-5-9"><h4 class="heading"><span class="codenumber">39<span class="period">.</span></span></h4>
+<div class="para logical" id="ex_firstA-5-9-1">
+<div class="para">A conducting shell of inner radius a and outer radius b contains a total electrical charge of <span class="process-math">\(Q\text{.}\)</span> At its center is a negative point charge <span class="process-math">\(-2Q\)</span> as shown in figure below. <div class="image-box" style="width: 30%; margin-left: 35%; margin-right: 35%;"><img src="external/fig20.png" class="contained"></div>
+</div>
+<ol class="lower-alpha ol-marker-2" id="ex_firstA-5-9-1-4">
+<li id="ex_firstA-5-9-1-4-1">
+<div class="para" id="p-derived-ex_firstA-5-9-1-4-1">What is the electrical field at a distance <span class="process-math">\(r \)</span> from the center of the shell when <span class="process-math">\(r \lt a?\)</span>
+</div>
+<div class="autopermalink" data-description="Item 1.6.39.a"><a href="#ex_firstA-5-9-1-4-1" title="Copy heading and permalink for Item 1.6.39.a">🔗</a></div>
+</li>
+<li id="ex_firstA-5-9-1-4-2">
+<div class="para" id="p-derived-ex_firstA-5-9-1-4-2">When <span class="process-math">\(a \lt r \lt b?\)</span>
+</div>
+<div class="autopermalink" data-description="Item 1.6.39.b"><a href="#ex_firstA-5-9-1-4-2" title="Copy heading and permalink for Item 1.6.39.b">🔗</a></div>
+</li>
+<li id="ex_firstA-5-9-1-4-3">
+<div class="para" id="p-derived-ex_firstA-5-9-1-4-3">When <span class="process-math">\(r \gt b?\)</span>
+</div>
+<div class="autopermalink" data-description="Item 1.6.39.c"><a href="#ex_firstA-5-9-1-4-3" title="Copy heading and permalink for Item 1.6.39.c">🔗</a></div>
+</li>
+<li id="ex_firstA-5-9-1-4-4">
+<div class="para" id="p-derived-ex_firstA-5-9-1-4-4">What is the charge on the inner surface of the shell?</div>
+<div class="autopermalink" data-description="Item 1.6.39.d"><a href="#ex_firstA-5-9-1-4-4" title="Copy heading and permalink for Item 1.6.39.d">🔗</a></div>
+</li>
+<li id="ex_firstA-5-9-1-4-5">
+<div class="para" id="p-derived-ex_firstA-5-9-1-4-5">On the outer surface?</div>
+<div class="autopermalink" data-description="Item 1.6.39.e"><a href="#ex_firstA-5-9-1-4-5" title="Copy heading and permalink for Item 1.6.39.e">🔗</a></div>
+</li>
+<li id="ex_firstA-5-9-1-4-6">
+<div class="para" id="p-derived-ex_firstA-5-9-1-4-6">Plot a graph of the field strength as a function of <span class="process-math">\(r.\)</span>
+</div>
+<div class="autopermalink" data-description="Item 1.6.39.f"><a href="#ex_firstA-5-9-1-4-6" title="Copy heading and permalink for Item 1.6.39.f">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex_firstA-5-9-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 1.6.39"><a href="#ex_firstA-5-9" title="Copy heading and permalink for Exercise 1.6.39">🔗</a></div></article><article class="exercise exercise-like" id="ex_firstA-5-10"><h4 class="heading"><span class="codenumber">40<span class="period">.</span></span></h4>
+<div class="para logical" id="ex_firstA-5-10-1">
+<div class="para">Two parallel wires are 100 m long and 10 cm apart and carry opposite charges of <span class="process-math">\(100 \,\mu C.\)</span>
+</div>
+<ol class="lower-alpha ol-marker-2" id="ex_firstA-5-10-1-2">
+<li id="ex_firstA-5-10-1-2-1">
+<div class="para" id="p-derived-ex_firstA-5-10-1-2-1">What is the electrical force between the wires?</div>
+<div class="autopermalink" data-description="Item 1.6.40.a"><a href="#ex_firstA-5-10-1-2-1" title="Copy heading and permalink for Item 1.6.40.a">🔗</a></div>
+</li>
+<li id="ex_firstA-5-10-1-2-2">
+<div class="para" id="p-derived-ex_firstA-5-10-1-2-2">How would this answer have changed if the wires had both been positively charged? Negatively charged?</div>
+<div class="autopermalink" data-description="Item 1.6.40.b"><a href="#ex_firstA-5-10-1-2-2" title="Copy heading and permalink for Item 1.6.40.b">🔗</a></div>
+</li>
+<li id="ex_firstA-5-10-1-2-3">
+<div class="para" id="p-derived-ex_firstA-5-10-1-2-3">How would this answer have changed if the wires had been point charges located 10 cm apart?</div>
+<div class="autopermalink" data-description="Item 1.6.40.c"><a href="#ex_firstA-5-10-1-2-3" title="Copy heading and permalink for Item 1.6.40.c">🔗</a></div>
+</li>
+<li id="ex_firstA-5-10-1-2-4">
+<div class="para" id="p-derived-ex_firstA-5-10-1-2-4">How would this answer have changed if the wires had been parallel sheets of metal 100 m long, 200 m wide, and 10 cm apart?</div>
+<div class="autopermalink" data-description="Item 1.6.40.d"><a href="#ex_firstA-5-10-1-2-4" title="Copy heading and permalink for Item 1.6.40.d">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex_firstA-5-10-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 1.6.40"><a href="#ex_firstA-5-10" title="Copy heading and permalink for Exercise 1.6.40">🔗</a></div></article><article class="exercise exercise-like" id="ex_firstA-5-11"><h4 class="heading"><span class="codenumber">41<span class="period">.</span></span></h4>
+<div class="para logical" id="ex_firstA-5-11-1">
+<div class="para">A small conducting spherical conducting shell of inner radius a and outer radius <span class="process-math">\(b\)</span> is concentric with a larger conducting shell of inner radius <span class="process-math">\(c \)</span> and outer radius <span class="process-math">\(d \)</span> as shown in the figure below. The total charge on the inner shell is <span class="process-math">\(+q\)</span> and the charge on the outer shell is <span class="process-math">\(+2q.\)</span> Find the electric field at a distance <span class="process-math">\(r\)</span> from the center for each of the cases: <div class="image-box" style="width: 30%; margin-left: 35%; margin-right: 35%;"><img src="external/fig23.png" class="contained"></div>
+</div>
+<ol class="lower-alpha ol-marker-2" id="ex_firstA-5-11-1-8">
+<li id="ex_firstA-5-11-1-8-1">
+<div class="para" id="p-derived-ex_firstA-5-11-1-8-1"><span class="process-math">\(\displaystyle r \lt a,\)</span></div>
+<div class="autopermalink" data-description="Item 1.6.41.a"><a href="#ex_firstA-5-11-1-8-1" title="Copy heading and permalink for Item 1.6.41.a">🔗</a></div>
+</li>
+<li id="ex_firstA-5-11-1-8-2">
+<div class="para" id="p-derived-ex_firstA-5-11-1-8-2"><span class="process-math">\(\displaystyle a \lt r \lt b,\)</span></div>
+<div class="autopermalink" data-description="Item 1.6.41.b"><a href="#ex_firstA-5-11-1-8-2" title="Copy heading and permalink for Item 1.6.41.b">🔗</a></div>
+</li>
+<li id="ex_firstA-5-11-1-8-3">
+<div class="para" id="p-derived-ex_firstA-5-11-1-8-3"><span class="process-math">\(\displaystyle b \lt r \lt c,\)</span></div>
+<div class="autopermalink" data-description="Item 1.6.41.c"><a href="#ex_firstA-5-11-1-8-3" title="Copy heading and permalink for Item 1.6.41.c">🔗</a></div>
+</li>
+<li id="ex_firstA-5-11-1-8-4">
+<div class="para" id="p-derived-ex_firstA-5-11-1-8-4"><span class="process-math">\(\displaystyle c \lt r \lt d,\)</span></div>
+<div class="autopermalink" data-description="Item 1.6.41.d"><a href="#ex_firstA-5-11-1-8-4" title="Copy heading and permalink for Item 1.6.41.d">🔗</a></div>
+</li>
+<li id="ex_firstA-5-11-1-8-5">
+<div class="para" id="p-derived-ex_firstA-5-11-1-8-5"><span class="process-math">\(\displaystyle r \gt d.\)</span></div>
+<div class="autopermalink" data-description="Item 1.6.41.e"><a href="#ex_firstA-5-11-1-8-5" title="Copy heading and permalink for Item 1.6.41.e">🔗</a></div>
+</li>
+<li id="ex_firstA-5-11-1-8-6">
+<div class="para" id="p-derived-ex_firstA-5-11-1-8-6">Make a plot of E versus r for  <span class="process-math">\(0 \lt r \lt 2d.\)</span>
+</div>
+<div class="autopermalink" data-description="Item 1.6.41.f"><a href="#ex_firstA-5-11-1-8-6" title="Copy heading and permalink for Item 1.6.41.f">🔗</a></div>
+</li>
+<li id="ex_firstA-5-11-1-8-7">
+<div class="para" id="p-derived-ex_firstA-5-11-1-8-7">What is the charge on each of the four surfaces.</div>
+<div class="autopermalink" data-description="Item 1.6.41.g"><a href="#ex_firstA-5-11-1-8-7" title="Copy heading and permalink for Item 1.6.41.g">🔗</a></div>
+</li>
+<li id="ex_firstA-5-11-1-8-8">
+<div class="para" id="p-derived-ex_firstA-5-11-1-8-8">What is the charge density on each surface?</div>
+<div class="autopermalink" data-description="Item 1.6.41.h"><a href="#ex_firstA-5-11-1-8-8" title="Copy heading and permalink for Item 1.6.41.h">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex_firstA-5-11-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 1.6.41"><a href="#ex_firstA-5-11" title="Copy heading and permalink for Exercise 1.6.41">🔗</a></div></article><div class="autopermalink" data-description="Paragraphs: Gauss’s Law"><a href="#ex_firstA-5" title="Copy heading and permalink for Paragraphs: Gauss’s Law">🔗</a></div></section><div class="autopermalink" data-description="Exercises 1.6: Exercise A"><a href="#ex_firstA" title="Copy heading and permalink for Exercises 1.6: Exercise A">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="sec_first-examplesB.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec_first-pot.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
