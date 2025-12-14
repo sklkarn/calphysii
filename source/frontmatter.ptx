@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This frontmatter division will contain all content before the -->
+<!-- first chapter. Fill in and comment/uncomment to see how this -->
+<!-- works. -->
+
+<frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="frontmatter">
+  <bibinfo>
+  
+    <author>
+      <personname>Sunil Karna</personname>
+      <department>Natural Science</department>
+      <institution>UCU, KY</institution>
+    </author>
+    <date>
+      <today />
+    </date>
+
+    <website>
+      <url href="https://pretextbook.org">My Website</url>
+    </website>
+
+    <copyright>
+      <year>2020<ndash />2025</year>
+      <holder>You</holder>
+      <shortlicense> This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. 
+        To view a copy of this license, visit <url href="http://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0"> CreativeCommons.org</url>
+      </shortlicense>
+    </copyright>
+  
+  </bibinfo>
+
+  <titlepage>
+    <titlepage-items/>
+  </titlepage>
+
+
+
+  <colophon xml:id="front-colophon">
+    <colophon-items/>
+   </colophon>
+
+
+  <dedication>
+    <p>
+      To my spouse.
+    </p>
+  </dedication>
+
+  <acknowledgement>
+    <p>
+      I would like to thank my colleagues and students for the contributions they have 
+      made to improve this book through questionnaires, classroom discussion, and their 
+      invaluable feedback and support throughout the writing process. I am especially 
+      very grateful to John Gould and Daniel Covington for 
+      providing their critical suggestions to organize this book. Without their guidance, 
+      this book would not be what it is today. Their knowledge and expertise were instrumental 
+      in shaping my journey in writing this book. Finally, I want to express my gratitude to 
+      my family for their unwavering encouragement and patience during the many long hours 
+      I spent at my desk. Their love and support sustained me through the ups and downs 
+      of this project. Several others deserve credit for their generous help in this book.
+      </p>
+    </acknowledgement>
+
+
+    <preface>
+       <p>
+        General Physics is a calculus-based introductory physics textbook. This book represents a concise 
+        distillation of the lecture notes I have developed and delivered over many years in my introductory-level 
+        physics courses.It is not intended to replace any textbook recommended by an instructor rather 
+        serve as a supplementary resource that supports calculus-based physics instruction in a rapid and 
+        efficient manner, aligned with my personal teaching approach. Students using this text are assumed 
+        to possess the prerequisite mathematical knowledge, including basic skills in geometry, algebra, 
+        and trigonometry, as well as proficiency in differential and integral calculus.
+       </p>
+       <p>
+        Learning physics efficiently cannot rely primarily on memorization, as the discipline is fundamentally 
+        logical and conceptual in nature. It demands an approach distinct from merely committing formulas 
+        or examples to memory. This book is organized into two volumes, covering the standard syllabus of 
+        introductory undergraduate physics as taught in many universities and colleges. General Physics, volume I 
+        encompasses the basics of mechanics, fluid mechanics, and thermodynamics. General Physics, volume II covers 
+        electricity, magnetism, waves, acoustics, and optics. These topics have been carefully selected to 
+        introduce foundational physical concepts while providing opportunities to develop critical thinking 
+        and problem-solving skills. The primary objective of this book is to teach readers how to approach 
+        and investigate problems logically. It guides students toward understanding physics through reasoned 
+        analysis rather than rote learning. Numerous examples and practice problems are included throughout 
+        the text to help refine physical intuition and deepen conceptual mastery.
+       </p>
+       <p>
+        To address physical problems systematically, this book employs the "GUESS" method, 
+        which promotes organized gathering of information and logical derivation of solutions. 
+        The GUESS acronym stands for the following steps: 
+        <ul>
+          <li>
+            <p>
+              G: Given - Identify the provided information and, where possible, sketch a diagram to visualize it.
+            </p>
+          </li>
+          <li>
+            <p>
+              U: Unknown - Clearly specify the quantity or quantities to be determined. 
+            </p>
+          </li>
+          <li>
+            <p>
+              E: Equation(s) - Establish the appropriate physical equation(s) based on the given information and fundamental principles.
+            </p>
+          </li>
+          <li>
+            <p>
+              S: Substitute - Insert the known numerical values (with units) into the equation(s).
+            </p>
+          </li>
+          <li>
+            <p>
+              S: Solve - Perform the algebraic or numerical operations to obtain the solution, and verify its physical reasonableness.
+            </p>
+          </li>
+        </ul>      
+       </p>  
+        </preface>
+
+       
+</frontmatter>
+

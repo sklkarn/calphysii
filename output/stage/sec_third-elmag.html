@@ -1,0 +1,1913 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Electromagnetic Induction</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="General Physics">
+<meta property="book:author" content="Sunil Karna">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.11.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.49eb29f446982553.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.731d8387162b79c1.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.f4ab138da65f4203.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="changeme" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="calphysii.html"><span class="title">General Physics</span> <span class="subtitle">Volume II</span></a></h1>
+<p class="byline">Sunil Karna</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="backmatter-5.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec_third-examplesB.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch_third.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec_third-examplesC.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} 
+   \newcommand{\Z}{\mathbb Z} 
+   \newcommand{\Q}{\mathbb Q} 
+   \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="front-colophon.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-dedication"><div class="toc-title-box"><a href="frontmatter-4.html" class="internal"><span class="title">Dedication</span></a></div></li>
+<li class="toc-item toc-acknowledgement"><div class="toc-title-box"><a href="frontmatter-5.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="frontmatter-6.html" class="internal"><span class="title">Preface</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch_first.html" class="internal"><span class="codenumber">1</span> <span class="title">Electrostatics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_first-intro.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Electrostatic Induction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_first-intro.html#subsec-charg_transf" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Methods of Transferring Charges:</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-intro.html#subsubsec-electroscope" class="internal"><span class="codenumber">1.1.1.1</span> <span class="title">Electrophorus:</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-intro.html#subsubsec-electrscp" class="internal"><span class="codenumber">1.1.1.2</span> <span class="title">Electroscope:</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_first-intro.html#subsec-coulmb_law" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Coulumb’s Law</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-intro.html#subsubsec-1d_colmb" class="internal"><span class="codenumber">1.1.2.1</span> <span class="title">Coulumb’s Law in One Dimension</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-intro.html#subsubsec-2d_colmb" class="internal"><span class="codenumber">1.1.2.2</span> <span class="title">Coulomb’s Law in Two and Three Dimensions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_first-intro.html#subsec-superp_th" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Principle of Superposition</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_first-el_field.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Electric Field</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_first-el_field.html#subsec-chrg_dist" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Electric Field of a Continuous Charge Distribution</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_first-examplesA.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Examples A</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_first-flux.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Electric Flux</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_first-flux.html#subsec-gauss" class="internal"><span class="codenumber">1.4.1</span> <span class="title">Gauss’s Law</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-flux.html#subsubsec-appl_gauss" class="internal"><span class="codenumber">1.4.1.1</span> <span class="title">Applications of Gauss’s Law</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_first-flux.html#subsec-sph_symmtr" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Cases of spherical symmetry:</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-flux.html#subsubsec-point_chrg" class="internal"><span class="codenumber">1.4.2.1</span> <span class="title">Electric field due to a point charge</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-flux.html#subsubsec-sph_chrg" class="internal"><span class="codenumber">1.4.2.2</span> <span class="title">Electric field due to a  spherical symmetric charged distribution</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-flux.html#subsubsec-hsph_chrg" class="internal"><span class="codenumber">1.4.2.3</span> <span class="title">Electric field due to a uniformly charged non-conducting hollow sphere</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_first-flux.html#subsec-cyl_symtr" class="internal"><span class="codenumber">1.4.3</span> <span class="title">Cases of cylindrical symmetry:</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-flux.html#subsubsec-long_wire" class="internal"><span class="codenumber">1.4.3.1</span> <span class="title">Electric field due to infinitely long charged conductor</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-flux.html#subsubsec-long_cyl" class="internal"><span class="codenumber">1.4.3.2</span> <span class="title">Electric field due to a uniform infinite cylindrical charge</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-flux.html#subsubsec-chrgd_sheet" class="internal"><span class="codenumber">1.4.3.3</span> <span class="title">Electric field due to infinite sheet of charge</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-flux.html#subsubsec-out_cond" class="internal"><span class="codenumber">1.4.3.4</span> <span class="title">Electric field just outside a charged conductor</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_first-examplesB.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Examples B</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_firstA.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Exercise A</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_first-pot.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Electric Potential</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_first-pot.html#subsec-capctrs" class="internal"><span class="codenumber">1.7.1</span> <span class="title">Capacitors</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-pot.html#subsubsec-cap_comb" class="internal"><span class="codenumber">1.7.1.1</span> <span class="title">Combination of Capacitors</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-pot.html#subsubsec-paralle_cap" class="internal"><span class="codenumber">1.7.1.2</span> <span class="title">Parallel-Plate Capacitor</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-pot.html#subsubsec-spher_cap" class="internal"><span class="codenumber">1.7.1.3</span> <span class="title">Spherical Capacitor</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-pot.html#subsubsec-cyl_cap" class="internal"><span class="codenumber">1.7.1.4</span> <span class="title">Cylindrical Capacitor</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_first-pot.html#subsec-enrgy_cap" class="internal"><span class="codenumber">1.7.2</span> <span class="title">Energy Stored in a Capacitor</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-pot.html#subsubsec-elf_enrgdenst" class="internal"><span class="codenumber">1.7.2.1</span> <span class="title">Electric Field Energy Density</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_first-pot.html#subsec-cap_enrgloss" class="internal"><span class="codenumber">1.7.3</span> <span class="title">Loss of Energy in Combining two Capacitors</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_first-examplesC.html" class="internal"><span class="codenumber">1.8</span> <span class="title">Examples C</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_firstB.html" class="internal"><span class="codenumber">1.9</span> <span class="title">Exercise B</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch_second.html" class="internal"><span class="codenumber">2</span> <span class="title">Electricity</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_second-intro.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Conduction Mechanism of Current in a Metal</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_second-intro.html#subsec-ohm_law" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Ohm’s Law:</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_second-intro.html#subsubsec-restvty" class="internal"><span class="codenumber">2.1.1.1</span> <span class="title">Resistivity or Specific Resistance, <span class="process-math">\(\rho\text{:}\)</span></span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_second-intro.html#subsubsec-temp_restvty" class="internal"><span class="codenumber">2.1.1.2</span> <span class="title">Temperature Coefficient of Resistivity</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_second-intro.html#subsubsec-el_power" class="internal"><span class="codenumber">2.1.1.3</span> <span class="title">Electrical Power:</span></a></div></li>
+</ul>
+</li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_second-examplesA.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Examples A</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_second-elcircuits.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Electrical Circuits</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_second-elcircuits.html#subsec-emf" class="internal"><span class="codenumber">2.3.1</span> <span class="title">A summary on internal resistance, emf, and terminal potential difference:</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_second-elcircuits.html#subsec-res_circt" class="internal"><span class="codenumber">2.3.2</span> <span class="title">Resistance Circuits:</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_second-elcircuits.html#subsubsec-res_comb" class="internal"><span class="codenumber">2.3.2.1</span> <span class="title">Combination of Resistances</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_second-elcircuits.html#subsec-maxptr" class="internal"><span class="codenumber">2.3.3</span> <span class="title">Maximum Power Transfer Theorem</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_second-elcircuits.html#subsec-el_instrmnt" class="internal"><span class="codenumber">2.3.4</span> <span class="title">Electrical Instruments:</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_second-kirchhf.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Kirchhoff’s Law</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_second-kirchhf.html#subsec-cir_anals" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Analysis of DC Electric Circuit</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_second-kirchhf.html#subsec-wheat_stone" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Wheat-Stone’s Bridge Circuit</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_second-kirchhf.html#subsec-chrg_dischrg" class="internal"><span class="codenumber">2.4.3</span> <span class="title">Charging and Discharging of a Capacitor</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_second-examplesB.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Examples B</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_second.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Exercise</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch_third.html" class="internal"><span class="codenumber">3</span> <span class="title">Magnetism</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_third-intro.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Magnetic Field</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_third-intro.html#subsec-mag_mater" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Magnetic Materials</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-intro.html#subsubsec-ferro" class="internal"><span class="codenumber">3.1.1.1</span> <span class="title">Ferromagnetic Material:</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-intro.html#subsubsec-para" class="internal"><span class="codenumber">3.1.1.2</span> <span class="title">Paramagnetic Material:</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-intro.html#subsubsec-dia" class="internal"><span class="codenumber">3.1.1.3</span> <span class="title">Diamagnetic Material:</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-intro.html#subsec-geo_mag" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Geomagnetism</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-intro.html#subsec-mag_force" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Magnetic Force on a Moving Charge</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-intro.html#subsec-lorentz" class="internal"><span class="codenumber">3.1.4</span> <span class="title">Electromagnetic Force on a Moving Charge (or Lorentz Force)</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_third-intro.html#subsec-mag_flux" class="internal"><span class="codenumber">3.1.5</span> <span class="title">Magnetic Flux, <span class="process-math">\(\Phi_{B}\)</span></span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-intro.html#subsubsec-gauss_mag" class="internal"><span class="codenumber">3.1.5.1</span> <span class="title">Gauss’s Law for Magnetism</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-intro.html#subsubsec-vel_select" class="internal"><span class="codenumber">3.1.5.2</span> <span class="title">Velocity Selector</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-intro.html#subsubsec-cyclotron" class="internal"><span class="codenumber">3.1.5.3</span> <span class="title">Cyclotron Frequency</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-intro.html#subsubsec-masspect" class="internal"><span class="codenumber">3.1.5.4</span> <span class="title">Mass Spectrometer</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-intro.html#subsubsec-Hall_effect" class="internal"><span class="codenumber">3.1.5.5</span> <span class="title">Hall Effect</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_third-Aforce.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Magnetic Forces on Currents</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-Aforce.html#subsec-ilb" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Magnetic Force on a Current Element</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_third-Aforce.html#subsec-IA" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Magnetic Dipole Moment of a Current Loop</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-Aforce.html#subsubsec-solenoid" class="internal"><span class="codenumber">3.2.2.1</span> <span class="title">Solenoid</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-Aforce.html#subsec-mag_torq" class="internal"><span class="codenumber">3.2.3</span> <span class="title">Magnetic Torque on a Current Loop</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-Aforce.html#subsec-mag_potE" class="internal"><span class="codenumber">3.2.4</span> <span class="title">Potential Energy of Magnetic Dipole</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_third-examplesA.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Examples A</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_third-magS.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Sources of Magnetic Fields</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_third-magS.html#subsec-magfld_movcharge" class="internal"><span class="codenumber">3.4.1</span> <span class="title">Magnetic Field of a Moving Charge:</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-magS.html#subsubsec-free_permblt" class="internal"><span class="codenumber">3.4.1.1</span> <span class="title">Permeability of Free Space, <span class="process-math">\(\mu_{o}\)</span></span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-magS.html#subsubsec-biot_savrt" class="internal"><span class="codenumber">3.4.1.2</span> <span class="title">Magnetic Field of a Current Element (Biot Savart Law)</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-magS.html#subsubsec-stwire_magf" class="internal"><span class="codenumber">3.4.1.3</span> <span class="title">Magnetic Field of a straight wire</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-magS.html#subsubsec-magcrnt_loop" class="internal"><span class="codenumber">3.4.1.4</span> <span class="title">Magnetic field due to a current loop</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-magS.html#subsubsec-helmholtz" class="internal"><span class="codenumber">3.4.1.5</span> <span class="title">Magnetic field at the center of a Helmholtz coil</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-magS.html#subsubsec-solenoid_curnt" class="internal"><span class="codenumber">3.4.1.6</span> <span class="title">Magnetic field at a point due to current carrying solenoid</span></a></div></li>
+</ul>
+</li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_third-ampre.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Amper’s Law</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-ampre.html#subsec-mag_longcond" class="internal"><span class="codenumber">3.5.1</span> <span class="title">Magnetic field  due to infinitely long current carrying  conductor</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-ampre.html#subsec-mag_sheetcond" class="internal"><span class="codenumber">3.5.2</span> <span class="title">Magnetic field  due to infinitely long current carrying flat sheet</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-ampre.html#subsec-mag_solnd" class="internal"><span class="codenumber">3.5.3</span> <span class="title">Magnetic field at a point due to infinitely long solenoid</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-ampre.html#subsec-mag_toroid" class="internal"><span class="codenumber">3.5.4</span> <span class="title">Magnetic field at a point due to toroid</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-ampre.html#subsec-mag_parallelcond" class="internal"><span class="codenumber">3.5.5</span> <span class="title">Magnetic Force between Parallel Wires</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_third-examplesB.html" class="internal"><span class="codenumber">3.6</span> <span class="title">Examples B</span></a></div></li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec_third-elmag.html" class="internal"><span class="codenumber">3.7</span> <span class="title">Electromagnetic Induction</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsec-faraday" class="internal"><span class="codenumber">3.7.1</span> <span class="title">Faraday’s Law</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsec-lenz" class="internal"><span class="codenumber">3.7.2</span> <span class="title">Lenz’s Law</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsec-motional_emf" class="internal"><span class="codenumber">3.7.3</span> <span class="title">Motional Electromotive Force</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_third-elmag.html#subsec-induced_elf" class="internal"><span class="codenumber">3.7.4</span> <span class="title">Induced Electric Fields</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsubsec-eddy" class="internal"><span class="codenumber">3.7.4.1</span> <span class="title">Eddy Currents</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsubsec-genertr" class="internal"><span class="codenumber">3.7.4.2</span> <span class="title">Generator</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsubsec-skineffect" class="internal"><span class="codenumber">3.7.4.3</span> <span class="title">Skin Effect</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsubsec-supercond" class="internal"><span class="codenumber">3.7.4.4</span> <span class="title">Superconductivity</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_third-elmag.html#subsec-self_induct" class="internal"><span class="codenumber">3.7.5</span> <span class="title">Self-Inductance:</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsubsec-self_solenoid" class="internal"><span class="codenumber">3.7.5.1</span> <span class="title">Self-inductance of a solenoid:</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsubsec-mutual_ind" class="internal"><span class="codenumber">3.7.5.2</span> <span class="title">Mutual Inductance:</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsubsec-maf_fieldenergy" class="internal"><span class="codenumber">3.7.5.3</span> <span class="title">Magnetic-Field Energy</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsec-rlc" class="internal"><span class="codenumber">3.7.6</span> <span class="title">R-L Circuit</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsec-lc" class="internal"><span class="codenumber">3.7.7</span> <span class="title">L-C Circuit</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsec-lcr" class="internal"><span class="codenumber">3.7.8</span> <span class="title">L-C-R Circuit</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_third-examplesC.html" class="internal"><span class="codenumber">3.8</span> <span class="title">Examples C</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_third-accircuits.html" class="internal"><span class="codenumber">3.9</span> <span class="title">AC Circuits</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsec-rmsI" class="internal"><span class="codenumber">3.9.1</span> <span class="title">RMS value of emf or current</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_third-accircuits.html#subsec-complex_number" class="internal"><span class="codenumber">3.9.2</span> <span class="title">The Complex Number Method for A.C. Analysis</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsubsec-ZXY" class="internal"><span class="codenumber">3.9.2.1</span> <span class="title">Impedance, Reactance, and Admittance</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsubsec-acR" class="internal"><span class="codenumber">3.9.2.2</span> <span class="title">Resistance in an AC Circuit</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsubsec-acL" class="internal"><span class="codenumber">3.9.2.3</span> <span class="title">Inductance in an AC Circuit</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsubsec-acC" class="internal"><span class="codenumber">3.9.2.4</span> <span class="title">Capacitance in an AC Circuit</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsubsec-rlc_variation" class="internal"><span class="codenumber">3.9.2.5</span> <span class="title">Variation of reactance due to R, L and C with angular frequency <span class="process-math">\(\omega\)</span> in an AC circuit</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsubsec-acPower" class="internal"><span class="codenumber">3.9.2.6</span> <span class="title">Power in an AC Circuit</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsubsec-acRL" class="internal"><span class="codenumber">3.9.2.7</span> <span class="title">AC Circuit with Resistance and  Inductance in Series</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsubsec-acRC" class="internal"><span class="codenumber">3.9.2.8</span> <span class="title">AC Circuit with Resistance and  Capacitance in Series</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsubsec-acRLC_series" class="internal"><span class="codenumber">3.9.2.9</span> <span class="title">AC Circuit with Resistance,  Capacitance, and Inductance in Series</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsubsec-acRLC_parallel" class="internal"><span class="codenumber">3.9.2.10</span> <span class="title">AC Circuit with Resistance,  Capacitance, and Inductance in Parallel</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsec-transformer" class="internal"><span class="codenumber">3.9.3</span> <span class="title">Transformer</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsec-ac_preferential" class="internal"><span class="codenumber">3.9.4</span> <span class="title">AC is preferential over dc in power transmission</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_third-examplesD.html" class="internal"><span class="codenumber">3.10</span> <span class="title">Examples D</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_third.html" class="internal"><span class="codenumber">3.11</span> <span class="title">Exercise</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch_fourth.html" class="internal"><span class="codenumber">4</span> <span class="title">Waves and Acoustics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_fourth-intro.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Simple Harmonic Motion</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fourth-intro.html#subsec-shm_energy" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Energy in SHM</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_fourth-waves.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Waves</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fourth-waves.html#subsec-shm_wfn" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Simple harmonic wave function</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fourth-waves.html#subsubsec-wave_eq" class="internal"><span class="codenumber">4.2.1.1</span> <span class="title">Wave equation</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fourth-waves.html#subsubsec-waveeq_string" class="internal"><span class="codenumber">4.2.1.2</span> <span class="title">Wave Equation in Stretched String</span></a></div></li>
+</ul>
+</li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_fourth-examplesA.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Examples A</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_fourth-medwave.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Waves in a Medium</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fourth-medwave.html#subsec-speed_TW" class="internal"><span class="codenumber">4.4.1</span> <span class="title">Speed of a Transverse Wave</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fourth-medwave.html#subsec-speed_LW" class="internal"><span class="codenumber">4.4.2</span> <span class="title">Speed of a Longitudinal Wave</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fourth-medwave.html#subsec-energy_MW" class="internal"><span class="codenumber">4.4.3</span> <span class="title">Energy Transport in a Mechanical Wave</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fourth-medwave.html#subsec-interferMW" class="internal"><span class="codenumber">4.4.4</span> <span class="title">Interference of Mechanical Waves</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fourth-medwave.html#subsec-super_princple" class="internal"><span class="codenumber">4.4.5</span> <span class="title">Principle of Superposition</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fourth-medwave.html#subsec-prog_wave" class="internal"><span class="codenumber">4.4.6</span> <span class="title">Traveling Waves (or Progressive Waves):</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fourth-medwave.html#subsec-stand_wave" class="internal"><span class="codenumber">4.4.7</span> <span class="title">Standing Waves (or stationary waves):</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fourth-medwave.html#subsubsec-node_antinode" class="internal"><span class="codenumber">4.4.7.1</span> <span class="title">Position of nodes and antinodes</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_fourth-organ.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Musical Instruments</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fourth-organ.html#subsec-string" class="internal"><span class="codenumber">4.5.1</span> <span class="title">Stretched String</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fourth-organ.html#subsec-organ_pipe" class="internal"><span class="codenumber">4.5.2</span> <span class="title">Organ Pipe</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_fourth-sound.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Sound</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fourth-sound.html#subsec-echo" class="internal"><span class="codenumber">4.6.1</span> <span class="title">Reverberation and Echo</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fourth-sound.html#subsec-beatsf" class="internal"><span class="codenumber">4.6.2</span> <span class="title">Beats</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fourth-sound.html#subsec-dopplerefct" class="internal"><span class="codenumber">4.6.3</span> <span class="title">Doppler Effect</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fourth-sound.html#subsubsec-ssl" class="internal"><span class="codenumber">4.6.3.1</span> <span class="title">Stationary source and listener</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fourth-sound.html#subsubsec-smsl" class="internal"><span class="codenumber">4.6.3.2</span> <span class="title">Source is moving towards stationary listener</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fourth-sound.html#subsubsec-smaway_sl" class="internal"><span class="codenumber">4.6.3.3</span> <span class="title">Source is moving away from stationary listner</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fourth-sound.html#subsubsec-lmss" class="internal"><span class="codenumber">4.6.3.4</span> <span class="title">Listener is moving towards a stationary source</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fourth-sound.html#subsubsec-lmaway_ss" class="internal"><span class="codenumber">4.6.3.5</span> <span class="title">Listener is moving away from a stationary source</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fourth-sound.html#subsubsec-sl_eo" class="internal"><span class="codenumber">4.6.3.6</span> <span class="title">Source and listener move towards each other</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fourth-sound.html#subsubsec-slaway_eo" class="internal"><span class="codenumber">4.6.3.7</span> <span class="title">Source and listener move away from each other</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fourth-sound.html#subsec-sonic_boom" class="internal"><span class="codenumber">4.6.4</span> <span class="title">Sonic Boom</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_fourth-examplesB.html" class="internal"><span class="codenumber">4.7</span> <span class="title">Examples B</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_fourth.html" class="internal"><span class="codenumber">4.8</span> <span class="title">Exercise</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch_fifth.html" class="internal"><span class="codenumber">5</span> <span class="title">Optics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_fifth-intro.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Light</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-intro.html#subsec-speed_light" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Speed of Light</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-intro.html#subsec-huygens" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Huygens’s Principle</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_fifth-geoopt.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Geometrical Optics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsec-refl" class="internal"><span class="codenumber">5.2.1</span> <span class="title">Reflection</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-refl_laws" class="internal"><span class="codenumber">5.2.1.1</span> <span class="title">Laws of Reflection</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-reg_diff" class="internal"><span class="codenumber">5.2.1.2</span> <span class="title">Regular and Diffuse Reflection</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-image_pmirror" class="internal"><span class="codenumber">5.2.1.3</span> <span class="title">Image formed by a mirror</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-plan_mirror" class="internal"><span class="codenumber">5.2.1.4</span> <span class="title">Plane Mirror</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-inclined_mir" class="internal"><span class="codenumber">5.2.1.5</span> <span class="title">Inclined Mirrors</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsec-sp_mir" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Spherical Mirror</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-fr_rel" class="internal"><span class="codenumber">5.2.2.1</span> <span class="title">Relation between f and R</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-mir_form" class="internal"><span class="codenumber">5.2.2.2</span> <span class="title">Mirror Formula</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-lateral_magmir" class="internal"><span class="codenumber">5.2.2.3</span> <span class="title">Lateral Magnification, m</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-concave_image" class="internal"><span class="codenumber">5.2.2.4</span> <span class="title">Formation of Image by a Concave Mirror</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-convex_image" class="internal"><span class="codenumber">5.2.2.5</span> <span class="title">Formation of Image by a Convex Mirror</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsec-refraction" class="internal"><span class="codenumber">5.2.3</span> <span class="title">Refraction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-" class="internal"><span class="codenumber">5.2.3.1</span> <span class="title">Laws of Refraction</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-real_apprnt" class="internal"><span class="codenumber">5.2.3.2</span> <span class="title">Real and Apparent Depth</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-lateral_shift" class="internal"><span class="codenumber">5.2.3.3</span> <span class="title">Lateral Shift</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-reversblty_prncple" class="internal"><span class="codenumber">5.2.3.4</span> <span class="title">Principle of Reversibility of Light</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsec-tir" class="internal"><span class="codenumber">5.2.4</span> <span class="title">Total Internal Reflection</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-mirage" class="internal"><span class="codenumber">5.2.4.1</span> <span class="title">Mirage</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsec-prism_ref" class="internal"><span class="codenumber">5.2.5</span> <span class="title">Refraction through a Prism</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsec-srs_img" class="internal"><span class="codenumber">5.2.6</span> <span class="title">Image formed by Spherical Refracting Surfaces</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-srs_mag" class="internal"><span class="codenumber">5.2.6.1</span> <span class="title">Lateral or Transverse Magnification, m</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-longmag_srs" class="internal"><span class="codenumber">5.2.6.2</span> <span class="title">Longitudinal Magnification, L</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsec-thin_lens" class="internal"><span class="codenumber">5.2.7</span> <span class="title">Thin Lenses</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-lens_formula" class="internal"><span class="codenumber">5.2.7.1</span> <span class="title">Lens Formula</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-vexlens_img" class="internal"><span class="codenumber">5.2.7.2</span> <span class="title">Image formed by a convex lens</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-cavelens_img" class="internal"><span class="codenumber">5.2.7.3</span> <span class="title">Image formed by a concave lens</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsec-lensmakers" class="internal"><span class="codenumber">5.2.8</span> <span class="title">Lens Maker’s Formula</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-fr_dependence" class="internal"><span class="codenumber">5.2.8.1</span> <span class="title">Dependence of f of a lens on R of its surfaces</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-mindist_rimge" class="internal"><span class="codenumber">5.2.8.2</span> <span class="title">Minimum distance between object and its real image in a convex lens</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-eqf_thinlens" class="internal"><span class="codenumber">5.2.8.3</span> <span class="title">Equivalent focal length of two thin lenses</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_fifth-dispers.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Dispersion</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-dispers.html#subsec-achrom_prism" class="internal"><span class="codenumber">5.3.1</span> <span class="title">Deviation Without Dispersion (Achromatic Prism)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-dispers.html#subsec-diswdev1" class="internal"><span class="codenumber">5.3.2</span> <span class="title">Dispersion Without Deviation</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-dispers.html#subsec-chrom_abr" class="internal"><span class="codenumber">5.3.3</span> <span class="title">Chromatic Aberation in a Lens</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-dispers.html#subsubsec-achrom" class="internal"><span class="codenumber">5.3.3.1</span> <span class="title">Achromatism</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-dispers.html#subsec-rainbow" class="internal"><span class="codenumber">5.3.4</span> <span class="title">Rainbow</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-dispers.html#subsubsec-prainbow" class="internal"><span class="codenumber">5.3.4.1</span> <span class="title">Primary Rainbow</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-dispers.html#subsubsec-srainbow" class="internal"><span class="codenumber">5.3.4.2</span> <span class="title">Secondary Rainbow</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-dispers.html#subsec-scattering" class="internal"><span class="codenumber">5.3.5</span> <span class="title">Scattering</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_fifth-examplesA.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Examples A</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_fifth-examplesB.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Examples B</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_fifth-opinst.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Optical Instruments</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsec-camera" class="internal"><span class="codenumber">5.6.1</span> <span class="title">Camera</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-opinst.html#subsec-opvision" class="internal"><span class="codenumber">5.6.2</span> <span class="title">Optical Vision</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-myopia" class="internal"><span class="codenumber">5.6.2.1</span> <span class="title">Myopia:</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-hyperopia" class="internal"><span class="codenumber">5.6.2.2</span> <span class="title">Hypermetropia  (or hyperopia):</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-visangle" class="internal"><span class="codenumber">5.6.2.3</span> <span class="title">Visual Angle</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-magpower" class="internal"><span class="codenumber">5.6.2.4</span> <span class="title">Angular Magnification  (or Magnifying Power:)</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-opinst.html#subsec-microscope" class="internal"><span class="codenumber">5.6.3</span> <span class="title">Microscope</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-handlens" class="internal"><span class="codenumber">5.6.3.1</span> <span class="title">Simple Microscope</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-compmicros" class="internal"><span class="codenumber">5.6.3.2</span> <span class="title">Compound Microscope</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-opinst.html#subsec-telescope" class="internal"><span class="codenumber">5.6.4</span> <span class="title">Telescope</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-astrts" class="internal"><span class="codenumber">5.6.4.1</span> <span class="title">Astronomical Telescope</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-terrts" class="internal"><span class="codenumber">5.6.4.2</span> <span class="title">Terrestrial Telescope</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-galilots" class="internal"><span class="codenumber">5.6.4.3</span> <span class="title">Galileo’s Telescope</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-opinst.html#subsec-photmtry" class="internal"><span class="codenumber">5.6.5</span> <span class="title">Photometry</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-stcandle" class="internal"><span class="codenumber">5.6.5.1</span> <span class="title">Standard Candle</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-sangl" class="internal"><span class="codenumber">5.6.5.2</span> <span class="title">Solid Angle, <span class="process-math">\(\omega\)</span></span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-lumenflx" class="internal"><span class="codenumber">5.6.5.3</span> <span class="title">Luminous Flux, <span class="process-math">\(\phi\)</span></span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsec-isl" class="internal"><span class="codenumber">5.6.6</span> <span class="title">Inverse Square Law</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsec-iil" class="internal"><span class="codenumber">5.6.7</span> <span class="title">Intensity of Illumination</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-opinst.html#subsec-bsil" class="internal"><span class="codenumber">5.6.8</span> <span class="title">Brightness of a surface and illumination</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-bgsp" class="internal"><span class="codenumber">5.6.8.1</span> <span class="title">Bunsen’s Grease Spot Photometer</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_fifth-examplesC.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Examples C</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_fifth-physopt.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Physical Optics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-physopt.html#subsec-interfnc" class="internal"><span class="codenumber">5.8.1</span> <span class="title">Interference</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsubsec-coherent" class="internal"><span class="codenumber">5.8.1.1</span> <span class="title">Coherent Sources</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsubsec-phase_path" class="internal"><span class="codenumber">5.8.1.2</span> <span class="title">Phase Difference and Path Difference</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsec-inter_fringe" class="internal"><span class="codenumber">5.8.2</span> <span class="title">Theory of Interference Fringes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsec-thin_film" class="internal"><span class="codenumber">5.8.3</span> <span class="title">Thickness of Thin Sheet of Transparent Material</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-physopt.html#subsec-thinfilm_interf" class="internal"><span class="codenumber">5.8.4</span> <span class="title">Interference in Thin Films</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsubsec-thinf_interr" class="internal"><span class="codenumber">5.8.4.1</span> <span class="title">Interference due to Reflected Light in Thin Films</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsubsec-thinf_intert" class="internal"><span class="codenumber">5.8.4.2</span> <span class="title">Interference due to Transmitted Light in Thin Films</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsec-thinf_color" class="internal"><span class="codenumber">5.8.5</span> <span class="title">Colors of Thin Films</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-physopt.html#subsec-diffraction" class="internal"><span class="codenumber">5.8.6</span> <span class="title">Diffraction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsubsec-ssdiffrct" class="internal"><span class="codenumber">5.8.6.1</span> <span class="title">Single Slit Diffraction</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsubsec-issdiff" class="internal"><span class="codenumber">5.8.6.2</span> <span class="title">Intensity of Diffraction Pattern due to a Single Slit</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-physopt.html#subsec-dsdiffrc" class="internal"><span class="codenumber">5.8.7</span> <span class="title">Double Slits Diffraction</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsubsec-idsdiffrc" class="internal"><span class="codenumber">5.8.7.1</span> <span class="title">Intensity of Diffraction Pattern due to Double Slits</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsec-msdiffrc" class="internal"><span class="codenumber">5.8.8</span> <span class="title">Multiple Slits Diffraction</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-physopt.html#subsec-diffgrating" class="internal"><span class="codenumber">5.8.9</span> <span class="title">Diffraction Grating</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsubsec-grat_spectrom" class="internal"><span class="codenumber">5.8.9.1</span> <span class="title">Grating Spectrometer</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsubsec-resolv_power" class="internal"><span class="codenumber">5.8.9.2</span> <span class="title">Resolving Power</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsec-polrzn" class="internal"><span class="codenumber">5.8.10</span> <span class="title">Polarization</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_fifth-examplesD.html" class="internal"><span class="codenumber">5.9</span> <span class="title">Examples D</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_fifth.html" class="internal"><span class="codenumber">5.10</span> <span class="title">Exercise</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="append_math.html" class="internal"><span class="codenumber">A</span> <span class="title">Mathematical Relations</span></a></div></li>
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="append_physTable.html" class="internal"><span class="codenumber">B</span> <span class="title">Useful Data and Greek Letters</span></a></div></li>
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="backmatter-4.html" class="internal"><span class="codenumber">C</span> <span class="title">List of Symbols</span></a></div></li>
+<li class="toc-item toc-index"><div class="toc-title-box"><a href="backmatter-5.html" class="internal"><span class="title">Index</span></a></div></li>
+<li class="toc-item toc-references"><div class="toc-title-box"><a href="refs-list.html" class="internal"><span class="title">References</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-7.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec_third-elmag"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">3.7</span><span class="space"> </span><span class="title">Electromagnetic Induction</span>
+</h2>
+<section class="introduction" id="sec_third-elmag-2"><div class="para logical" id="sec_third-elmag-2-1">
+<div class="para">Orsted discovered that electric currents can produce magnetic fields. Faraday discovered that magnetic fields can be used to induce electric currents. It has been seen from experiments that whenever there is a change in magnetic flux linked with the closed circuit, am emf (or current) is induced in that circuit and lasts as long as this change happen. This phenomenon is known as <dfn class="terminology">electromagnetic induction</dfn>. The magnetic flux through a circuit may be changed in the following ways:</div>
+<ol class="lower-roman ol-marker-1" id="sec_third-elmag-2-1-2">
+<li id="sec_third-elmag-2-1-2-1">
+<div class="para" id="p-derived-sec_third-elmag-2-1-2-1">by relative motion between a magnet and the circuit,</div>
+<div class="autopermalink" data-description="Item i"><a href="#sec_third-elmag-2-1-2-1" title="Copy heading and permalink for Item i">🔗</a></div>
+</li>
+<li id="sec_third-elmag-2-1-2-2">
+<div class="para" id="p-derived-sec_third-elmag-2-1-2-2">by changing current in the same circuit,</div>
+<div class="autopermalink" data-description="Item ii"><a href="#sec_third-elmag-2-1-2-2" title="Copy heading and permalink for Item ii">🔗</a></div>
+</li>
+<li id="sec_third-elmag-2-1-2-3">
+<div class="para" id="p-derived-sec_third-elmag-2-1-2-3">by changing current in the neighbouring circuit, and</div>
+<div class="autopermalink" data-description="Item iii"><a href="#sec_third-elmag-2-1-2-3" title="Copy heading and permalink for Item iii">🔗</a></div>
+</li>
+<li id="sec_third-elmag-2-1-2-4">
+<div class="para" id="p-derived-sec_third-elmag-2-1-2-4">by rotating a coil in a magnetic field.</div>
+<div class="autopermalink" data-description="Item iv"><a href="#sec_third-elmag-2-1-2-4" title="Copy heading and permalink for Item iv">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_third-elmag-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec_third-elmag-2-2">
+<dfn class="terminology">Electromagnetic induction</dfn> is a process of producing an emf across the conductor by making a relative motion between the conductor and magnetic field. In other word, producing an emf across the conductor by placing a conductor in a changing magnetic field or moving a conductor through a stationary magnetic field. This process causes an electrical current in a conductor known as <dfn class="terminology">induced current</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#sec_third-elmag-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec_third-elmag-2-3">A moving electrical charge also generates a magnetic field just as changing magnetic field induces current in a conductor. In fact, a traditional magnet is the result of the individual motion of the electrons within the individual atoms of the magnet, aligned so that the generated magnetic field is in a uniform direction as shown in <a href="sec_third-intro.html#barmagloop" class="xref" data-knowl="./knowl/xref/barmagloop.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 3.1.3.(b)">Figure 3.1.3.(b)</a>. (In non-magnetic materials, the electrons move in such a way that the individual magnetic fields point in different directions, so they cancel each other out and the net magnetic field generated is negligible.)<div class="autopermalink" data-description="Paragraph"><a href="#sec_third-elmag-2-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec_third-elmag-2-4">
+<dfn class="terminology">Induced emf:</dfn> It is a voltage produced in a coil because of the changing magnetic flux through a coil. An EMF can be induced in two ways, i.e., when an electric conductor is kept in a moving magnetic field or when the electric conductor is constantly moving within a static magnetic field.<div class="autopermalink" data-description="Paragraph"><a href="#sec_third-elmag-2-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><section class="subsection" id="subsec-faraday"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.7.1</span><span class="space"> </span><span class="title">Faraday’s Law</span>
+</h3>
+<div class="para logical" id="subsec-faraday-2">
+<div class="para">If the magnetic field changes, or if the magnet and coil are in relative motion, there will be an induced emf (and therefore current) in the coil. The instantaneous EMF (voltage) induced in a circuit is proportional to the rate of change of magnetic flux through the circuit. If <span class="process-math">\(\Phi\)</span> is magnetic flux linked with the circuit at any instant of time and <span class="process-math">\(\varepsilon\)</span> is an induced emf, then</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\varepsilon \propto \frac{\,d\Phi}{\,dt}.
+\end{equation*}
+</div>
+<div class="para">The direction of induced emf is such that it opposes the change in flux which produces it. Hence,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\varepsilon = - \frac{\,d\Phi}{\,dt}.
+\end{equation*}
+</div>
+<div class="para">The minus sign indicates the direction of the induced emf. If there are N number of turns in current loops, then</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\varepsilon = - N \frac{\,d\Phi}{\,dt}.
+\end{equation*}
+</div>
+<div class="para">When the magnetic flux inside a closed loop of wire (coil) changes, emf is induced in the wire,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+|emf| = \frac{\phi_{f}-\phi_{i}}{t_{f}-ti_{i}} 
+\end{equation*}
+</div>
+<ol class="lower-roman ol-marker-1" id="subsec-faraday-2-7">
+<li id="subsec-faraday-2-7-1">
+<div class="para" id="p-derived-subsec-faraday-2-7-1">The induced emf generates a current in the wire, <span class="process-math">\(I=\frac{emf}{R}\)</span>
+</div>
+<div class="autopermalink" data-description="Item i"><a href="#subsec-faraday-2-7-1" title="Copy heading and permalink for Item i">🔗</a></div>
+</li>
+<li id="subsec-faraday-2-7-2">
+<div class="para" id="p-derived-subsec-faraday-2-7-2">The direction of the current is determined by the Lenz’s law.</div>
+<div class="autopermalink" data-description="Item ii"><a href="#subsec-faraday-2-7-2" title="Copy heading and permalink for Item ii">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-faraday-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 3.7.1: Faraday’s Law"><a href="#subsec-faraday" title="Copy heading and permalink for Subsection 3.7.1: Faraday’s Law">🔗</a></div></section><section class="subsection" id="subsec-lenz"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.7.2</span><span class="space"> </span><span class="title">Lenz’s Law</span>
+</h3>
+<div class="para" id="subsec-lenz-2">An induced current always flows in a direction that opposes the change that caused it. In other word, -ve sign in Faraday’s law is Lenz’s contribution. The changing magnetic flux generates an emf according to Faraday, the polarity of this emf is such that it induces the current in a circuit whose magnetic field opposes the change which produces it, according to Lenz.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-lenz-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="subsec-lenz-3"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:25%;"><figure class="figure figure-like" id="lenzb"><img src="external/lenzb.png" class="contained"><figcaption><span class="codenumber">(a)</span><span class="space"> </span><div class="autopermalink" data-description="Figure 3.7.1.(a)"><a href="#lenzb" title="Copy heading and permalink for Figure 3.7.1.(a)">🔗</a></div></figcaption></figure></div>
+<div class="sbspanel top" style="width:25%;"><figure class="figure figure-like" id="lenzc"><img src="external/lenzc.png" class="contained"><figcaption><span class="codenumber">(b)</span><span class="space"> </span><div class="autopermalink" data-description="Figure 3.7.1.(b)"><a href="#lenzc" title="Copy heading and permalink for Figure 3.7.1.(b)">🔗</a></div></figcaption></figure></div>
+<div class="sbspanel top" style="width:25%;"><figure class="figure figure-like" id="lenzd"><img src="external/lenzd.png" class="contained"><figcaption><span class="codenumber">(c)</span><span class="space"> </span><div class="autopermalink" data-description="Figure 3.7.1.(c)"><a href="#lenzd" title="Copy heading and permalink for Figure 3.7.1.(c)">🔗</a></div></figcaption></figure></div>
+<div class="sbspanel top" style="width:25%;"><figure class="figure figure-like" id="lenze"><img src="external/lenze.png" class="contained"><figcaption><span class="codenumber">(d)</span><span class="space"> </span><div class="autopermalink" data-description="Figure 3.7.1.(d)"><a href="#lenze" title="Copy heading and permalink for Figure 3.7.1.(d)">🔗</a></div></figcaption></figure></div>
+</div></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.7.1<span class="period">.</span></span><span class="space"> </span><div class="autopermalink" data-description="Figure 3.7.1"><a href="#subsec-lenz-3" title="Copy heading and permalink for Figure 3.7.1">🔗</a></div></figcaption></figure><div class="para" id="subsec-lenz-4">Suppose a bar magnet is moving towards a coil, then an emf is induced in the coil and current starts flowing in a circuit (coil). The direction of this induced current will be such that it opposes the motion of the magnet towards the coil.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-lenz-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-lenz-5">
+<div class="para">The induced emf resulting from a changing magnetic flux has a polarity that leads to an induced current whose direction is such that the induced magnetic field opposes the original flux change.</div>
+<ol class="decimal" id="subsec-lenz-5-1">
+<li id="subsec-lenz-5-1-1">
+<div class="para" id="p-derived-subsec-lenz-5-1-1">When the magnetic flux is increasing, a magnetic field opposing to the increasing field is generated by induced current.</div>
+<div class="autopermalink" data-description="Item 1"><a href="#subsec-lenz-5-1-1" title="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="subsec-lenz-5-1-2">
+<div class="para" id="p-derived-subsec-lenz-5-1-2">When the magnetic flux is decreasing, a magnetic field in the same direction as the decreasing field is generated by the induced current.</div>
+<div class="autopermalink" data-description="Item 2"><a href="#subsec-lenz-5-1-2" title="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-lenz-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 3.7.2: Lenz’s Law"><a href="#subsec-lenz" title="Copy heading and permalink for Subsection 3.7.2: Lenz’s Law">🔗</a></div></section><section class="subsection" id="subsec-motional_emf"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.7.3</span><span class="space"> </span><span class="title">Motional Electromotive Force</span>
+</h3>
+<div class="para" id="subsec-motional_emf-2">An emf will also be produced if a conductor moves through a magnetic field. The emf comes from the motion of charges, which are free to move in the conductor. If a rod is moving in a magnetic field positive charges collected at on edge of the conductor and negative charge at the opposite edge.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-motional_emf-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 3.7.3: Motional Electromotive Force"><a href="#subsec-motional_emf" title="Copy heading and permalink for Subsection 3.7.3: Motional Electromotive Force">🔗</a></div></section><section class="subsection" id="subsec-induced_elf"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.7.4</span><span class="space"> </span><span class="title">Induced Electric Fields</span>
+</h3>
+<section class="introduction" id="subsec-induced_elf-2"><div class="para" id="subsec-induced_elf-2-1"><div class="autopermalink" data-description="Paragraph"><a href="#subsec-induced_elf-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div></div></section><section class="subsubsection" id="subsubsec-eddy"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">3.7.4.1</span><span class="space"> </span><span class="title">Eddy Currents</span>
+</h4>
+<div class="para" id="subsubsec-eddy-2">When a conductor is moved in a magnetic field, there is a force on the electrons, which then move in the metal. This movement is called an eddy current. The induced currents produce magnetic fields which tend to oppose the motion of the metal. An eddy current is a swirling current set up in a conductor in response to a changing magnetic field. According to Lenz’s law the current swirls in the conductor in such a way that it opposes the changing magnetic field. To do so in a conductor, electrons swirl in a plane perpendicular to the magnetic field. As the metal enters into the magnetic field, flux starts increasing so to oppose this flux electrons of metal make loop in such a way that the induced current has magnetic field opposing the increase. As the metal plate begins leaving the magnetic field current loops on metal surface just in opposite direction to the previous loops as shown in <a href="sec_third-elmag.html#eddy" class="xref" data-knowl="./knowl/xref/eddy.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 3.7.2">Figure 3.7.2</a>.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-eddy-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="eddy"><div class="image-box" style="width: 30%; margin-left: 35%; margin-right: 35%;"><img src="external/eddy.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.7.2<span class="period">.</span></span><span class="space"> </span><div class="autopermalink" data-description="Figure 3.7.2"><a href="#eddy" title="Copy heading and permalink for Figure 3.7.2">🔗</a></div></figcaption></figure><div class="para" id="subsubsec-eddy-4">Because of the tendency to oppose, eddy currents cause energy to be lost. Due to eddy currents kinetic energy transforms into heat energy. One of the practical applications of eddy currents is <dfn class="terminology">magnetic braking</dfn>. During braking, the metal wheels are exposed to a magnetic field from an electromagnet, generating eddy currents in the wheels. The magnetic interaction between the applied field and the eddy currents acts to slow the wheels down. The faster the wheels are spinning, the stronger the effect, meaning that as the train slows the braking force is reduced, producing a smooth stopping motion.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-eddy-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsubsec-eddy-5">French physicist Leon Foucault in 1855 discovered eddy currents. He found that the force needed to rotate a copper disk when its rim is placed between the poles of a magnet, such as a horseshoe magnet, increases and the disk is heated by the induced eddy currents.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-eddy-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsubsec-eddy-6">The heating effect originates from the transformation of electric energy into heat energy and is used in induction heating devices, like some cookers and welders. The resistance felt by the eddy currents in a conductor causes Joule heating and he amount of heat generated is proportional to the current squared. However, for applications like motors, generators and transformers, this heat is considered wasted energy and as such, eddy currents need to be minimized. This can be achieved by laminating the metal cores of these devices, where each core is made up of multiple insulated sheets of metal. This splits the core in many individual magnetic circuits and restricts the flow of the eddy currents through it, reducing the amount of heat generated through Joule heating.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-eddy-6" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsubsec-eddy-7">Eddy currents can also be removed by cracks or slits in the conductor, which break the circuit and prevent the current loops from circulating. This means that eddy currents can be used to detect defects in materials. This is called nondestructive testing and is often used in airplanes. The magnetic field produced by the eddy currents is measured, where a change in the field reveals the presence of an irregularity; a defect will reduce the size of the eddy current, which in turn reduces the magnetic field strength.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-eddy-7" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsubsection 3.7.4.1: Eddy Currents"><a href="#subsubsec-eddy" title="Copy heading and permalink for Subsubsection 3.7.4.1: Eddy Currents">🔗</a></div></section><section class="subsubsection" id="subsubsec-genertr"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">3.7.4.2</span><span class="space"> </span><span class="title">Generator</span>
+</h4>
+<div class="para" id="subsubsec-genertr-2">A generator is a device that converts mechanical energy to electrical energy. As Faraday’s law holds good for any shape of conductor moving in a magnetic field, this principle can be used to design electric dynamo or generator where a loop is rataing in a magnetic field.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-genertr-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="subsubsec-genertr-3"><div class="sidebyside"><div class="sbsrow" style="margin-left:7.5%;margin-right:7.5%;">
+<div class="sbspanel top" style="width:41.1764705882353%;"><figure class="figure figure-like" id="generator"><img src="external/generator.png" class="contained"><figcaption><span class="codenumber">(a)</span><span class="space"> </span><div class="autopermalink" data-description="Figure 3.7.3.(a)"><a href="#generator" title="Copy heading and permalink for Figure 3.7.3.(a)">🔗</a></div></figcaption></figure></div>
+<div class="sbspanel top" style="width:41.1764705882353%;"><figure class="figure figure-like" id="gr19"><img src="external/gr19.png" class="contained"><figcaption><span class="codenumber">(b)</span><span class="space"> </span><div class="autopermalink" data-description="Figure 3.7.3.(b)"><a href="#gr19" title="Copy heading and permalink for Figure 3.7.3.(b)">🔗</a></div></figcaption></figure></div>
+</div></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.7.3<span class="period">.</span></span><span class="space"> </span><div class="autopermalink" data-description="Figure 3.7.3"><a href="#subsubsec-genertr-3" title="Copy heading and permalink for Figure 3.7.3">🔗</a></div></figcaption></figure><div class="para logical" id="subsubsec-genertr-4">
+<div class="para">Consider a closed rectangular loop C of number of turns N, area of each loop is A rotating in a uniform magnetic field B with angular velocity <span class="process-math">\(\omega\text{.}\)</span> As the loop rotates, the flux linked with the coil changes and an emf is induced in the coil. Suppose at any instant the normal to plane of loop is making an angle <span class="process-math">\(\theta\)</span> with the magnetic field B, then magnetic flux linked with loop at that time is given by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\phi = N(\vec{B}\cdot\vec{A}) = NBA\cos\theta
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\therefore\quad \varepsilon =-N\frac{\,d\Phi}{\,dt} = -N\frac{\,d}{\,dt}(BA\cos\theta)
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= NBA\omega\sin\omega t  = \varepsilon_{o} \sin\omega t
+\end{equation*}
+</div>
+<div class="para">
+<span class="process-math">\([\because \theta = \omega t]\)</span> where <span class="process-math">\(\varepsilon_{o} = NBA \omega\)</span> =  maximum emf.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-genertr-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsubsec-genertr-5">
+<div class="para">If this loop is part of a circuit, this emf will induce an Alternating Current (AC) in the circuit. If R is the resistance of the circuit, the induced current in the circuit is given by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+i=\frac{\varepsilon}{R}= \frac{NBA\omega}{R}\sin\omega t= i_{o}\sin\omega t
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(i_{o}\)</span> is the amplitude of the ac current.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-genertr-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsubsection 3.7.4.2: Generator"><a href="#subsubsec-genertr" title="Copy heading and permalink for Subsubsection 3.7.4.2: Generator">🔗</a></div></section><section class="subsubsection" id="subsubsec-skineffect"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">3.7.4.3</span><span class="space"> </span><span class="title">Skin Effect</span>
+</h4>
+<div class="para" id="subsubsec-skineffect-2">When a steady current flows through a wire, it is distributed uniformly over the entire cross-section of the wire. On the other hand, when an alternating current flows through the a wire, it is concentrated mostly near the outer surface of wire rather than the uniform distribution. This effect is called skin effect of alternating current. The skin effect increases with increasing frequency. In case of very high frequency current is almost wholly confined to the surface layer of the wire. This is the reason in ac transmission current carrier wire is made out of collection of many thin insulated stranded wires rather than one thick single wire. Electromagnetic induction is the cause of skin effect.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-skineffect-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsubsection 3.7.4.3: Skin Effect"><a href="#subsubsec-skineffect" title="Copy heading and permalink for Subsubsection 3.7.4.3: Skin Effect">🔗</a></div></section><section class="subsubsection" id="subsubsec-supercond"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">3.7.4.4</span><span class="space"> </span><span class="title">Superconductivity</span>
+</h4>
+<div class="para" id="subsubsec-supercond-2">Superconductivity is a phenomenon that conduct electricity in an element, inter-metallic alloy, or compound  without resistance when it is kept below a certain temperature and magnetic field<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-supercond-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsubsec-supercond-3">
+<div class="para"><dfn class="terminology">Emf of Moving Conductor:</dfn></div>
+<div class="displaymath process-math">
+\begin{equation*}
+\varepsilon  =  \int(\vec{v} \times \vec{B})\cdot\vec{dl}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\varepsilon =  v B l
+\end{equation*}
+</div>
+<div class="para">rod with everything perpendicular.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-supercond-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsubsec-supercond-4">
+<div class="para">
+<dfn class="terminology">Induced Electric Field:</dfn>	(non-conservative)</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\oint \vec{E}\cdot\vec{dl} = -\frac{\,d\Phi_{B}}{\,dt} 
+\end{equation*}
+</div>
+<div class="para">Stationary Closed Path.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-supercond-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsubsec-supercond-5">
+<div class="para"><dfn class="terminology">Maxwell’s Equations:</dfn></div>
+<div class="displaymath process-math">
+\begin{equation*}
+\oint \vec{E}\cdot\vec{dA} = \frac{q_{enc}}{\epsilon_{o}} \quad \text{(Gauss's Law)}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\oint \vec{B}\cdot\vec{dA} = 0 \quad \text{(Gauss's Law in Magnetism)}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\oint \vec{E}\cdot\vec{dl}  = -\frac{\,d\Phi_{B}}{\,dt} \quad 	\text{(Faraday's Law)}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\oint \vec{B}\cdot\vec{dl} = \mu_{o}\left(I_{c} +\epsilon_{o}\frac{\,d\Phi_{E}}{\,dt}\right) \quad \text{(Generalized Ampere's Law)} 
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-supercond-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsubsection 3.7.4.4: Superconductivity"><a href="#subsubsec-supercond" title="Copy heading and permalink for Subsubsection 3.7.4.4: Superconductivity">🔗</a></div></section><div class="autopermalink" data-description="Subsection 3.7.4: Induced Electric Fields"><a href="#subsec-induced_elf" title="Copy heading and permalink for Subsection 3.7.4: Induced Electric Fields">🔗</a></div></section><section class="subsection" id="subsec-self_induct"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.7.5</span><span class="space"> </span><span class="title">Self-Inductance:</span>
+</h3>
+<section class="introduction" id="subsec-self_induct-2"><div class="para" id="subsec-self_induct-2-1">The phenomenon of the production of induced emf in a circuit itself due to the change in current through it is called self induction and induced emf is called back emf. The delayed response of changing current in a circuit like solenoid is due to a self induction. This is because the changing magnetic flux through the solenoid produces a self-induced emf to initially oppose any changes as prescribed by Lenz’s Law. This effect is known as coefficient of self-induction or <em class="emphasis">self-inductance</em> of the coil. Actually all circuit elements have some self-inductance. However, only coils with many turns of wire, such as in a solenoid, have substantial self-inductance.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-self_induct-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-self_induct-2-2">
+<div class="para">Let current I is flowing through a circuit C [<a href="sec_third-elmag.html#selfind" class="xref" data-knowl="./knowl/xref/selfind.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 3.7.4">Figure 3.7.4</a>]. This current will set up a magnetic field and hence a magnetic flux <span class="process-math">\(\Phi\)</span> is linked with the circuit. As the magnetic field at any point is proportional to the current flowing through the circuit, the magnetic flux <span class="process-math">\(\Phi\)</span> linked to the circuit at any instant is also proportional to the current I flowing through it at the same instant. For any geometry of loop, the magnetic flux through the loop, produced by the current in the loop is <span class="process-math">\(\Phi \propto I\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/selfind.html">
+\begin{equation*}
+or, \quad \Phi =L I.
+\end{equation*}
+</div>
+<div class="para">The inductance L is the constant of proportionality. Its unit is henery. When the current flowing through a circuit is changed, the magnetic flux linked with the circuit also changes and induced emf is set up in the circuit.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-self_induct-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="selfind"><div class="image-box" style="width: 15%; margin-left: 42.5%; margin-right: 42.5%;"><img src="external/selfind.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.7.4<span class="period">.</span></span><span class="space"> </span><div class="autopermalink" data-description="Figure 3.7.4"><a href="#selfind" title="Copy heading and permalink for Figure 3.7.4">🔗</a></div></figcaption></figure><div class="para logical" id="subsec-self_induct-2-4">
+<div class="para">The rate of change of flux linked with the circuit is given by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{\,d\Phi}{\,dt}= L\frac{\,dI}{\,dt}
+\end{equation*}
+</div>
+<div class="para">Therefore from Faraday’s law the emf induced in the circuit is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\varepsilon = -\frac{\,d\Phi}{\,dt}= -L\frac{\,dI}{\,dt}
+\end{equation*}
+</div>
+<div class="para">Which is also a Self-Induced Emf in an inductor and L is its inductance. If there are N number of turns in a coil then, self inductance is given by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+N\Phi =L I
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="eqn-selfinduct1">
+\begin{equation}
+\text{or,}\quad L  = N\frac{\,d\Phi}{\,dI}\tag{3.7.1}
+\end{equation}
+</div>
+<div class="para">The unit of Self-Inductance is Henry, H = Wb/A.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-self_induct-2-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><section class="subsubsection" id="subsubsec-self_solenoid"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">3.7.5.1</span><span class="space"> </span><span class="title">Self-inductance of a solenoid:</span>
+</h4>
+<div class="para logical" id="subsubsec-self_solenoid-2">
+<div class="para">Consider a solenoid of length l, cross-sectional area A, number of turns per unit length n, and current I is flowing through it then,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+B=\mu_{o}nI
+\end{equation*}
+</div>
+<div class="para">
+<span class="process-math">\(\Phi = B \)</span> (effective area of solenoid) = <span class="process-math">\(\mu_{o}nI (nlA) = \mu_{o}n^{2} AlI,\)</span> but from definition,  <span class="process-math">\(\Phi=LI.\)</span>
+</div>
+<div class="displaymath process-math" id="eqn-selfsolnd1">
+\begin{equation}
+\therefore\quad L= \mu_{o}n^{2} Al \tag{3.7.2}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-self_solenoid-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsubsection 3.7.5.1: Self-inductance of a solenoid:"><a href="#subsubsec-self_solenoid" title="Copy heading and permalink for Subsubsection 3.7.5.1: Self-inductance of a solenoid:">🔗</a></div></section><section class="subsubsection" id="subsubsec-mutual_ind"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">3.7.5.2</span><span class="space"> </span><span class="title">Mutual Inductance:</span>
+</h4>
+<div class="para" id="subsubsec-mutual_ind-2">The phenomenon of inducing emf in a neighboring circuit whenever a current is flowing through a circuit near it is known as mutual inductance. The circuit in which current changes is known as primary circuit, while the neighboring circuit in which emf is induced in called the secondary circuit.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-mutual_ind-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsubsec-mutual_ind-3">
+<div class="para">Consider a circuit <span class="process-math">\(C_{2}\)</span> is placed in a magnetic field of another circuit <span class="process-math">\(C_{1}\)</span> as shown in <a href="sec_third-elmag.html#mutind" class="xref" data-knowl="./knowl/xref/mutind.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 3.7.5">Figure 3.7.5</a>. The flux linked with circuit <span class="process-math">\(C_{2}\)</span>  depends upon its relative position with circuit <span class="process-math">\(C_{1}\)</span> and current flowing through <span class="process-math">\(C_{1}.\)</span> If <span class="process-math">\(i_{1}\)</span> is the current flowing in circuit <span class="process-math">\(C_{1}\)</span> and <span class="process-math">\(B_{1}(x,y,z)\)</span> is the magnetic field at any point (x,y,z) in space around <span class="process-math">\(C_{1}\text{,}\)</span> then the magnetic flux linked with the coil <span class="process-math">\(C_{2}\)</span> is given by</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/mutind.html">
+\begin{equation*}
+\Phi_{2} =\iint_{s_{2}} B_{1}\,dA_{2}
+\end{equation*}
+</div>
+<div class="para">Where <span class="process-math">\(s_{2}\)</span> represents the effective surface area enclosed by the coil <span class="process-math">\(C_{2}.\)</span> If the shapes, orientations and the positions of the two circuits <span class="process-math">\(C_{1}\)</span> and <span class="process-math">\(C_{2}\)</span> are fixed, then the magnetic flux <span class="process-math">\(\Phi_{2}\)</span> linked with the circuit <span class="process-math">\(C_{2}\)</span> is proportional to the current <span class="process-math">\(i_{1}\)</span> flowing in circuit <span class="process-math">\(C_{1}\)</span> i.e.,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/mutind.html">
+\begin{equation*}
+\Phi_{2}  \propto i_{1}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/mutind.html">
+\begin{equation*}
+\text{or}\quad \Phi_{2}  = M_{21} i_{1}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-mutual_ind-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="mutind"><div class="image-box" style="width: 35%; margin-left: 32.5%; margin-right: 32.5%;"><img src="external/mutind.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.7.5<span class="period">.</span></span><span class="space"> </span><div class="autopermalink" data-description="Figure 3.7.5"><a href="#mutind" title="Copy heading and permalink for Figure 3.7.5">🔗</a></div></figcaption></figure><div class="para logical" id="subsubsec-mutual_ind-5">
+<div class="para">Where <span class="process-math">\(M_{21}\)</span> is constant of proportionality and is termed as mutual inductance of circuit <span class="process-math">\(C_{2}\)</span> with respect to circuit <span class="process-math">\(C_{1}.\)</span> Now, emf induced in a circuit  <span class="process-math">\(C_{2}\)</span> is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\varepsilon_{2} = -\frac{\,d\Phi_{2}}{\,dt} = -M_{21}\frac{\,di_{1}}{\,dt}
+\end{equation*}
+</div>
+<div class="para">Similarly, emf induced in a circuit <span class="process-math">\(C_{1}\)</span> due current flowing in circuit <span class="process-math">\(C_{2}\)</span> is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\varepsilon_{1} = -\frac{\,d\Phi_{1}}{\,dt} = -M_{12}\frac{\,di_{2}}{\,dt}
+\end{equation*}
+</div>
+<div class="para">If shapes, orientations, and the positions of the coils are fixed, then the mutual inductance of the two coils does not depend upon which circuits carries the current i.e., <span class="process-math">\(M_{21}=M_{12}\text{.}\)</span> The mutual inductance of two neighboring coils and mutually induced emfs are given by the following equations.</div>
+<div class="displaymath process-math" id="eqn-mutind1">
+\begin{equation}
+M  = \frac{N_{1}\Phi_{B1}}{I_{2}} = \frac{N_{2}\Phi_{B2}}{I_{1}}\tag{3.7.3}
+\end{equation}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\varepsilon_{2}   =  -M\frac{\,dI_{1}}{\,dt}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+and \quad \varepsilon_{1}   =  -M\frac{\,dI_{2}}{\,dt}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-mutual_ind-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsubsection 3.7.5.2: Mutual Inductance:"><a href="#subsubsec-mutual_ind" title="Copy heading and permalink for Subsubsection 3.7.5.2: Mutual Inductance:">🔗</a></div></section><section class="subsubsection" id="subsubsec-maf_fieldenergy"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">3.7.5.3</span><span class="space"> </span><span class="title">Magnetic-Field Energy</span>
+</h4>
+<div class="para logical" id="subsubsec-maf_fieldenergy-2">
+<div class="para">If i is an instantaneous current moving in a circuit like a solenoid then back emf induced in the inductor is given by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\varepsilon =-L\frac{\,di}{\,dt}
+\end{equation*}
+</div>
+<div class="para">The workdone is moving charge <span class="process-math">\(\,dq\)</span> against this emf is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\,dW=-\varepsilon \,dq
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=L\frac{\,di}{\,dt}\,dq = L\frac{\,dq}{\,dt}\,di=Li\,di
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\therefore\quad W=\frac{1}{2}Li^{2}
+\end{equation*}
+</div>
+<div class="para">This energy is stored in a magnetic field of the inductor.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-maf_fieldenergy-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsubsec-maf_fieldenergy-3">
+<div class="para">For a solenoid</div>
+<div class="displaymath process-math">
+\begin{equation*}
+B=\mu_{o}n i 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{or,}\quad i=\frac{B}{\mu_{o}n}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\therefore\quad u=\frac{U}{V} = \frac{W}{V} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \frac{\frac{1}{2}Li^{2}}{Al} = \frac{\frac{1}{2} \mu_{o} n^{2}Al}{Al}i^{2} = \frac{1}{2}\mu_{o}n^{2}i^{2}= \frac{B^{2}}{2\mu_{o}}
+\end{equation*}
+</div>
+<div class="para">where n is number of turns in a solenoid, l is length, and A is area of cross-section of the solenoid. Even though this energy density is calculated for  a solenoid it it the same for magnetic field of any kind. In integral form of energy stored in a magnetic field is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+U_{B}=\frac{1}{2\mu_{o}}\int B^{2}\,dV
+\end{equation*}
+</div>
+<div class="para">Which is analogous to electric energy stored in an electric field</div>
+<div class="displaymath process-math">
+\begin{equation*}
+U_{E}=\frac{1}{2}\epsilon_{o}\int E^{2}\,dV
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-maf_fieldenergy-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsubsec-maf_fieldenergy-4">
+<div class="para">Magnetic-Field Energy: 	(non-conservative)</div>
+<div class="displaymath process-math">
+\begin{equation*}
+U = \frac{1}{2} LI^{2} \quad \text{(Energy in an Inductor)}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+u = \frac{B^{2}}{2\mu_{o}}\quad \text{(Energy Density in a Magnetic Field)} 
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-maf_fieldenergy-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsubsec-maf_fieldenergy-5">
+<div class="para">Permeable Material:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mu  = Km \mu_{o}\quad 	(Permeability)
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+u = 	\frac{B^{2}}{2\mu}\quad \text{(Energy Density in a Magnetic Field)} 
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-maf_fieldenergy-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsubsection 3.7.5.3: Magnetic-Field Energy"><a href="#subsubsec-maf_fieldenergy" title="Copy heading and permalink for Subsubsection 3.7.5.3: Magnetic-Field Energy">🔗</a></div></section><div class="autopermalink" data-description="Subsection 3.7.5: Self-Inductance:"><a href="#subsec-self_induct" title="Copy heading and permalink for Subsection 3.7.5: Self-Inductance:">🔗</a></div></section><section class="subsection" id="subsec-rlc"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.7.6</span><span class="space"> </span><span class="title">R-L Circuit</span>
+</h3>
+<div class="para logical" id="subsec-rlc-2">
+<ol class="upper-roman ol-marker-3" id="subsec-rlc-2-1">
+<li id="subsec-rlc-2-1-1">
+<div class="para" id="subsec-rlc-2-1-1-1">
+<dfn class="terminology">Rise of current</dfn> Consider a circuit containing an inductor of self-inductance L, resistance R, and a battery of constant emf E is connected with the switch s. As soon as the switch is connected to the battery current begins to flow and magnetic flux is linked with the coil. As a result a self induced emf is set up in the coil which opposes the rise of current in the circuit. Hence the current does not attain its final steady value <span class="process-math">\(i_{o}\)</span> instantaneously.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rlc-2-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="subsec-rlc-2-1-1-2"><div class="sidebyside"><div class="sbsrow" style="margin-left:7.5%;margin-right:7.5%;">
+<div class="sbspanel top" style="width:41.1764705882353%;"><figure class="figure figure-like" id="RL"><img src="external/RL.png" class="contained"><figcaption><span class="codenumber">(a)</span><span class="space"> </span><div class="autopermalink" data-description="Figure 3.7.6.(a)"><a href="#RL" title="Copy heading and permalink for Figure 3.7.6.(a)">🔗</a></div></figcaption></figure></div>
+<div class="sbspanel top" style="width:41.1764705882353%;"><figure class="figure figure-like" id="gr9"><img src="external/gr9.png" class="contained"><figcaption><span class="codenumber">(b)</span><span class="space"> </span><div class="autopermalink" data-description="Figure 3.7.6.(b)"><a href="#gr9" title="Copy heading and permalink for Figure 3.7.6.(b)">🔗</a></div></figcaption></figure></div>
+</div></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.7.6<span class="period">.</span></span><span class="space"> </span><div class="autopermalink" data-description="Figure 3.7.6"><a href="#subsec-rlc-2-1-1-2" title="Copy heading and permalink for Figure 3.7.6">🔗</a></div></figcaption></figure><div class="para logical" id="subsec-rlc-2-1-1-3">
+<div class="displaymath process-math">
+\begin{equation*}
+E-L\frac{\,di}{\,dt}=Ri 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{or,}\quad L\frac{\,di}{\,dt} =E-Ri
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{i.e.,}\quad \frac{\,di}{E-Ri} = \frac{\,dt}{L} 
+\end{equation*}
+</div>
+<div class="para">Integrating, we get -</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int\limits_{0}^{i} \frac{\,di}{E-Ri} = \int\limits_{0}^{t} \frac{\,dt}{L}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{or}\quad \left.-\frac{ln(E-Ri)}{R}\right]_{0}^{i} =\left. \frac{t}{L} \right]_{0}^{t} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{or,} \quad -\frac{ln(E-Ri)}{R} + -\frac{ln(E)}{R} = \frac{t}{L} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{or,} \quad  \frac{1}{R}ln\left(\frac{E-Ri}{E}\right) = -\frac{t}{L}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{or,} \quad \frac{E-Ri}{E} = e^{(-\frac{R}{L})t}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{or,} \quad -Ri=E  e^{(-\frac{R}{L})t} -E
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{or,}\quad i = \frac{E}{R} \left[1- e^{(-\frac{R}{L})t}\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="eqn-rl1">
+\begin{equation}
+\therefore \quad i = i_{o} \left[1- e^{-t/\tau}\right]\tag{3.7.4}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rlc-2-1-1-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-rlc-2-1-1-4">
+<div class="para">From this equation it is clear that the current in the circuit rises according to an exponential law. The quantity L/R is known  as the time constant <span class="process-math">\(\tau\)</span> of L-R circuit. If L is in Henry and R is in ohms then <span class="process-math">\(\tau\)</span> will be in second. If t=L/R, then</div>
+<div class="displaymath process-math">
+\begin{equation*}
+i = i_{o} \left[1- e^{-1}\right] = 0.63  i_{o} 
+\end{equation*}
+</div>
+<div class="para">i.e., the time constant of L-R circuit is the current rises to nearly two third of its maximum steady value.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rlc-2-1-1-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item I"><a href="#subsec-rlc-2-1-1" title="Copy heading and permalink for Item I">🔗</a></div>
+</li>
+<li id="subsec-rlc-2-1-2">
+<div class="para" id="subsec-rlc-2-1-2-1">
+<dfn class="terminology">Decay of current</dfn> When the switch is disconnected from point 1  and connected to point 2 then the current begins to decays through the resistance R from maximum its value <span class="process-math">\([i_{o}=\frac{E}{R}]\)</span> to zero. During the decay, the flux linked with the coil changes which induced an emf in the coil to oppose this decay. Hence current takes some time to reach to zero.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rlc-2-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-rlc-2-1-2-2">
+<div class="para">From the circuit, we have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+-L\frac{\,di}{\,dt} = Ri 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{or,}\quad \frac{\,di}{i}= -\frac{R}{L}\,dt
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{or,}\quad \int\limits_{i_{o}}^{i}\frac{\,di}{i}= -\frac{R}{L}\int\limits_{0}^{t}\,dt
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{or,}\quad \left.\ln \,i\right\vert_{i_{o}}^{i} = -\frac{R}{L} t
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{or,}\quad  \ln i -\ln i_{o} = -\frac{R}{L} t
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{or,}\quad  \ln \frac{i}{i_{o}} = -\frac{R}{L} t
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\therefore\quad i = i_{o}e^{-(\frac{R}{L})t} = i_{o}e^{-(t/\tau)}
+\end{equation*}
+</div>
+<div class="para">i.e., current decays exponentially. After time constant L/R,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+i=i_{o}e^{-(1)}
+\end{equation*}
+</div>
+<div class="para">Hence time constant is the time in which current in the R-L circuit falls to <span class="process-math">\(1/e\)</span> of its maximum value when the emf of the circuit is removed.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rlc-2-1-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item II"><a href="#subsec-rlc-2-1-2" title="Copy heading and permalink for Item II">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rlc-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 3.7.6: R-L Circuit"><a href="#subsec-rlc" title="Copy heading and permalink for Subsection 3.7.6: R-L Circuit">🔗</a></div></section><section class="subsection" id="subsec-lc"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.7.7</span><span class="space"> </span><span class="title">L-C Circuit</span>
+</h3>
+<div class="para logical" id="subsec-lc-2">
+<div class="para">Consider a charged capacitor of capacitance C is connected in a circuit in such a way that it begins discharging through an inductor of inductance L. If i is current flowing in the circuit at some extent then potential difference across the inductance is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+V_{L}= -L\frac{\,di}{\,dt}
+\end{equation*}
+</div>
+<div class="para">and potential difference across the capacitor at the same extent is <span class="process-math">\(V_{C}=\frac{q}{C}\text{.}\)</span> The -ve sign of <span class="process-math">\(V_{L}\)</span> indicates the back emf in the inductance. From the circuit, we have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+V_{C}=V_{L}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{q}{C} = -L\frac{\,di}{\,dt}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{or,}\quad L\frac{\,d^{2}q}{\,dt^{2}} + \frac{q}{C}=0
+\end{equation*}
+</div>
+<div class="para"><span class="process-math">\([\because i=\frac{\,dq}{\,dt}]\)</span></div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{or,}\quad \frac{\,d^{2}q}{\,dt^{2}} + \frac{q}{LC}=0
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="eqn-lc1">
+\begin{equation}
+\text{or,}\quad \frac{\,d^{2}q}{\,dt^{2}} + \omega^{2}_{o}q=0 \tag{3.7.5}
+\end{equation}
+</div>
+<div class="para">
+<span class="process-math">\(\text{where} \quad [\omega^{2}_{o} = \frac{1}{LC}] \)</span> This is a second order linear differential equation.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-lc-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="LC"><div class="image-box" style="width: 35%; margin-left: 32.5%; margin-right: 32.5%;"><img src="external/LC.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.7.7<span class="period">.</span></span><span class="space"> </span><div class="autopermalink" data-description="Figure 3.7.7"><a href="#LC" title="Copy heading and permalink for Figure 3.7.7">🔗</a></div></figcaption></figure><div class="para logical" id="subsec-lc-4">
+<div class="para">Let <span class="process-math">\(q=Ae^{\alpha t}\)</span> be the solution of eqn. <a href="sec_third-elmag.html#eqn-lc1" class="xref" data-knowl="./knowl/xref/eqn-lc1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.7.5">(3.7.5)</a> Where A and <span class="process-math">\(\alpha\)</span> are constants.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lc1.html ./knowl/xref/eqn-lc1.html">
+\begin{equation*}
+\text{Now,}\quad \frac{\,dq}{\,dt}= A\alpha e^{\alpha t}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lc1.html ./knowl/xref/eqn-lc1.html">
+\begin{equation*}
+\text{and}\quad \frac{\,d^{2}q}{\,dt^{2}}= A\alpha^{2} e^{\alpha t}
+\end{equation*}
+</div>
+<div class="para">Therefore from eqn. <a href="sec_third-elmag.html#eqn-lc1" class="xref" data-knowl="./knowl/xref/eqn-lc1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.7.5">(3.7.5)</a>, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lc1.html ./knowl/xref/eqn-lc1.html">
+\begin{equation*}
+A\alpha^{2} e^{\alpha t}+\omega^{2}Ae^{\alpha t}=0
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lc1.html ./knowl/xref/eqn-lc1.html">
+\begin{equation*}
+\text{or,} \quad A e^{\alpha t}\left[\alpha^{2} +\omega^{2}\right]=0 
+\end{equation*}
+</div>
+<div class="para"><span class="process-math">\([\text{Since,}\quad q= A e^{\alpha t} \neq 0 ]\)</span></div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lc1.html ./knowl/xref/eqn-lc1.html">
+\begin{equation*}
+\text{We have -}\quad \left[\alpha^{2} +\omega^{2}\right]=0
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lc1.html ./knowl/xref/eqn-lc1.html">
+\begin{equation*}
+\therefore\quad \alpha=\pm j\omega_{o}
+\end{equation*}
+</div>
+<div class="para"><span class="process-math">\([\text{where}\quad j=\sqrt{-1}]\)</span></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-lc-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-lc-5">
+<div class="para">Hence the general solution of eqn. <a href="sec_third-elmag.html#eqn-lc1" class="xref" data-knowl="./knowl/xref/eqn-lc1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.7.5">(3.7.5)</a> is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lc1.html" id="eqn-lc2">
+\begin{equation}
+q= Ae^{j\omega_{o}t}+Be^{-j\omega_{o}t} \tag{3.7.6}
+\end{equation}
+</div>
+<div class="para">where A and B are constants and their value can be determined by the initial conditions <span class="process-math">\(t=0, \quad q=q_{o},\)</span> and <span class="process-math">\(i=0.\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-lc-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-lc-6">
+<div class="para">Hence from the condition <span class="process-math">\(t=0,\quad q=q_{o}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lc2.html ./knowl/xref/eqn-lc3.html ./knowl/xref/eqn-lc4.html ./knowl/xref/eqn-lc2.html" id="eqn-lc3">
+\begin{equation}
+q_{o} = A + B \tag{3.7.7}
+\end{equation}
+</div>
+<div class="para">Also differentiating eqn. <a href="sec_third-elmag.html#eqn-lc2" class="xref" data-knowl="./knowl/xref/eqn-lc2.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.7.6">(3.7.6)</a>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lc2.html ./knowl/xref/eqn-lc3.html ./knowl/xref/eqn-lc4.html ./knowl/xref/eqn-lc2.html">
+\begin{equation*}
+i=\frac{\,dq}{\,dt}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lc2.html ./knowl/xref/eqn-lc3.html ./knowl/xref/eqn-lc4.html ./knowl/xref/eqn-lc2.html">
+\begin{equation*}
+= Aj\omega_{o} e^{j\omega_{o}t}-Bj\omega_{o} e^{-j\omega_{o}t} = j\omega_{o} \left[Ae^{j\omega_{o}t}-Be^{-j\omega_{o}t}\right]
+\end{equation*}
+</div>
+<div class="para">Now from second condition <span class="process-math">\(t=0, \quad i=0\text{,}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lc2.html ./knowl/xref/eqn-lc3.html ./knowl/xref/eqn-lc4.html ./knowl/xref/eqn-lc2.html">
+\begin{equation*}
+0 = A - B 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lc2.html ./knowl/xref/eqn-lc3.html ./knowl/xref/eqn-lc4.html ./knowl/xref/eqn-lc2.html" id="eqn-lc4">
+\begin{equation}
+A = B   \tag{3.7.8}
+\end{equation}
+</div>
+<div class="para">Therefore from eqns. <a href="sec_third-elmag.html#eqn-lc3" class="xref" data-knowl="./knowl/xref/eqn-lc3.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.7.7">(3.7.7)</a>  and <a href="sec_third-elmag.html#eqn-lc4" class="xref" data-knowl="./knowl/xref/eqn-lc4.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.7.8">(3.7.8)</a> , we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lc2.html ./knowl/xref/eqn-lc3.html ./knowl/xref/eqn-lc4.html ./knowl/xref/eqn-lc2.html">
+\begin{equation*}
+A = \frac{q_{o}}{2} 
+\end{equation*}
+</div>
+<div class="para">Hence from eqn. <a href="sec_third-elmag.html#eqn-lc2" class="xref" data-knowl="./knowl/xref/eqn-lc2.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.7.6">(3.7.6)</a>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lc2.html ./knowl/xref/eqn-lc3.html ./knowl/xref/eqn-lc4.html ./knowl/xref/eqn-lc2.html">
+\begin{equation*}
+q= q_{o}\left( \frac{e^{j\omega_{o}t}+ e^{-j\omega_{o}t}}{2}\right)
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lc2.html ./knowl/xref/eqn-lc3.html ./knowl/xref/eqn-lc4.html ./knowl/xref/eqn-lc2.html">
+\begin{equation*}
+i.e.,\quad q= q_{o}\cos\omega_{o}t
+\end{equation*}
+</div>
+<div class="para">This is the equation of discharging of a capacitor through the inductor. It is oscillatory and simple harmonic. The time period of oscillation is given by</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lc2.html ./knowl/xref/eqn-lc3.html ./knowl/xref/eqn-lc4.html ./knowl/xref/eqn-lc2.html">
+\begin{equation*}
+T=\frac{2\pi}{\omega_{o}} = 2\pi\sqrt{ LC}
+\end{equation*}
+</div>
+<div class="para">The oscillation happen because of a transfer of energy back and forth from the capacitor to the inductor, or from electric field to magnetic field.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-lc-6" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 3.7.7: L-C Circuit"><a href="#subsec-lc" title="Copy heading and permalink for Subsection 3.7.7: L-C Circuit">🔗</a></div></section><section class="subsection" id="subsec-lcr"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.7.8</span><span class="space"> </span><span class="title">L-C-R Circuit</span>
+</h3>
+<figure class="figure figure-like" id="RLC"><div class="image-box" style="width: 35%; margin-left: 32.5%; margin-right: 32.5%;"><img src="external/RLC.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.7.8<span class="period">.</span></span><span class="space"> </span><div class="autopermalink" data-description="Figure 3.7.8"><a href="#RLC" title="Copy heading and permalink for Figure 3.7.8">🔗</a></div></figcaption></figure><div class="para logical" id="subsec-lcr-3">
+<ol class="upper-roman ol-marker-3" id="subsec-lcr-3-1">
+<li id="subsec-lcr-3-1-1">
+<div class="para logical" id="subsec-lcr-3-1-1-1">
+<div class="para">
+<dfn class="terminology">Charging of a capacitor</dfn> In the circuit <a href="sec_third-elmag.html#RLC" class="xref" data-knowl="./knowl/xref/RLC.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 3.7.8">Figure 3.7.8</a>, when switch is connected to point 1, capacitor starts charging. If i is current initially draws from battery of emf E, then we have -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/RLC.html">
+\begin{equation*}
+V_{E}-V_{L}=V_{R}+V_{C}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/RLC.html">
+\begin{equation*}
+E-L\frac{\,di}{\,dt} =Ri+\frac{q}{C}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/RLC.html">
+\begin{equation*}
+\text{or,}\quad L\frac{\,di}{\,dt} + Ri+\frac{q}{C} = E
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/RLC.html">
+\begin{equation*}
+\text{or,}\quad L\frac{\,d^{2}q}{\,dt^{2}} + R\frac{\,dq}{\,dt}+\frac{q}{C} = E
+\end{equation*}
+</div>
+<div class="para"><span class="process-math">\([\because i=\frac{\,dq}{\,dt}]\)</span></div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/RLC.html">
+\begin{equation*}
+\text{or,}\quad \frac{\,d^{2}q}{\,dt^{2}} + \frac{R}{L}\frac{\,dq}{\,dt}+\frac{q}{LC} = \frac{E}{L}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/RLC.html">
+\begin{equation*}
+\text{or,}\quad \frac{\,d^{2}q}{\,dt^{2}} + 2\lambda\frac{\,dq}{\,dt}+\omega^{2}_{o}q = \frac{E}{L}
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\([\frac{R}{L} = 2\lambda]\)</span> and <span class="process-math">\([\frac{1}{LC}=\omega^{2}_{o}] \)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-lcr-3-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-lcr-3-1-1-2">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr1.html" id="eqn-lcr1">
+\begin{equation}
+\text{or,}\quad \frac{\,d^{2}q}{\,dt^{2}} + 2\lambda\frac{\,dq}{\,dt}+\omega^{2}_{o}\left[q-\frac{E}{L\omega^{2}_{o}}\right] =0 \tag{3.7.9}
+\end{equation}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr1.html">
+\begin{equation*}
+\text{Let}\quad \left[q-\frac{E}{L\omega^{2}_{o}}\right]=x
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr1.html">
+\begin{equation*}
+\text{so that}\quad \frac{\,dq}{\,dt} =\frac{\,dx}{\,dt}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr1.html">
+\begin{equation*}
+\text{and}\quad  \frac{\,d^{2}q}{\,dt^{2}} =\frac{\,d^{2}x}{\,dt^{2}}
+\end{equation*}
+</div>
+<div class="para">Therefore from eqn. <a href="sec_third-elmag.html#eqn-lcr1" class="xref" data-knowl="./knowl/xref/eqn-lcr1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.7.9">(3.7.9)</a> we have -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr1.html" id="eqn-lcr2">
+\begin{equation}
+\frac{\,d^{2}x}{\,dt^{2}}+2\lambda\frac{\,dx}{\,dt}+\omega^{2}_{o}x =0 \tag{3.7.10}
+\end{equation}
+</div>
+<div class="para">Which is a second order linear differential equation.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-lcr-3-1-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-lcr-3-1-1-3">
+<div class="para">Let <span class="process-math">\(x=Ae^{\alpha t}\)</span> be the solution of this equation, so that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr2.html">
+\begin{equation*}
+\frac{\,dx}{\,dt} = A\alpha e^{\alpha t}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr2.html">
+\begin{equation*}
+\text{and}\quad \frac{\,d^{2}x}{\,dt^{2}} =  A\alpha^{2} e^{\alpha t}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr2.html">
+\begin{equation*}
+\therefore\quad  A\alpha^{2} e^{\alpha t}+2\lambda A\alpha e^{\alpha t} + \omega^{2}_{o} Ae^{\alpha t} =0
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr2.html">
+\begin{equation*}
+\text{or,}\quad  Ae^{\alpha t}\left( \alpha^{2} +2\lambda \alpha + \omega^{2}_{o}\right) =0
+\end{equation*}
+</div>
+<div class="para">Since, <span class="process-math">\(Ae^{\alpha t} \neq 0, \)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr2.html">
+\begin{equation*}
+\text{we have}\quad \left( \alpha^{2} +2\lambda \alpha + \omega^{2}_{o}\right) =0
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr2.html">
+\begin{equation*}
+\text{or,}\quad \alpha = \frac{-\lambda\pm\sqrt{4\lambda^{2}-4\omega^{2}_{o}}}{2} =-\lambda\pm\sqrt{\lambda^{2}-\omega^{2}_{o}}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr2.html">
+\begin{equation*}
+\therefore\quad \alpha = -\lambda \pm \beta,
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr2.html">
+\begin{equation*}
+\text{where}\quad \beta = \sqrt{\lambda^{2}-\omega^{2}_{o}} 
+\end{equation*}
+</div>
+<div class="para">Hence the most general solution of eqn. <a href="sec_third-elmag.html#eqn-lcr2" class="xref" data-knowl="./knowl/xref/eqn-lcr2.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.7.10">(3.7.10)</a> is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr2.html">
+\begin{equation*}
+x= A e^{\alpha t} + B e^{-\alpha t} =   A e^{(-\lambda + \beta) t} + B e^{(-\lambda - \beta) t}
+\end{equation*}
+</div>
+<div class="para">where A and B are constants and can be determined by initial conditions.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-lcr-3-1-1-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-lcr-3-1-1-4">
+<div class="displaymath process-math" id="eqn-lcr3">
+\begin{equation}
+\therefore\quad q= x+\frac{E}{L\omega^{2}_{o}} = A e^{(-\lambda + \beta) t} + B e^{(-\lambda - \beta) t} + q_{o}\tag{3.7.11}
+\end{equation}
+</div>
+<div class="para">
+<span class="process-math">\([\because \quad \frac{E}{L\omega^{2}_{o}} =\frac{E}{L\frac{1}{LC}} = CE=q_{o}] \)</span> where <span class="process-math">\(q_{o}\)</span> is the final charge in the capacitor.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-lcr-3-1-1-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-lcr-3-1-1-5">
+<div class="para">Now at t=0, q =0, hence</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr3.html ./knowl/xref/eqn-lcr4.html ./knowl/xref/eqn-lcr5.html ./knowl/xref/eqn-lcr3.html">
+\begin{equation*}
+0=q_{o}+A+B
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr3.html ./knowl/xref/eqn-lcr4.html ./knowl/xref/eqn-lcr5.html ./knowl/xref/eqn-lcr3.html" id="eqn-lcr4">
+\begin{equation}
+\text{or,}\quad  A+B=-q_{o}  \tag{3.7.12}
+\end{equation}
+</div>
+<div class="para">Also differentiating eqn. <a href="sec_third-elmag.html#eqn-lcr3" class="xref" data-knowl="./knowl/xref/eqn-lcr3.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.7.11">(3.7.11)</a> we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr3.html ./knowl/xref/eqn-lcr4.html ./knowl/xref/eqn-lcr5.html ./knowl/xref/eqn-lcr3.html">
+\begin{equation*}
+i=\frac{\,dq}{\,dt} = A[-\lambda+\beta]e^{(-\lambda + \beta) t} +B[-\lambda-\beta]e^{(-\lambda - \beta) t}
+\end{equation*}
+</div>
+<div class="para">Now the initial condition as t=0,i=o, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr3.html ./knowl/xref/eqn-lcr4.html ./knowl/xref/eqn-lcr5.html ./knowl/xref/eqn-lcr3.html">
+\begin{equation*}
+0=A[-\lambda+\beta]+B[-\lambda-\beta]
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr3.html ./knowl/xref/eqn-lcr4.html ./knowl/xref/eqn-lcr5.html ./knowl/xref/eqn-lcr3.html">
+\begin{equation*}
+\text{or,}\quad 0=-\lambda (A+B) +\beta (A-B) = \lambda q_{o} +\beta (A-B) 
+\end{equation*}
+</div>
+<div class="para"><span class="process-math">\([\because A+B=-q_{o}]\)</span></div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr3.html ./knowl/xref/eqn-lcr4.html ./knowl/xref/eqn-lcr5.html ./knowl/xref/eqn-lcr3.html" id="eqn-lcr5">
+\begin{equation}
+\therefore\quad A-B = \frac{-\lambda q_{o}}{\beta} \tag{3.7.13}
+\end{equation}
+</div>
+<div class="para">Solving eqns. <a href="sec_third-elmag.html#eqn-lcr4" class="xref" data-knowl="./knowl/xref/eqn-lcr4.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.7.12">(3.7.12)</a> and <a href="sec_third-elmag.html#eqn-lcr5" class="xref" data-knowl="./knowl/xref/eqn-lcr5.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.7.13">(3.7.13)</a>, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr3.html ./knowl/xref/eqn-lcr4.html ./knowl/xref/eqn-lcr5.html ./knowl/xref/eqn-lcr3.html">
+\begin{equation*}
+A = -\frac{q_{o}}{2}\left(1+\frac{\lambda}{\beta}\right)
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr3.html ./knowl/xref/eqn-lcr4.html ./knowl/xref/eqn-lcr5.html ./knowl/xref/eqn-lcr3.html">
+\begin{equation*}
+\text{and}\quad B = -\frac{q_{o}}{2}\left(1-\frac{\lambda}{\beta}\right)
+\end{equation*}
+</div>
+<div class="para">Hence from eqn. <a href="sec_third-elmag.html#eqn-lcr3" class="xref" data-knowl="./knowl/xref/eqn-lcr3.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.7.11">(3.7.11)</a> we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr3.html ./knowl/xref/eqn-lcr4.html ./knowl/xref/eqn-lcr5.html ./knowl/xref/eqn-lcr3.html" id="eqn-lcr6">
+\begin{equation}
+q = q_{o} -\frac{q_{o}}{2}\left(1+\frac{\lambda}{\beta}\right) e^{(-\lambda + \beta) t} -\frac{q_{o}}{2}\left(1-\frac{\lambda}{\beta}\right) e^{(-\lambda - \beta) t} \tag{3.7.14}
+\end{equation}
+</div>
+<div class="para">Now charging of the capacitor depends upon the following  three cases of <span class="process-math">\(\lambda^{2} \gt, =, \lt \omega^{2}_{o}\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-lcr-3-1-1-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="subsec-lcr-3-1-1-6"><div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="sbspanel top" style="width:47.3684210526316%;"><figure class="figure figure-like" id="gr10"><img src="external/gr10.png" class="contained"><figcaption><span class="codenumber">(a)</span><span class="space"> </span><div class="autopermalink" data-description="Figure 3.7.9.(a)"><a href="#gr10" title="Copy heading and permalink for Figure 3.7.9.(a)">🔗</a></div></figcaption></figure></div>
+<div class="sbspanel top" style="width:47.3684210526316%;"><figure class="figure figure-like" id="pyth"><img src="external/pyth.png" class="contained"><figcaption><span class="codenumber">(b)</span><span class="space"> </span><div class="autopermalink" data-description="Figure 3.7.9.(b)"><a href="#pyth" title="Copy heading and permalink for Figure 3.7.9.(b)">🔗</a></div></figcaption></figure></div>
+</div></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.7.9<span class="period">.</span></span><span class="space"> </span><div class="autopermalink" data-description="Figure 3.7.9"><a href="#subsec-lcr-3-1-1-6" title="Copy heading and permalink for Figure 3.7.9">🔗</a></div></figcaption></figure><div class="para" id="subsec-lcr-3-1-1-7">
+<dfn class="terminology">Case I:</dfn> If <span class="process-math">\(\lambda^{2} \gt \omega^{2}_{o},\)</span> then <span class="process-math">\(\beta\)</span> is real hence both the exponential terms in eqn. <a href="sec_third-elmag.html#eqn-lcr6" class="xref" data-knowl="./knowl/xref/eqn-lcr6.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.7.14">(3.7.14)</a> become real and the charge gradually acquires its final value <span class="process-math">\(q_{o}\)</span> as shown by <em class="emphasis">curve I</em> in the <a href="sec_third-elmag.html#gr10" class="xref" data-knowl="./knowl/xref/gr10.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 3.7.9.(a)">Figure 3.7.9.(a)</a>.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-lcr-3-1-1-7" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-lcr-3-1-1-8">
+<div class="para">
+<dfn class="terminology">Case II:</dfn> If <span class="process-math">\(\lambda^{2} = \omega^{2}_{o},\)</span> then <span class="process-math">\(\beta \)</span> is zero hence both the coefficients of exponential terms in eqn. <a href="sec_third-elmag.html#eqn-lcr6" class="xref" data-knowl="./knowl/xref/eqn-lcr6.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.7.14">(3.7.14)</a> become infinite and hence from eqn. <a href="sec_third-elmag.html#eqn-lcr3" class="xref" data-knowl="./knowl/xref/eqn-lcr3.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.7.11">(3.7.11)</a> assume that <span class="process-math">\(\beta\)</span> to be very small, then</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr6.html ./knowl/xref/eqn-lcr3.html">
+\begin{equation*}
+q=q_{o}+Ae^{(-\lambda+\beta)t}+Be^{(-\lambda-\beta)t}= q_{o}+e^{-\lambda t}\left[Ae^{\beta t}+Be^{-\beta t}\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr6.html ./knowl/xref/eqn-lcr3.html">
+\begin{equation*}
+\text{or,}\quad q = q_{o}+e^{-\lambda t}\left[A(1+\beta t+\cdots)+B(1-\beta t+\cdots)\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr6.html ./knowl/xref/eqn-lcr3.html">
+\begin{equation*}
+\text{or,}\quad q = q_{o}+e^{-\lambda t}\left[(A+B)+\beta (A-B)t\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr6.html ./knowl/xref/eqn-lcr3.html" id="eqn-lcr7">
+\begin{equation}
+\text{or,}\quad q = q_{o}+e^{-\lambda t}\left[P+Q t\right]\tag{3.7.15}
+\end{equation}
+</div>
+<div class="para">where <span class="process-math">\([P=(A+B)\)</span> and <span class="process-math">\(Q=\beta (A-B)]. \)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-lcr-3-1-1-8" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-lcr-3-1-1-9">
+<div class="para">Now as q=0 at t=0, <span class="process-math">\(q_{o}=-P\)</span> from eqn. <a href="sec_third-elmag.html#eqn-lcr3" class="xref" data-knowl="./knowl/xref/eqn-lcr3.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.7.11">(3.7.11)</a>. Differentiating eqn. <a href="sec_third-elmag.html#eqn-lcr7" class="xref" data-knowl="./knowl/xref/eqn-lcr7.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.7.15">(3.7.15)</a>;</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr3.html ./knowl/xref/eqn-lcr7.html ./knowl/xref/eqn-lcr7.html ./knowl/xref/gr10.html">
+\begin{equation*}
+i=\frac{\,dq}{\,dt}=-\lambda e^{-\lambda t}\left[P+Q t\right]+e^{-\lambda t}Q
+\end{equation*}
+</div>
+<div class="para">Now i=0 at t=0, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr3.html ./knowl/xref/eqn-lcr7.html ./knowl/xref/eqn-lcr7.html ./knowl/xref/gr10.html">
+\begin{equation*}
+0=-\lambda P+Q=\lambda q_{o}+Q
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr3.html ./knowl/xref/eqn-lcr7.html ./knowl/xref/eqn-lcr7.html ./knowl/xref/gr10.html">
+\begin{equation*}
+\therefore\quad Q=-\lambda q_{o}
+\end{equation*}
+</div>
+<div class="para">Substituting these values in eqn. <a href="sec_third-elmag.html#eqn-lcr7" class="xref" data-knowl="./knowl/xref/eqn-lcr7.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.7.15">(3.7.15)</a>, we egt -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr3.html ./knowl/xref/eqn-lcr7.html ./knowl/xref/eqn-lcr7.html ./knowl/xref/gr10.html">
+\begin{equation*}
+q=q_{o}+e^{-\lambda t}\left(-q_{o}-\lambda q_{o}t\right)
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr3.html ./knowl/xref/eqn-lcr7.html ./knowl/xref/eqn-lcr7.html ./knowl/xref/gr10.html">
+\begin{equation*}
+\text{or,}\quad q=q_{o}-q_{o}\left(1+\lambda t\right) e^{-\lambda t}
+\end{equation*}
+</div>
+<div class="para">i.e., the charge gradually increases with time as shown by <em class="emphasis">curve II</em> in the <a href="sec_third-elmag.html#gr10" class="xref" data-knowl="./knowl/xref/gr10.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 3.7.9.(a)">Figure 3.7.9.(a)</a>.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-lcr-3-1-1-9" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-lcr-3-1-1-10">
+<div class="para">
+<dfn class="terminology">Case III:</dfn> If <span class="process-math">\(\lambda^{2} \lt \omega^{2}_{o},\)</span> then <span class="process-math">\(\beta\)</span> is imaginary. Let us put</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr6.html">
+\begin{equation*}
+\beta = \sqrt{(\lambda^{2}-\omega^{2}_{o})}=j\sqrt{(\omega^{2}_{o}-\lambda^{2})}=j\gamma 
+\end{equation*}
+</div>
+<div class="para">where</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr6.html">
+\begin{equation*}
+\gamma = \sqrt{(\omega^{2}_{o}-\lambda^{2})}.
+\end{equation*}
+</div>
+<div class="para">Hence, from eqn. <a href="sec_third-elmag.html#eqn-lcr6" class="xref" data-knowl="./knowl/xref/eqn-lcr6.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.7.14">(3.7.14)</a>, we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr6.html">
+\begin{equation*}
+q= q_{o}-\frac{q_{o}}{2}\left(1+\frac{\lambda}{j\gamma}\right) e^{(-\lambda +j\gamma)t} 
+- \frac{q_{o}}{2}\left(1-\frac{\lambda}{j\gamma}\right) e^{(-\lambda -j\gamma)t}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr6.html">
+\begin{equation*}
+\text{or,}\quad q = q_{o}-\frac{q_{o}}{2}e^{-\lambda t}\left(e^{j\gamma t}
++\frac{\lambda}{j\gamma} e^{j\gamma t}+ e^{-j\gamma t}- \frac{\lambda}{j\gamma} e^{-j\gamma t}\right)
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr6.html">
+\begin{equation*}
+\text{or,}\quad q = q_{o}-q_{o}e^{-\lambda t}\left(\frac{e^{j\gamma t}+e^{-j\gamma t}}{2} 
++ \frac{\lambda}{\gamma} \frac{e^{j\gamma t}-e^{-j\gamma t}}{2j} \right)
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr6.html">
+\begin{equation*}
+\therefore\quad q = q_{o}-q_{o}e^{-\lambda t}\left(\cos\gamma t+ \frac{\lambda}{\gamma} \sin\gamma t\right)
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-lcr-3-1-1-10" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-lcr-3-1-1-11">
+<div class="para">Let us put <span class="process-math">\(\frac{\lambda}{\gamma} = \tan\theta\)</span> where <span class="process-math">\(\theta\)</span> is a new constant so that <span class="process-math">\(\sin\theta=\frac{\lambda}{\omega_{o}}\)</span> and <span class="process-math">\(\cos\theta=\frac{\gamma}{\omega_{o}}.\)</span> as shown in <a href="sec_third-elmag.html#pyth" class="xref" data-knowl="./knowl/xref/pyth.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 3.7.9.(b)">Figure 3.7.9.(b)</a>. Hence from the above equation</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/pyth.html ./knowl/xref/gr10.html">
+\begin{equation*}
+q= q_{o}-q_{o}e^{-\lambda t}\left(\cos\gamma t+\tan\theta\sin\gamma t\right)
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/pyth.html ./knowl/xref/gr10.html">
+\begin{equation*}
+=  q_{o}-q_{o}\frac{e^{-\lambda t}}{\cos\theta}\left(\cos\theta\cos\gamma t+\sin\theta\sin\gamma t\right)
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/pyth.html ./knowl/xref/gr10.html">
+\begin{equation*}
+\therefore\quad q= q_{o}-q_{o}\frac{\omega_{o} e^{-\lambda t}}{\gamma} \cos\left(\gamma t-\theta \right)
+\end{equation*}
+</div>
+<div class="para">Thus in this case the charge is damped oscillatory as shown by <em class="emphasis">curve III</em> in <a href="sec_third-elmag.html#gr10" class="xref" data-knowl="./knowl/xref/gr10.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 3.7.9.(a)">Figure 3.7.9.(a)</a>. The current in this case is given by</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/pyth.html ./knowl/xref/gr10.html">
+\begin{equation*}
+i=\frac{\,dq}{\,dt} = q_{o}\omega_{o}e^{-\lambda t}\sin(\gamma t - \theta) +q_{o}\frac{\omega_{o}\lambda e^{-\lambda t}}{\gamma} \cos\left(\gamma t-\theta \right)
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/pyth.html ./knowl/xref/gr10.html">
+\begin{equation*}
+\text{or,}\quad i=q_{o}\frac{\omega_{o} e^{-\lambda t}}{\gamma}\left[\gamma\sin(\gamma t-\theta)+\lambda\cos(\gamma t-\theta)\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/pyth.html ./knowl/xref/gr10.html">
+\begin{equation*}
+\text{or,}\quad i=q_{o}\frac{\omega^{2}_{o} e^{-\lambda t}}{\gamma}\left[\frac{\gamma}{\omega_{o}}\sin(\gamma t-\theta) 
++\frac{\lambda}{\omega_{o}}\cos(\gamma t-\theta)\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/pyth.html ./knowl/xref/gr10.html">
+\begin{equation*}
+\text{or,}\quad i=q_{o}\frac{\omega^{2}_{o} e^{-\lambda t}}{\gamma}\left[\cos\theta\sin(\gamma t-\theta)
++\sin\theta\cos(\gamma t-\theta)\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/pyth.html ./knowl/xref/gr10.html">
+\begin{equation*}
+\therefore\quad i= q_{o}\frac{\omega^{2}_{o} e^{-\lambda t}}{\gamma}\sin\gamma t
+\end{equation*}
+</div>
+<div class="para">i.e., current is also damped oscillatory.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-lcr-3-1-1-11" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item I"><a href="#subsec-lcr-3-1-1" title="Copy heading and permalink for Item I">🔗</a></div>
+</li>
+<li id="subsec-lcr-3-1-2">
+<div class="para logical" id="subsec-lcr-3-1-2-1">
+<div class="para">
+<dfn class="terminology">Discharging of a capacitor</dfn> When circuit is connected to point 2 capacitor begins discharging through the inductor and resistor. Hence</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr8.html">
+\begin{equation*}
+\frac{q}{C}+L\frac{\,di}{\,dt}+Ri=0
+\end{equation*}
+</div>
+<div class="para">Since <span class="process-math">\(i=\pm \frac{\,dq}{\,dt}\)</span> and during discharging <span class="process-math">\(\,dq \)</span> is decreasing or <span class="process-math">\(\,dq\)</span> is negative, Therefore <span class="process-math">\(i=\frac{\,dq}{\,dt}\text{.}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr8.html">
+\begin{equation*}
+\text{or,}\quad L\frac{\,d^{2}q}{\,dt^{2}}+R\frac{\,dq}{\,dt}+\frac{q}{C} =0
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr8.html">
+\begin{equation*}
+\text{or,}\quad \frac{\,d^{2}q}{\,dt^{2}}+\frac{R}{L}\frac{\,dq}{\,dt}+\frac{q}{LC} =0
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr8.html" id="eqn-lcr8">
+\begin{equation}
+\text{or,}\quad \frac{\,d^{2}q}{\,dt^{2}}+2\lambda\frac{\,dq}{\,dt}+\omega^{2}_{o}q =0\tag{3.7.16}
+\end{equation}
+</div>
+<div class="para">where <span class="process-math">\([\frac{R}{L} = 2\lambda \)</span> and <span class="process-math">\(\frac{1}{LC}=\omega^{2}_{o}] \)</span> If <span class="process-math">\(q=Ae^{\alpha t}\)</span> be the trial solution of eqn. <a href="sec_third-elmag.html#eqn-lcr8" class="xref" data-knowl="./knowl/xref/eqn-lcr8.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.7.16">(3.7.16)</a> then this equation becomes</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr8.html">
+\begin{equation*}
+\alpha^{2}+2\lambda \alpha +\omega^{2}_{o} =0
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-lcr-3-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-lcr-3-1-2-2">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr9.html ./knowl/xref/eqn-lcr10.html ./knowl/xref/eqn-lcr10.html" id="eqn-lcr9">
+\begin{equation}
+\text{or,}\quad \alpha = -\lambda \pm \sqrt{(\lambda^{2}-\omega^{2}_{o})} = -\lambda \pm \beta  \tag{3.7.17}
+\end{equation}
+</div>
+<div class="para">The general solution of eqn. <a href="sec_third-elmag.html#eqn-lcr9" class="xref" data-knowl="./knowl/xref/eqn-lcr9.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.7.17">(3.7.17)</a> is given by</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr9.html ./knowl/xref/eqn-lcr10.html ./knowl/xref/eqn-lcr10.html">
+\begin{equation*}
+q=Ae^{(-\lambda+\beta t)}+B e^{(-\lambda-\beta t)}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr9.html ./knowl/xref/eqn-lcr10.html ./knowl/xref/eqn-lcr10.html" id="eqn-lcr10">
+\begin{equation}
+q=e^{-\lambda t}\left(Ae^{\beta t}+B e^{-\beta t}\right)  \tag{3.7.18}
+\end{equation}
+</div>
+<div class="para">According to initial condition, when t=0, <span class="process-math">\(q=q_{o}\text{,}\)</span> maximum value.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr9.html ./knowl/xref/eqn-lcr10.html ./knowl/xref/eqn-lcr10.html">
+\begin{equation*}
+\therefore\quad A+B = q_{o}
+\end{equation*}
+</div>
+<div class="para">Differentiating eqn.<a href="sec_third-elmag.html#eqn-lcr10" class="xref" data-knowl="./knowl/xref/eqn-lcr10.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.7.18">(3.7.18)</a>, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr9.html ./knowl/xref/eqn-lcr10.html ./knowl/xref/eqn-lcr10.html">
+\begin{equation*}
+i=\frac{\,dq}{\,dt} = -\lambda e^{-\lambda t}\left(Ae^{\beta t}+B e^{-\beta t}\right)+e^{-\lambda t}\left(A\beta e^{-\beta t}
+-B \beta e^{-\beta t}\right)
+\end{equation*}
+</div>
+<div class="para">At i=0, <span class="process-math">\(\frac{\,dq}{\,dt} =0.\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr9.html ./knowl/xref/eqn-lcr10.html ./knowl/xref/eqn-lcr10.html">
+\begin{equation*}
+\beta(A-B)-\lambda(A+B)=0.
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr9.html ./knowl/xref/eqn-lcr10.html ./knowl/xref/eqn-lcr10.html">
+\begin{equation*}
+\therefore\quad A-B = \frac{\lambda(A+B)}{\beta} = \frac{\lambda q_{o}}{\beta}
+\end{equation*}
+</div>
+<div class="para">Hence</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr9.html ./knowl/xref/eqn-lcr10.html ./knowl/xref/eqn-lcr10.html">
+\begin{equation*}
+A = \frac{q_{o}}{2}\left[1+\frac{\lambda}{\beta}\right] 
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr9.html ./knowl/xref/eqn-lcr10.html ./knowl/xref/eqn-lcr10.html">
+\begin{equation*}
+B = \frac{q_{o}}{2}\left[1-\frac{\lambda}{\beta}\right]
+\end{equation*}
+</div>
+<div class="para">Therefore eqn. <a href="sec_third-elmag.html#eqn-lcr10" class="xref" data-knowl="./knowl/xref/eqn-lcr10.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.7.18">(3.7.18)</a> becomes -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr9.html ./knowl/xref/eqn-lcr10.html ./knowl/xref/eqn-lcr10.html">
+\begin{equation*}
+q=\frac{q_{o}}{2}\left\{\left(1+\frac{\lambda}{\sqrt{\lambda^{2}-\omega^{2}_{o}}}\right)e^{-\lambda+\sqrt{(\lambda^{2}-\omega^{2}_{o})}t}
++ \left(1-\frac{\lambda}{\sqrt{\lambda^{2}-\omega^{2}_{o}}}\right)e^{-\lambda-\sqrt{(\lambda^{2}-\omega^{2}_{o})}t}\right\}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr9.html ./knowl/xref/eqn-lcr10.html ./knowl/xref/eqn-lcr10.html" id="eqn-lcr11">
+\begin{equation}
+\therefore\quad q= \frac{q_{o}}{2}e^{-\lambda t}\left\{\left(1+\frac{\lambda}{\sqrt{\lambda^{2}-\omega^{2}_{o}}}\right)e^{\sqrt{(\lambda^{2} 
+-\omega^{2}_{o})}t}+ \left(1-\frac{\lambda}{\sqrt{\lambda^{2}-\omega^{2}_{o}}}\right)e^{-\sqrt{(\lambda^{2}-\omega^{2}_{o})}t}\right\} \tag{3.7.19}
+\end{equation}
+</div>
+<div class="para">Depending upon the relative value of <span class="process-math">\(\lambda\text{,}\)</span> there arises three cases -</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-lcr-3-1-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-lcr-3-1-2-3">
+<em class="alert">Case I:</em> When <span class="process-math">\(\lambda^{2} \gt \omega^{2}_{o}\text{,}\)</span> we get overdamped discharge. In this case exponential terms become negative and hence charge decreases exponentially with time and finally becomes zero.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-lcr-3-1-2-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-lcr-3-1-2-4">
+<div class="para">
+<em class="alert">Case II:</em> When <span class="process-math">\(\lambda^{2}=\omega^{2}_{o}\text{,}\)</span> we get critically damped discharge. In this case two values of <span class="process-math">\(\alpha\)</span> become identical and after using the initial condition</div>
+<div class="displaymath process-math">
+\begin{equation*}
+q=q_{o}e^{-\lambda t}(1+\lambda t)
+\end{equation*}
+</div>
+<div class="para">Here charge becomes to zero without oscillation in least amount of time.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-lcr-3-1-2-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-lcr-3-1-2-5">
+<div class="para">
+<em class="alert">Case III:</em> When <span class="process-math">\(\lambda^{2} \lt \omega^{2}_{o}\text{,}\)</span> we get under damped discharge. Since <span class="process-math">\(\sqrt{\lambda^{2}-\omega^{2}_{o}}\)</span> is imaginary.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr11.html">
+\begin{equation*}
+\text{or,}\quad \sqrt{\lambda^{2}-\omega^{2}_{o}} =j\gamma
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr11.html">
+\begin{equation*}
+\text{where}\quad \gamma = \sqrt{\omega^{2}_{o}-\lambda^{2}}
+\end{equation*}
+</div>
+<div class="para">Hence from eqn. <a href="sec_third-elmag.html#eqn-lcr11" class="xref" data-knowl="./knowl/xref/eqn-lcr11.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.7.19">(3.7.19)</a>,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr11.html">
+\begin{equation*}
+q=\frac{q_{o}}{2}e^{-\lambda t}\left[\left(1+\frac{\lambda}{j\gamma}\right)e^{j\gamma t}+\left(1-\frac{\lambda}{j\gamma}\right)e^{-j\gamma t}\right] 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lcr11.html">
+\begin{equation*}
+\text{or,}\quad q=q_{o}e^{-\lambda t}\left[\left(\frac{e^{j\gamma t}+e^{-j\gamma t}}{2}\right)+\frac{\lambda}{\gamma}\left(\frac{e^{j\gamma t}-e^{-j\gamma t}}{2j}\right)\right]
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-lcr-3-1-2-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="gr11"><div class="image-box" style="width: 45%; margin-left: 27.5%; margin-right: 27.5%;"><img src="external/gr11.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.7.10<span class="period">.</span></span><span class="space"> </span><div class="autopermalink" data-description="Figure 3.7.10"><a href="#gr11" title="Copy heading and permalink for Figure 3.7.10">🔗</a></div></figcaption></figure><div class="para logical" id="subsec-lcr-3-1-2-7">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/pyth.html">
+\begin{equation*}
+\text{or,}\quad q= q_{o}e^{-\lambda t}\left[\cos\gamma t+\frac{\lambda}{\gamma}\sin\gamma t\right] 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/pyth.html">
+\begin{equation*}
+\text{or,}\quad q= \frac{q_{o}\omega_{o}e^{-\lambda t}}{\gamma}\left[\frac{\gamma}{\omega_{o}}\cos\gamma t+\frac{\lambda}{\omega_{o}}\sin\gamma t\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/pyth.html">
+\begin{equation*}
+\text{or,}\quad q= \frac{q_{o}\omega_{o}e^{-\lambda t}}{\gamma}\left[\cos\phi\cos\gamma t+\sin\phi\sin\gamma t\right]
+\end{equation*}
+</div>
+<div class="para">see <a href="sec_third-elmag.html#pyth" class="xref" data-knowl="./knowl/xref/pyth.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 3.7.9.(b)">Figure 3.7.9.(b)</a>.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/pyth.html">
+\begin{equation*}
+\therefore \quad q= \frac{q_{o}\omega_{o}e^{-\lambda t}}{\gamma}\sin(\gamma t+\phi)
+\end{equation*}
+</div>
+<div class="para">This is the equation for damped oscillation, where <span class="process-math">\(\gamma\)</span> is an angular frequency of the discharge.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-lcr-3-1-2-7" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item II"><a href="#subsec-lcr-3-1-2" title="Copy heading and permalink for Item II">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-lcr-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 3.7.8: L-C-R Circuit"><a href="#subsec-lcr" title="Copy heading and permalink for Subsection 3.7.8: L-C-R Circuit">🔗</a></div></section><div class="autopermalink" data-description="Section 3.7: Electromagnetic Induction"><a href="#sec_third-elmag" title="Copy heading and permalink for Section 3.7: Electromagnetic Induction">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="sec_third-examplesB.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec_third-examplesC.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Waves in a Medium</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="General Physics">
+<meta property="book:author" content="Sunil Karna">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.11.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.49eb29f446982553.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.731d8387162b79c1.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.f4ab138da65f4203.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="changeme" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="calphysii.html"><span class="title">General Physics</span> <span class="subtitle">Volume II</span></a></h1>
+<p class="byline">Sunil Karna</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="backmatter-5.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec_fourth-examplesA.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch_fourth.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec_fourth-organ.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} 
+   \newcommand{\Z}{\mathbb Z} 
+   \newcommand{\Q}{\mathbb Q} 
+   \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="front-colophon.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-dedication"><div class="toc-title-box"><a href="frontmatter-4.html" class="internal"><span class="title">Dedication</span></a></div></li>
+<li class="toc-item toc-acknowledgement"><div class="toc-title-box"><a href="frontmatter-5.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="frontmatter-6.html" class="internal"><span class="title">Preface</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch_first.html" class="internal"><span class="codenumber">1</span> <span class="title">Electrostatics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_first-intro.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Electrostatic Induction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_first-intro.html#subsec-charg_transf" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Methods of Transferring Charges:</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-intro.html#subsubsec-electroscope" class="internal"><span class="codenumber">1.1.1.1</span> <span class="title">Electrophorus:</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-intro.html#subsubsec-electrscp" class="internal"><span class="codenumber">1.1.1.2</span> <span class="title">Electroscope:</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_first-intro.html#subsec-coulmb_law" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Coulumb’s Law</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-intro.html#subsubsec-1d_colmb" class="internal"><span class="codenumber">1.1.2.1</span> <span class="title">Coulumb’s Law in One Dimension</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-intro.html#subsubsec-2d_colmb" class="internal"><span class="codenumber">1.1.2.2</span> <span class="title">Coulomb’s Law in Two and Three Dimensions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_first-intro.html#subsec-superp_th" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Principle of Superposition</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_first-el_field.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Electric Field</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_first-el_field.html#subsec-chrg_dist" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Electric Field of a Continuous Charge Distribution</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_first-examplesA.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Examples A</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_first-flux.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Electric Flux</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_first-flux.html#subsec-gauss" class="internal"><span class="codenumber">1.4.1</span> <span class="title">Gauss’s Law</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-flux.html#subsubsec-appl_gauss" class="internal"><span class="codenumber">1.4.1.1</span> <span class="title">Applications of Gauss’s Law</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_first-flux.html#subsec-sph_symmtr" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Cases of spherical symmetry:</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-flux.html#subsubsec-point_chrg" class="internal"><span class="codenumber">1.4.2.1</span> <span class="title">Electric field due to a point charge</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-flux.html#subsubsec-sph_chrg" class="internal"><span class="codenumber">1.4.2.2</span> <span class="title">Electric field due to a  spherical symmetric charged distribution</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-flux.html#subsubsec-hsph_chrg" class="internal"><span class="codenumber">1.4.2.3</span> <span class="title">Electric field due to a uniformly charged non-conducting hollow sphere</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_first-flux.html#subsec-cyl_symtr" class="internal"><span class="codenumber">1.4.3</span> <span class="title">Cases of cylindrical symmetry:</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-flux.html#subsubsec-long_wire" class="internal"><span class="codenumber">1.4.3.1</span> <span class="title">Electric field due to infinitely long charged conductor</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-flux.html#subsubsec-long_cyl" class="internal"><span class="codenumber">1.4.3.2</span> <span class="title">Electric field due to a uniform infinite cylindrical charge</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-flux.html#subsubsec-chrgd_sheet" class="internal"><span class="codenumber">1.4.3.3</span> <span class="title">Electric field due to infinite sheet of charge</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-flux.html#subsubsec-out_cond" class="internal"><span class="codenumber">1.4.3.4</span> <span class="title">Electric field just outside a charged conductor</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_first-examplesB.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Examples B</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_firstA.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Exercise A</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_first-pot.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Electric Potential</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_first-pot.html#subsec-capctrs" class="internal"><span class="codenumber">1.7.1</span> <span class="title">Capacitors</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-pot.html#subsubsec-cap_comb" class="internal"><span class="codenumber">1.7.1.1</span> <span class="title">Combination of Capacitors</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-pot.html#subsubsec-paralle_cap" class="internal"><span class="codenumber">1.7.1.2</span> <span class="title">Parallel-Plate Capacitor</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-pot.html#subsubsec-spher_cap" class="internal"><span class="codenumber">1.7.1.3</span> <span class="title">Spherical Capacitor</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-pot.html#subsubsec-cyl_cap" class="internal"><span class="codenumber">1.7.1.4</span> <span class="title">Cylindrical Capacitor</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_first-pot.html#subsec-enrgy_cap" class="internal"><span class="codenumber">1.7.2</span> <span class="title">Energy Stored in a Capacitor</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-pot.html#subsubsec-elf_enrgdenst" class="internal"><span class="codenumber">1.7.2.1</span> <span class="title">Electric Field Energy Density</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_first-pot.html#subsec-cap_enrgloss" class="internal"><span class="codenumber">1.7.3</span> <span class="title">Loss of Energy in Combining two Capacitors</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_first-examplesC.html" class="internal"><span class="codenumber">1.8</span> <span class="title">Examples C</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_firstB.html" class="internal"><span class="codenumber">1.9</span> <span class="title">Exercise B</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch_second.html" class="internal"><span class="codenumber">2</span> <span class="title">Electricity</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_second-intro.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Conduction Mechanism of Current in a Metal</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_second-intro.html#subsec-ohm_law" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Ohm’s Law:</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_second-intro.html#subsubsec-restvty" class="internal"><span class="codenumber">2.1.1.1</span> <span class="title">Resistivity or Specific Resistance, <span class="process-math">\(\rho\text{:}\)</span></span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_second-intro.html#subsubsec-temp_restvty" class="internal"><span class="codenumber">2.1.1.2</span> <span class="title">Temperature Coefficient of Resistivity</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_second-intro.html#subsubsec-el_power" class="internal"><span class="codenumber">2.1.1.3</span> <span class="title">Electrical Power:</span></a></div></li>
+</ul>
+</li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_second-examplesA.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Examples A</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_second-elcircuits.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Electrical Circuits</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_second-elcircuits.html#subsec-emf" class="internal"><span class="codenumber">2.3.1</span> <span class="title">A summary on internal resistance, emf, and terminal potential difference:</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_second-elcircuits.html#subsec-res_circt" class="internal"><span class="codenumber">2.3.2</span> <span class="title">Resistance Circuits:</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_second-elcircuits.html#subsubsec-res_comb" class="internal"><span class="codenumber">2.3.2.1</span> <span class="title">Combination of Resistances</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_second-elcircuits.html#subsec-maxptr" class="internal"><span class="codenumber">2.3.3</span> <span class="title">Maximum Power Transfer Theorem</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_second-elcircuits.html#subsec-el_instrmnt" class="internal"><span class="codenumber">2.3.4</span> <span class="title">Electrical Instruments:</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_second-kirchhf.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Kirchhoff’s Law</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_second-kirchhf.html#subsec-cir_anals" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Analysis of DC Electric Circuit</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_second-kirchhf.html#subsec-wheat_stone" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Wheat-Stone’s Bridge Circuit</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_second-kirchhf.html#subsec-chrg_dischrg" class="internal"><span class="codenumber">2.4.3</span> <span class="title">Charging and Discharging of a Capacitor</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_second-examplesB.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Examples B</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_second.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Exercise</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch_third.html" class="internal"><span class="codenumber">3</span> <span class="title">Magnetism</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_third-intro.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Magnetic Field</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_third-intro.html#subsec-mag_mater" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Magnetic Materials</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-intro.html#subsubsec-ferro" class="internal"><span class="codenumber">3.1.1.1</span> <span class="title">Ferromagnetic Material:</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-intro.html#subsubsec-para" class="internal"><span class="codenumber">3.1.1.2</span> <span class="title">Paramagnetic Material:</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-intro.html#subsubsec-dia" class="internal"><span class="codenumber">3.1.1.3</span> <span class="title">Diamagnetic Material:</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-intro.html#subsec-geo_mag" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Geomagnetism</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-intro.html#subsec-mag_force" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Magnetic Force on a Moving Charge</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-intro.html#subsec-lorentz" class="internal"><span class="codenumber">3.1.4</span> <span class="title">Electromagnetic Force on a Moving Charge (or Lorentz Force)</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_third-intro.html#subsec-mag_flux" class="internal"><span class="codenumber">3.1.5</span> <span class="title">Magnetic Flux, <span class="process-math">\(\Phi_{B}\)</span></span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-intro.html#subsubsec-gauss_mag" class="internal"><span class="codenumber">3.1.5.1</span> <span class="title">Gauss’s Law for Magnetism</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-intro.html#subsubsec-vel_select" class="internal"><span class="codenumber">3.1.5.2</span> <span class="title">Velocity Selector</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-intro.html#subsubsec-cyclotron" class="internal"><span class="codenumber">3.1.5.3</span> <span class="title">Cyclotron Frequency</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-intro.html#subsubsec-masspect" class="internal"><span class="codenumber">3.1.5.4</span> <span class="title">Mass Spectrometer</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-intro.html#subsubsec-Hall_effect" class="internal"><span class="codenumber">3.1.5.5</span> <span class="title">Hall Effect</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_third-Aforce.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Magnetic Forces on Currents</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-Aforce.html#subsec-ilb" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Magnetic Force on a Current Element</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_third-Aforce.html#subsec-IA" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Magnetic Dipole Moment of a Current Loop</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-Aforce.html#subsubsec-solenoid" class="internal"><span class="codenumber">3.2.2.1</span> <span class="title">Solenoid</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-Aforce.html#subsec-mag_torq" class="internal"><span class="codenumber">3.2.3</span> <span class="title">Magnetic Torque on a Current Loop</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-Aforce.html#subsec-mag_potE" class="internal"><span class="codenumber">3.2.4</span> <span class="title">Potential Energy of Magnetic Dipole</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_third-examplesA.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Examples A</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_third-magS.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Sources of Magnetic Fields</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_third-magS.html#subsec-magfld_movcharge" class="internal"><span class="codenumber">3.4.1</span> <span class="title">Magnetic Field of a Moving Charge:</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-magS.html#subsubsec-free_permblt" class="internal"><span class="codenumber">3.4.1.1</span> <span class="title">Permeability of Free Space, <span class="process-math">\(\mu_{o}\)</span></span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-magS.html#subsubsec-biot_savrt" class="internal"><span class="codenumber">3.4.1.2</span> <span class="title">Magnetic Field of a Current Element (Biot Savart Law)</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-magS.html#subsubsec-stwire_magf" class="internal"><span class="codenumber">3.4.1.3</span> <span class="title">Magnetic Field of a straight wire</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-magS.html#subsubsec-magcrnt_loop" class="internal"><span class="codenumber">3.4.1.4</span> <span class="title">Magnetic field due to a current loop</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-magS.html#subsubsec-helmholtz" class="internal"><span class="codenumber">3.4.1.5</span> <span class="title">Magnetic field at the center of a Helmholtz coil</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-magS.html#subsubsec-solenoid_curnt" class="internal"><span class="codenumber">3.4.1.6</span> <span class="title">Magnetic field at a point due to current carrying solenoid</span></a></div></li>
+</ul>
+</li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_third-ampre.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Amper’s Law</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-ampre.html#subsec-mag_longcond" class="internal"><span class="codenumber">3.5.1</span> <span class="title">Magnetic field  due to infinitely long current carrying  conductor</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-ampre.html#subsec-mag_sheetcond" class="internal"><span class="codenumber">3.5.2</span> <span class="title">Magnetic field  due to infinitely long current carrying flat sheet</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-ampre.html#subsec-mag_solnd" class="internal"><span class="codenumber">3.5.3</span> <span class="title">Magnetic field at a point due to infinitely long solenoid</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-ampre.html#subsec-mag_toroid" class="internal"><span class="codenumber">3.5.4</span> <span class="title">Magnetic field at a point due to toroid</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-ampre.html#subsec-mag_parallelcond" class="internal"><span class="codenumber">3.5.5</span> <span class="title">Magnetic Force between Parallel Wires</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_third-examplesB.html" class="internal"><span class="codenumber">3.6</span> <span class="title">Examples B</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_third-elmag.html" class="internal"><span class="codenumber">3.7</span> <span class="title">Electromagnetic Induction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsec-faraday" class="internal"><span class="codenumber">3.7.1</span> <span class="title">Faraday’s Law</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsec-lenz" class="internal"><span class="codenumber">3.7.2</span> <span class="title">Lenz’s Law</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsec-motional_emf" class="internal"><span class="codenumber">3.7.3</span> <span class="title">Motional Electromotive Force</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_third-elmag.html#subsec-induced_elf" class="internal"><span class="codenumber">3.7.4</span> <span class="title">Induced Electric Fields</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsubsec-eddy" class="internal"><span class="codenumber">3.7.4.1</span> <span class="title">Eddy Currents</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsubsec-genertr" class="internal"><span class="codenumber">3.7.4.2</span> <span class="title">Generator</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsubsec-skineffect" class="internal"><span class="codenumber">3.7.4.3</span> <span class="title">Skin Effect</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsubsec-supercond" class="internal"><span class="codenumber">3.7.4.4</span> <span class="title">Superconductivity</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_third-elmag.html#subsec-self_induct" class="internal"><span class="codenumber">3.7.5</span> <span class="title">Self-Inductance:</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsubsec-self_solenoid" class="internal"><span class="codenumber">3.7.5.1</span> <span class="title">Self-inductance of a solenoid:</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsubsec-mutual_ind" class="internal"><span class="codenumber">3.7.5.2</span> <span class="title">Mutual Inductance:</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsubsec-maf_fieldenergy" class="internal"><span class="codenumber">3.7.5.3</span> <span class="title">Magnetic-Field Energy</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsec-rlc" class="internal"><span class="codenumber">3.7.6</span> <span class="title">R-L Circuit</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsec-lc" class="internal"><span class="codenumber">3.7.7</span> <span class="title">L-C Circuit</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsec-lcr" class="internal"><span class="codenumber">3.7.8</span> <span class="title">L-C-R Circuit</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_third-examplesC.html" class="internal"><span class="codenumber">3.8</span> <span class="title">Examples C</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_third-accircuits.html" class="internal"><span class="codenumber">3.9</span> <span class="title">AC Circuits</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsec-rmsI" class="internal"><span class="codenumber">3.9.1</span> <span class="title">RMS value of emf or current</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_third-accircuits.html#subsec-complex_number" class="internal"><span class="codenumber">3.9.2</span> <span class="title">The Complex Number Method for A.C. Analysis</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsubsec-ZXY" class="internal"><span class="codenumber">3.9.2.1</span> <span class="title">Impedance, Reactance, and Admittance</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsubsec-acR" class="internal"><span class="codenumber">3.9.2.2</span> <span class="title">Resistance in an AC Circuit</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsubsec-acL" class="internal"><span class="codenumber">3.9.2.3</span> <span class="title">Inductance in an AC Circuit</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsubsec-acC" class="internal"><span class="codenumber">3.9.2.4</span> <span class="title">Capacitance in an AC Circuit</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsubsec-rlc_variation" class="internal"><span class="codenumber">3.9.2.5</span> <span class="title">Variation of reactance due to R, L and C with angular frequency <span class="process-math">\(\omega\)</span> in an AC circuit</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsubsec-acPower" class="internal"><span class="codenumber">3.9.2.6</span> <span class="title">Power in an AC Circuit</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsubsec-acRL" class="internal"><span class="codenumber">3.9.2.7</span> <span class="title">AC Circuit with Resistance and  Inductance in Series</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsubsec-acRC" class="internal"><span class="codenumber">3.9.2.8</span> <span class="title">AC Circuit with Resistance and  Capacitance in Series</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsubsec-acRLC_series" class="internal"><span class="codenumber">3.9.2.9</span> <span class="title">AC Circuit with Resistance,  Capacitance, and Inductance in Series</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsubsec-acRLC_parallel" class="internal"><span class="codenumber">3.9.2.10</span> <span class="title">AC Circuit with Resistance,  Capacitance, and Inductance in Parallel</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsec-transformer" class="internal"><span class="codenumber">3.9.3</span> <span class="title">Transformer</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsec-ac_preferential" class="internal"><span class="codenumber">3.9.4</span> <span class="title">AC is preferential over dc in power transmission</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_third-examplesD.html" class="internal"><span class="codenumber">3.10</span> <span class="title">Examples D</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_third.html" class="internal"><span class="codenumber">3.11</span> <span class="title">Exercise</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch_fourth.html" class="internal"><span class="codenumber">4</span> <span class="title">Waves and Acoustics</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_fourth-intro.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Simple Harmonic Motion</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fourth-intro.html#subsec-shm_energy" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Energy in SHM</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_fourth-waves.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Waves</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fourth-waves.html#subsec-shm_wfn" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Simple harmonic wave function</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fourth-waves.html#subsubsec-wave_eq" class="internal"><span class="codenumber">4.2.1.1</span> <span class="title">Wave equation</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fourth-waves.html#subsubsec-waveeq_string" class="internal"><span class="codenumber">4.2.1.2</span> <span class="title">Wave Equation in Stretched String</span></a></div></li>
+</ul>
+</li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_fourth-examplesA.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Examples A</span></a></div></li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec_fourth-medwave.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Waves in a Medium</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fourth-medwave.html#subsec-speed_TW" class="internal"><span class="codenumber">4.4.1</span> <span class="title">Speed of a Transverse Wave</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fourth-medwave.html#subsec-speed_LW" class="internal"><span class="codenumber">4.4.2</span> <span class="title">Speed of a Longitudinal Wave</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fourth-medwave.html#subsec-energy_MW" class="internal"><span class="codenumber">4.4.3</span> <span class="title">Energy Transport in a Mechanical Wave</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fourth-medwave.html#subsec-interferMW" class="internal"><span class="codenumber">4.4.4</span> <span class="title">Interference of Mechanical Waves</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fourth-medwave.html#subsec-super_princple" class="internal"><span class="codenumber">4.4.5</span> <span class="title">Principle of Superposition</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fourth-medwave.html#subsec-prog_wave" class="internal"><span class="codenumber">4.4.6</span> <span class="title">Traveling Waves (or Progressive Waves):</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fourth-medwave.html#subsec-stand_wave" class="internal"><span class="codenumber">4.4.7</span> <span class="title">Standing Waves (or stationary waves):</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fourth-medwave.html#subsubsec-node_antinode" class="internal"><span class="codenumber">4.4.7.1</span> <span class="title">Position of nodes and antinodes</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_fourth-organ.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Musical Instruments</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fourth-organ.html#subsec-string" class="internal"><span class="codenumber">4.5.1</span> <span class="title">Stretched String</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fourth-organ.html#subsec-organ_pipe" class="internal"><span class="codenumber">4.5.2</span> <span class="title">Organ Pipe</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_fourth-sound.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Sound</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fourth-sound.html#subsec-echo" class="internal"><span class="codenumber">4.6.1</span> <span class="title">Reverberation and Echo</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fourth-sound.html#subsec-beatsf" class="internal"><span class="codenumber">4.6.2</span> <span class="title">Beats</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fourth-sound.html#subsec-dopplerefct" class="internal"><span class="codenumber">4.6.3</span> <span class="title">Doppler Effect</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fourth-sound.html#subsubsec-ssl" class="internal"><span class="codenumber">4.6.3.1</span> <span class="title">Stationary source and listener</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fourth-sound.html#subsubsec-smsl" class="internal"><span class="codenumber">4.6.3.2</span> <span class="title">Source is moving towards stationary listener</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fourth-sound.html#subsubsec-smaway_sl" class="internal"><span class="codenumber">4.6.3.3</span> <span class="title">Source is moving away from stationary listner</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fourth-sound.html#subsubsec-lmss" class="internal"><span class="codenumber">4.6.3.4</span> <span class="title">Listener is moving towards a stationary source</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fourth-sound.html#subsubsec-lmaway_ss" class="internal"><span class="codenumber">4.6.3.5</span> <span class="title">Listener is moving away from a stationary source</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fourth-sound.html#subsubsec-sl_eo" class="internal"><span class="codenumber">4.6.3.6</span> <span class="title">Source and listener move towards each other</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fourth-sound.html#subsubsec-slaway_eo" class="internal"><span class="codenumber">4.6.3.7</span> <span class="title">Source and listener move away from each other</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fourth-sound.html#subsec-sonic_boom" class="internal"><span class="codenumber">4.6.4</span> <span class="title">Sonic Boom</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_fourth-examplesB.html" class="internal"><span class="codenumber">4.7</span> <span class="title">Examples B</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_fourth.html" class="internal"><span class="codenumber">4.8</span> <span class="title">Exercise</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch_fifth.html" class="internal"><span class="codenumber">5</span> <span class="title">Optics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_fifth-intro.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Light</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-intro.html#subsec-speed_light" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Speed of Light</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-intro.html#subsec-huygens" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Huygens’s Principle</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_fifth-geoopt.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Geometrical Optics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsec-refl" class="internal"><span class="codenumber">5.2.1</span> <span class="title">Reflection</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-refl_laws" class="internal"><span class="codenumber">5.2.1.1</span> <span class="title">Laws of Reflection</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-reg_diff" class="internal"><span class="codenumber">5.2.1.2</span> <span class="title">Regular and Diffuse Reflection</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-image_pmirror" class="internal"><span class="codenumber">5.2.1.3</span> <span class="title">Image formed by a mirror</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-plan_mirror" class="internal"><span class="codenumber">5.2.1.4</span> <span class="title">Plane Mirror</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-inclined_mir" class="internal"><span class="codenumber">5.2.1.5</span> <span class="title">Inclined Mirrors</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsec-sp_mir" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Spherical Mirror</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-fr_rel" class="internal"><span class="codenumber">5.2.2.1</span> <span class="title">Relation between f and R</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-mir_form" class="internal"><span class="codenumber">5.2.2.2</span> <span class="title">Mirror Formula</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-lateral_magmir" class="internal"><span class="codenumber">5.2.2.3</span> <span class="title">Lateral Magnification, m</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-concave_image" class="internal"><span class="codenumber">5.2.2.4</span> <span class="title">Formation of Image by a Concave Mirror</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-convex_image" class="internal"><span class="codenumber">5.2.2.5</span> <span class="title">Formation of Image by a Convex Mirror</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsec-refraction" class="internal"><span class="codenumber">5.2.3</span> <span class="title">Refraction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-" class="internal"><span class="codenumber">5.2.3.1</span> <span class="title">Laws of Refraction</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-real_apprnt" class="internal"><span class="codenumber">5.2.3.2</span> <span class="title">Real and Apparent Depth</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-lateral_shift" class="internal"><span class="codenumber">5.2.3.3</span> <span class="title">Lateral Shift</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-reversblty_prncple" class="internal"><span class="codenumber">5.2.3.4</span> <span class="title">Principle of Reversibility of Light</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsec-tir" class="internal"><span class="codenumber">5.2.4</span> <span class="title">Total Internal Reflection</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-mirage" class="internal"><span class="codenumber">5.2.4.1</span> <span class="title">Mirage</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsec-prism_ref" class="internal"><span class="codenumber">5.2.5</span> <span class="title">Refraction through a Prism</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsec-srs_img" class="internal"><span class="codenumber">5.2.6</span> <span class="title">Image formed by Spherical Refracting Surfaces</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-srs_mag" class="internal"><span class="codenumber">5.2.6.1</span> <span class="title">Lateral or Transverse Magnification, m</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-longmag_srs" class="internal"><span class="codenumber">5.2.6.2</span> <span class="title">Longitudinal Magnification, L</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsec-thin_lens" class="internal"><span class="codenumber">5.2.7</span> <span class="title">Thin Lenses</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-lens_formula" class="internal"><span class="codenumber">5.2.7.1</span> <span class="title">Lens Formula</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-vexlens_img" class="internal"><span class="codenumber">5.2.7.2</span> <span class="title">Image formed by a convex lens</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-cavelens_img" class="internal"><span class="codenumber">5.2.7.3</span> <span class="title">Image formed by a concave lens</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsec-lensmakers" class="internal"><span class="codenumber">5.2.8</span> <span class="title">Lens Maker’s Formula</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-fr_dependence" class="internal"><span class="codenumber">5.2.8.1</span> <span class="title">Dependence of f of a lens on R of its surfaces</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-mindist_rimge" class="internal"><span class="codenumber">5.2.8.2</span> <span class="title">Minimum distance between object and its real image in a convex lens</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-eqf_thinlens" class="internal"><span class="codenumber">5.2.8.3</span> <span class="title">Equivalent focal length of two thin lenses</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_fifth-dispers.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Dispersion</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-dispers.html#subsec-achrom_prism" class="internal"><span class="codenumber">5.3.1</span> <span class="title">Deviation Without Dispersion (Achromatic Prism)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-dispers.html#subsec-diswdev1" class="internal"><span class="codenumber">5.3.2</span> <span class="title">Dispersion Without Deviation</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-dispers.html#subsec-chrom_abr" class="internal"><span class="codenumber">5.3.3</span> <span class="title">Chromatic Aberation in a Lens</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-dispers.html#subsubsec-achrom" class="internal"><span class="codenumber">5.3.3.1</span> <span class="title">Achromatism</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-dispers.html#subsec-rainbow" class="internal"><span class="codenumber">5.3.4</span> <span class="title">Rainbow</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-dispers.html#subsubsec-prainbow" class="internal"><span class="codenumber">5.3.4.1</span> <span class="title">Primary Rainbow</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-dispers.html#subsubsec-srainbow" class="internal"><span class="codenumber">5.3.4.2</span> <span class="title">Secondary Rainbow</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-dispers.html#subsec-scattering" class="internal"><span class="codenumber">5.3.5</span> <span class="title">Scattering</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_fifth-examplesA.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Examples A</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_fifth-examplesB.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Examples B</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_fifth-opinst.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Optical Instruments</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsec-camera" class="internal"><span class="codenumber">5.6.1</span> <span class="title">Camera</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-opinst.html#subsec-opvision" class="internal"><span class="codenumber">5.6.2</span> <span class="title">Optical Vision</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-myopia" class="internal"><span class="codenumber">5.6.2.1</span> <span class="title">Myopia:</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-hyperopia" class="internal"><span class="codenumber">5.6.2.2</span> <span class="title">Hypermetropia  (or hyperopia):</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-visangle" class="internal"><span class="codenumber">5.6.2.3</span> <span class="title">Visual Angle</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-magpower" class="internal"><span class="codenumber">5.6.2.4</span> <span class="title">Angular Magnification  (or Magnifying Power:)</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-opinst.html#subsec-microscope" class="internal"><span class="codenumber">5.6.3</span> <span class="title">Microscope</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-handlens" class="internal"><span class="codenumber">5.6.3.1</span> <span class="title">Simple Microscope</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-compmicros" class="internal"><span class="codenumber">5.6.3.2</span> <span class="title">Compound Microscope</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-opinst.html#subsec-telescope" class="internal"><span class="codenumber">5.6.4</span> <span class="title">Telescope</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-astrts" class="internal"><span class="codenumber">5.6.4.1</span> <span class="title">Astronomical Telescope</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-terrts" class="internal"><span class="codenumber">5.6.4.2</span> <span class="title">Terrestrial Telescope</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-galilots" class="internal"><span class="codenumber">5.6.4.3</span> <span class="title">Galileo’s Telescope</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-opinst.html#subsec-photmtry" class="internal"><span class="codenumber">5.6.5</span> <span class="title">Photometry</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-stcandle" class="internal"><span class="codenumber">5.6.5.1</span> <span class="title">Standard Candle</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-sangl" class="internal"><span class="codenumber">5.6.5.2</span> <span class="title">Solid Angle, <span class="process-math">\(\omega\)</span></span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-lumenflx" class="internal"><span class="codenumber">5.6.5.3</span> <span class="title">Luminous Flux, <span class="process-math">\(\phi\)</span></span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsec-isl" class="internal"><span class="codenumber">5.6.6</span> <span class="title">Inverse Square Law</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsec-iil" class="internal"><span class="codenumber">5.6.7</span> <span class="title">Intensity of Illumination</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-opinst.html#subsec-bsil" class="internal"><span class="codenumber">5.6.8</span> <span class="title">Brightness of a surface and illumination</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-bgsp" class="internal"><span class="codenumber">5.6.8.1</span> <span class="title">Bunsen’s Grease Spot Photometer</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_fifth-examplesC.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Examples C</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_fifth-physopt.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Physical Optics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-physopt.html#subsec-interfnc" class="internal"><span class="codenumber">5.8.1</span> <span class="title">Interference</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsubsec-coherent" class="internal"><span class="codenumber">5.8.1.1</span> <span class="title">Coherent Sources</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsubsec-phase_path" class="internal"><span class="codenumber">5.8.1.2</span> <span class="title">Phase Difference and Path Difference</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsec-inter_fringe" class="internal"><span class="codenumber">5.8.2</span> <span class="title">Theory of Interference Fringes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsec-thin_film" class="internal"><span class="codenumber">5.8.3</span> <span class="title">Thickness of Thin Sheet of Transparent Material</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-physopt.html#subsec-thinfilm_interf" class="internal"><span class="codenumber">5.8.4</span> <span class="title">Interference in Thin Films</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsubsec-thinf_interr" class="internal"><span class="codenumber">5.8.4.1</span> <span class="title">Interference due to Reflected Light in Thin Films</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsubsec-thinf_intert" class="internal"><span class="codenumber">5.8.4.2</span> <span class="title">Interference due to Transmitted Light in Thin Films</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsec-thinf_color" class="internal"><span class="codenumber">5.8.5</span> <span class="title">Colors of Thin Films</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-physopt.html#subsec-diffraction" class="internal"><span class="codenumber">5.8.6</span> <span class="title">Diffraction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsubsec-ssdiffrct" class="internal"><span class="codenumber">5.8.6.1</span> <span class="title">Single Slit Diffraction</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsubsec-issdiff" class="internal"><span class="codenumber">5.8.6.2</span> <span class="title">Intensity of Diffraction Pattern due to a Single Slit</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-physopt.html#subsec-dsdiffrc" class="internal"><span class="codenumber">5.8.7</span> <span class="title">Double Slits Diffraction</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsubsec-idsdiffrc" class="internal"><span class="codenumber">5.8.7.1</span> <span class="title">Intensity of Diffraction Pattern due to Double Slits</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsec-msdiffrc" class="internal"><span class="codenumber">5.8.8</span> <span class="title">Multiple Slits Diffraction</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-physopt.html#subsec-diffgrating" class="internal"><span class="codenumber">5.8.9</span> <span class="title">Diffraction Grating</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsubsec-grat_spectrom" class="internal"><span class="codenumber">5.8.9.1</span> <span class="title">Grating Spectrometer</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsubsec-resolv_power" class="internal"><span class="codenumber">5.8.9.2</span> <span class="title">Resolving Power</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsec-polrzn" class="internal"><span class="codenumber">5.8.10</span> <span class="title">Polarization</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_fifth-examplesD.html" class="internal"><span class="codenumber">5.9</span> <span class="title">Examples D</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_fifth.html" class="internal"><span class="codenumber">5.10</span> <span class="title">Exercise</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="append_math.html" class="internal"><span class="codenumber">A</span> <span class="title">Mathematical Relations</span></a></div></li>
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="append_physTable.html" class="internal"><span class="codenumber">B</span> <span class="title">Useful Data and Greek Letters</span></a></div></li>
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="backmatter-4.html" class="internal"><span class="codenumber">C</span> <span class="title">List of Symbols</span></a></div></li>
+<li class="toc-item toc-index"><div class="toc-title-box"><a href="backmatter-5.html" class="internal"><span class="title">Index</span></a></div></li>
+<li class="toc-item toc-references"><div class="toc-title-box"><a href="refs-list.html" class="internal"><span class="title">References</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-7.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec_fourth-medwave"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">4.4</span><span class="space"> </span><span class="title">Waves in a Medium</span>
+</h2>
+<section class="introduction" id="sec_fourth-medwave-2"><div class="para" id="sec_fourth-medwave-2-1">When wave propagates in a medium it deforms the shape of a medium and hence to understand wave motion completely in a medium the following terminologies will be helpful.<div class="autopermalink" data-description="Paragraph"><a href="#sec_fourth-medwave-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec_fourth-medwave-2-2">
+<div class="para">
+<dfn class="terminology">Mass per Unit Length, <span class="process-math">\(\mu\text{:}\)</span></dfn> It is the mass of a wire in its unit length i.e.,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mu= \frac{m}{L},
+\end{equation*}
+</div>
+<div class="para">where m is mass of the wire of length, L. Its unit is kg/m.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_fourth-medwave-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec_fourth-medwave-2-3">
+<div class="para">
+<dfn class="terminology">Bulk Modulus, <span class="process-math">\(B\text{:}\)</span></dfn> It is the ratio of volumetric stress to the volumetric strain i.e., [Read <a class="external" href="https://sklkarn.github.io/calPhysI/ch_eighth.html" target="_blank">Elasticity</a><details class="ptx-footnote" aria-live="polite" id="sec_fourth-medwave-2-3-3"><summary class="ptx-footnote__number" title="Footnote 4.4.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="sec_fourth-medwave-2-3-3"><code class="code-inline tex2jax_ignore">sklkarn.github.io/calPhysI/ch_eighth.html</code></div></details> for details.]</div>
+<div class="displaymath process-math">
+\begin{equation*}
+B=\frac{\Delta P}{\Delta V/V}. 
+\end{equation*}
+</div>
+<div class="para">It defines the incompressibility of the material. It describes the elastic properties of a solid or fluid when it is under pressure on all surfaces. Its unit is Pascal (Pa).</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_fourth-medwave-2-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec_fourth-medwave-2-4">
+<div class="para">
+<dfn class="terminology">Young’s Modulus, <span class="process-math">\(Y\text{:}\)</span></dfn> It is the ratio of longitudinal stress to the longitudinal strain, i.e.,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+Y=\frac{F/A}{\Delta L/L},
+\end{equation*}
+</div>
+<div class="para">where F is applied force normal to the cross-section of a wire, A is cross-sectional area of a wire, L is length of the wire, and <span class="process-math">\(\Delta L\)</span> is change in length of the wire after the application of this force. It describes the ability of a material to deform its length under the lengthwise stress. Its unit is Pascal (Pa).</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_fourth-medwave-2-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec_fourth-medwave-2-5">
+<div class="para">
+<dfn class="terminology">Ratio of Specific Heat Capacities, <span class="process-math">\(\gamma\text{:}\)</span></dfn> The specific heat capacity is a material property which defines heat absorbing capacity of a unit mass of material for unit rise of temperature. From first law of thermodynamics,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\,dQ=\,dU+P\,dV
+\end{equation*}
+</div>
+<div class="para">when heat is supplied to the gas at constant volume it increases its internal energy but by doing so  pressure of the gas also increases. When gas is heated at constant pressure it not only increases its internal energy but it also expands hence the system (gas) has to do extra work on the surrounding. The energy needed for expansion is taken from the internal energy of the gas. To compensate such work and have the same increase in internal energy as at constant volume some additional heat must be absorbed by the system at constant pressure. Hence the gas has two specific heat capacities, called specific heat at constant volume, <span class="process-math">\(c_{v}\)</span> and specific heat at constant pressure, <span class="process-math">\(c_{p}.\)</span> The ratio of these two heat capacities is defined as <span class="process-math">\(\gamma\)</span> i.e.,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\gamma = \frac{c_{p}}{c_{v}}.
+\end{equation*}
+</div>
+<div class="para">On the other hand, Solid and liquid are considered as an incompressible material hence their specific heat capacities at constant volume and pressure have almost the same value hence they have only one specific heat capacity. [read <a class="external" href="https://sklkarn.github.io/calPhysI/subsec-Ilaw_appl.html" target="_blank"><span class="process-math">\(\gamma\)</span></a><details class="ptx-footnote" aria-live="polite" id="sec_fourth-medwave-2-5-8"><summary class="ptx-footnote__number" title="Footnote 4.4.2"><sup> 2 </sup></summary><div class="ptx-footnote__contents" id="sec_fourth-medwave-2-5-8"><code class="code-inline tex2jax_ignore">sklkarn.github.io/calPhysI/subsec-Ilaw_appl.html</code></div></details>]</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_fourth-medwave-2-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec_fourth-medwave-2-6">
+<dfn class="terminology">Ideal Gas:</dfn> A hypothetical gas whose molecules are negligibly small and have no interaction between them is called an ideal gas or perfect gas. Small amount of gas molecules in a very large container may be considered as an ideal gas if it obeys the laws of ideal gas.<div class="autopermalink" data-description="Paragraph"><a href="#sec_fourth-medwave-2-6" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec_fourth-medwave-2-7">
+<dfn class="terminology">Pressure, P:</dfn> Force per unit area on the surface of any material is known as pressure. It is generally considered as a scalar quantity. Its unit is Pascal (pa).<div class="autopermalink" data-description="Paragraph"><a href="#sec_fourth-medwave-2-7" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec_fourth-medwave-2-8">
+<div class="para">
+<dfn class="terminology">Gas Constant, R:</dfn> It is a universal constant that appears in an ideal gas equation</div>
+<div class="displaymath process-math">
+\begin{equation*}
+PV=nRT
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(n\)</span> stands for number of mole of a gas. The value of R is approximately  <span class="process-math">\(8.3145 \, J/K/mol\text{.}\)</span> It is equivalent to Boltzmann constant, k as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+PV=NkT
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(N\)</span> stands for number of molecules in a gas and  <span class="process-math">\(N_{A}k = R\)</span> since <span class="process-math">\(N=N_{A}=6.022\times10^{23}\, /mol\text{,}\)</span> Avagadro’s number for n = 1 mole. The value of k is approximately <span class="process-math">\(1.3806\times10^{-23} \,J/K\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_fourth-medwave-2-8" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec_fourth-medwave-2-9">
+<dfn class="terminology">Molecular Mass:</dfn> The mass of one molecule of any substance is known as a molecular mass. It is a number equal to the sum of the atomic masses of all the atoms in a molecule. It provides the mass of a molecule relative to that of the mass of C-12 atom.<div class="autopermalink" data-description="Paragraph"><a href="#sec_fourth-medwave-2-9" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec_fourth-medwave-2-10">
+<dfn class="terminology">Molar Mass,M:</dfn> The mass of one mole of any substance is known as a molar mass. Its unit is g/mol. The molar mass of C-12 substance is 12 g/mol.<div class="autopermalink" data-description="Paragraph"><a href="#sec_fourth-medwave-2-10" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec_fourth-medwave-2-11">
+<div class="para">
+<dfn class="terminology">Atomic Mass Unit, amu or u:</dfn> 1 amu is <span class="process-math">\(\frac{1}{12}\)</span> of the mass of C-12 atom. Mass of one atom of C-12 is 12 amu as it contains 12 (6 proton + 6 neutrons) elementary particles. Since <span class="process-math">\(6.022\times10^{23}\)</span> atoms of C-12 has mass of 12 g, hence</div>
+<div class="displaymath process-math">
+\begin{equation*}
+1 \,amu = \left(\frac{1}{12}\right) \, (\text{mass of one atom of C-12})
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \left(\frac{1}{12}\right)\left(\frac{12\,g/mol}{6.022\times10^{23}\,1/mol}\right) = 1.66\times10^{-24} \,g = 1\,u.
+\end{equation*}
+</div>
+<div class="para">It is the mass of one proton or one hydrogen atom.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_fourth-medwave-2-11" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec_fourth-medwave-2-12">
+<dfn class="terminology">Absolute Temperature, T:</dfn> The value of temperature measured in Kelvin scale, a hypothetical temperature scale, is known as absolute temperature. It is also known as thermodynamic temperature. The lowest possible value of absolute temperature is absolute zero and from third law of thermodynamics, absolute zero is physical unattainable by any means. Temperature is an average kinetic energy per molecule of a substance and at absolute zero the molecular motion is ceased i.e. no heat remains in a molecule at absolute zero. The value of each division of kelvin scale is same as that in centigrade scale i.e., change in temperature in absolute scale is numerically equal to change in temperature in centigrade scale. Absolute zero is equal to  <span class="process-math">\(-270.15\,^{o}C.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_fourth-medwave-2-12" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><section class="subsection" id="subsec-speed_TW"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.4.1</span><span class="space"> </span><span class="title">Speed of a Transverse Wave</span>
+</h3>
+<div class="para logical" id="subsec-speed_TW-2">
+<div class="para">Let us consider an elastic string tightly stretched between its two ends by a constant tension T. The string is caused to vibrate by plucking it with a very small displacement so that the tension T remains constant through out the deflections of the string. Consider a small element of the string of arc length <span class="process-math">\(\,ds\)</span> [<a href="sec_fourth-medwave.html#speedTW" class="xref" data-knowl="./knowl/xref/speedTW.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.4.1">Figure 4.4.1</a>] which is moving at a constant velocity, v towards right. If this arc subtends an angle <span class="process-math">\(2\theta\)</span> at its center then length of arc, <span class="process-math">\(\,ds=R (2\theta)\)</span> where R is radius of the arc. If <span class="process-math">\(\mu \)</span> is mass per unit length of a string then mass of the arc,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/speedTW.html">
+\begin{equation*}
+m =  \mu R 2\theta.
+\end{equation*}
+</div>
+<div class="para">The force acting on the string element along x-axis is given by</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/speedTW.html">
+\begin{equation*}
+F_{x}= T\cos\theta-T\cos\theta=0, 
+\end{equation*}
+</div>
+<div class="para">i.e., there is no horizontal motion of the particle of a string.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-speed_TW-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="speedTW"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/speedTW.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.4.1<span class="period">.</span></span><span class="space"> </span><div class="autopermalink" data-description="Figure 4.4.1"><a href="#speedTW" title="Copy heading and permalink for Figure 4.4.1">🔗</a></div></figcaption></figure><div class="para logical" id="subsec-speed_TW-4">
+<div class="para">The force acting on the string element along y-axis is given by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+F_{y}= T\sin\theta+T\sin\theta=2 T\sin\theta = ma
+\end{equation*}
+</div>
+<div class="para">i.e.,  because of the circular portion of string each particle of string element experiences centripetal force.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{Hence,}\quad 2 T\sin\theta = m\frac{v^{2}}{R}
+\end{equation*}
+</div>
+<div class="para">where v is a velocity of wave which is passing through the string.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{Now,}\quad 2 T \theta = \mu R 2\theta \frac{v^{2}}{R}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{or,}\quad v= \sqrt{\frac{T}{\mu}}
+\end{equation*}
+</div>
+<div class="para">Hence the velocity of wave depends on the tension and mass per unit length of a string. Velocity of mechanical waves generally takes the form</div>
+<div class="displaymath process-math">
+\begin{equation*}
+v=\frac{\text{Restoring ability of a system}}{\text{Inertia resisting the return to equilibrium}}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-speed_TW-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 4.4.1: Speed of a Transverse Wave"><a href="#subsec-speed_TW" title="Copy heading and permalink for Subsection 4.4.1: Speed of a Transverse Wave">🔗</a></div></section><section class="subsection" id="subsec-speed_LW"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.4.2</span><span class="space"> </span><span class="title">Speed of a Longitudinal Wave</span>
+</h3>
+<div class="para" id="subsec-speed_LW-2">When a longitudinal wave passes through a fluid, it produces a local compression and rarefaction (expansion of the fluid). Consider a column of fluid of cross-sectional area A in which a longitudinal wave is being passed perpendicularly to the cross-section [<a href="sec_fourth-medwave.html#LW" class="xref" data-knowl="./knowl/xref/LW.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.4.2">Figure 4.4.2</a>]. As the wave passes a small portion of fluid of volume <span class="process-math">\(V_{i}\)</span> having thickness <span class="process-math">\(\,dx=x_{2}-x_{1}\)</span> will move and gets compressed because of the pressure difference between both faces.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-speed_LW-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="LW"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:25%;"><figure class="figure figure-like" id="speedLW"><img src="external/speedLW.png" class="contained"><figcaption><span class="codenumber">(a)</span><span class="space"> </span><div class="autopermalink" data-description="Figure 4.4.2.(a)"><a href="#speedLW" title="Copy heading and permalink for Figure 4.4.2.(a)">🔗</a></div></figcaption></figure></div>
+<div class="sbspanel top" style="width:25%;"><figure class="figure figure-like" id="speedLWa"><img src="external/speedLWa.png" class="contained"><figcaption><span class="codenumber">(b)</span><span class="space"> </span><div class="autopermalink" data-description="Figure 4.4.2.(b)"><a href="#speedLWa" title="Copy heading and permalink for Figure 4.4.2.(b)">🔗</a></div></figcaption></figure></div>
+<div class="sbspanel top" style="width:25%;"><figure class="figure figure-like" id="speedLWb"><img src="external/speedLWb.png" class="contained"><figcaption><span class="codenumber">(c)</span><span class="space"> </span><div class="autopermalink" data-description="Figure 4.4.2.(c)"><a href="#speedLWb" title="Copy heading and permalink for Figure 4.4.2.(c)">🔗</a></div></figcaption></figure></div>
+<div class="sbspanel top" style="width:25%;"><figure class="figure figure-like" id="speedLWc"><img src="external/speedLWc.png" class="contained"><figcaption><span class="codenumber">(d)</span><span class="space"> </span><div class="autopermalink" data-description="Figure 4.4.2.(d)"><a href="#speedLWc" title="Copy heading and permalink for Figure 4.4.2.(d)">🔗</a></div></figcaption></figure></div>
+</div></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.4.2<span class="period">.</span></span><span class="space"> </span><div class="autopermalink" data-description="Figure 4.4.2"><a href="#LW" title="Copy heading and permalink for Figure 4.4.2">🔗</a></div></figcaption></figure><div class="para logical" id="subsec-speed_LW-4">
+<div class="para">The right face experiences a backward pressure of <span class="process-math">\(P+\,dP\)</span> and the left face experience a forward pressure of <span class="process-math">\(P\text{.}\)</span> Hence due to the forces difference fluid move to the right and as it accelerates it will change its volume to <span class="process-math">\(V_{f}.\)</span> The fluid column only experiences normal force along x-axis as it does not support shear forces. If</div>
+<div class="displaymath process-math">
+\begin{equation*}
+s(x,t) =\frac{s_{1}+s_{2}}{2}
+\end{equation*}
+</div>
+<div class="para">is the displacement of fluid column from <span class="process-math">\(x_1\)</span> to <span class="process-math">\(x_1+s_1\text{,}\)</span> then from Newton’s law</div>
+<div class="displaymath process-math">
+\begin{equation*}
+F_{x}=ma_{x}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{or,}\quad [P-(P+\,dP)]A = V_{i}\rho \frac{\,d^{2}s}{\,dt^{2}} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{or,}\quad -\,dP \,A = A\,dx \rho \frac{\,d^{2}s}{\,dt^{2}}
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="eqn-speedLW1">
+\begin{equation}
+\therefore \quad \frac{\,dP}{\,dx} = -\rho \frac{\,d^{2}s}{\,dt^{2}} \tag{4.4.1}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-speed_LW-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-speed_LW-5">
+<div class="para">But from Bulk modulus of elasticity,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-speedLW1.html ./knowl/xref/eqn-speedLW2.html">
+\begin{equation*}
+B=-\frac{P}{\,dV/V_{i}}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-speedLW1.html ./knowl/xref/eqn-speedLW2.html">
+\begin{equation*}
+\text{or,}\quad P = -B\left(\frac{\,dV}{V_{i}}\right)
+\end{equation*}
+</div>
+<div class="para">where</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-speedLW1.html ./knowl/xref/eqn-speedLW2.html">
+\begin{equation*}
+\,dV=V_{f}-V_{i} = A[(x_{2}+s_{2})-(x_{1}+s_{1})]-A\,dx
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-speedLW1.html ./knowl/xref/eqn-speedLW2.html">
+\begin{equation*}
+= A[(x_{2}-x_{1})+(s_{2}-s_{1})]-A\,dx = A(\,dx+\,ds)-A\,dx =A\,ds
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-speedLW1.html ./knowl/xref/eqn-speedLW2.html">
+\begin{equation*}
+\therefore \quad P = -B\frac{A\,ds}{A\,dx}=-B\frac{\,ds}{\,dx} 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-speedLW1.html ./knowl/xref/eqn-speedLW2.html" id="eqn-speedLW2">
+\begin{equation}
+\text{or,} \quad \frac{\,dP}{\,dx} = -B\frac{\,d^{2}s}{\,dx^{2}}  \tag{4.4.2}
+\end{equation}
+</div>
+<div class="para">From eqns. <a href="sec_fourth-medwave.html#eqn-speedLW1" class="xref" data-knowl="./knowl/xref/eqn-speedLW1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.4.1">(4.4.1)</a> and <a href="sec_fourth-medwave.html#eqn-speedLW2" class="xref" data-knowl="./knowl/xref/eqn-speedLW2.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.4.2">(4.4.2)</a>, we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-speedLW1.html ./knowl/xref/eqn-speedLW2.html">
+\begin{equation*}
+-\rho \frac{\,d^{2}s}{\,dt^{2}}=-B\frac{\,d^{2}s}{\,dx^{2}}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-speedLW1.html ./knowl/xref/eqn-speedLW2.html" id="eqn-speedLW3">
+\begin{equation}
+\therefore \quad  \frac{\,d^{2}s}{\,dx^{2}}=\frac{\rho}{B}\frac{\,d^{2}s}{\,dt^{2}}\tag{4.4.3}
+\end{equation}
+</div>
+<div class="para">Which is the wave equation of longitudinal wave. Hence</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-speedLW1.html ./knowl/xref/eqn-speedLW2.html" id="eqn-speedLW4">
+\begin{equation}
+s(x,t) = s_{o}\sin(kx-\omega t) \tag{4.4.4}
+\end{equation}
+</div>
+<div class="para">where <span class="process-math">\(s_{o} \)</span> is the amplitude of the wave or maximum displacement of fluid column,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-speedLW1.html ./knowl/xref/eqn-speedLW2.html">
+\begin{equation*}
+\omega =2\pi f 
+\end{equation*}
+</div>
+<div class="para">is angular frequency, and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-speedLW1.html ./knowl/xref/eqn-speedLW2.html">
+\begin{equation*}
+k=\frac{2\pi}{\lambda}
+\end{equation*}
+</div>
+<div class="para">is the wave number.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-speedLW1.html ./knowl/xref/eqn-speedLW2.html">
+\begin{equation*}
+\text{Now}\quad \frac{\,ds(x,t)}{\,dx} =s_{o}k\cos(kx-\omega t) 
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-speed_LW-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-speed_LW-6">
+<div class="para">Also pressure fluctuation can be</div>
+<div class="displaymath process-math" id="eqn-speedLW5">
+\begin{equation}
+p(x,t) = -Bks_{o}\cos(kx-\omega t)  \tag{4.4.5}
+\end{equation}
+</div>
+<div class="para">which is lagging behind the displacement <span class="process-math">\(s(x,t)\)</span> by quarter of wavelength and</div>
+<div class="displaymath process-math">
+\begin{equation*}
+p_{max} = B\,k\,s_{o}
+\end{equation*}
+</div>
+<div class="para">is pressure amplitude.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{and,}\quad \frac{\,d^{2}s}{\,dx^{2}} =-s_{o}k^{2}\sin(kx-\omega t)
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{Also}\quad \frac{\,ds}{\,dt} =-s_{o}\omega\cos(kx-\omega t)
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{or,}\quad \frac{\,d^{2}s}{\,dt^{2}} =-s_{o}\omega^{2}\sin(kx-\omega t)
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{Hence,}\quad -s_{o}k^{2}\sin(kx-\omega t) =-\frac{\rho}{B} s_{o}\omega^{2}\sin(kx-\omega t)
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{or,}\quad k^{2} =\frac{\rho}{B}\omega^{2}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{or,}\quad \frac{1}{\lambda^{2} f^{2}}=\frac{\rho}{B}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\therefore \quad v^{2}=\frac{B}{\rho}
+\end{equation*}
+</div>
+<div class="para">Hence the speed of longitudinal wave in fluid is given by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+v=\sqrt{\frac{B}{\rho}}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-speed_LW-6" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-speed_LW-7">
+<div class="para">In general speed of longitudinal wave is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+v=\sqrt{\frac{\text{elastic property}}{\text{inertial property}}}
+\end{equation*}
+</div>
+<div class="para">This is the same as writing</div>
+<div class="displaymath process-math">
+\begin{equation*}
+v = \sqrt{\frac{Y}{\rho}}	\quad	\text{(in solid)}
+\end{equation*}
+</div>
+<div class="para">Newton assumed that the process is very slow when a wave passes through fluid hence the temperature remains constant through out the process,  i.e.,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+PV  =constant
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{or,} \quad P\,dV+V\,dP =0
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{or,}\quad P\,dV=-V\,dP
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{or,}\quad P = -\frac{\,dP}{\,dV/V} = B
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\therefore\quad v = \sqrt{\frac{P}{\rho}}
+\end{equation*}
+</div>
+<div class="para">Now at normal temperature and pressure (NTP) the atmospheric pressure is <span class="process-math">\(P=1.01\times10^{5} \,N/m^{2}\)</span> and density of air is <span class="process-math">\(\rho=1.293 \,kg/m^{3}\text{,}\)</span> we have velocity of sound in air is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+v = \sqrt{\frac{P}{\rho}}=280\, m/s
+\end{equation*}
+</div>
+<div class="para">But the experimental value of sound in air is 332 m/s. Hence Laplace modified this solution by assuming that when wave flows through the fluid compression and rarefaction occur so fast that there is no exchange of heat between the system and surrounding in fluid.  Hence</div>
+<div class="displaymath process-math">
+\begin{equation*}
+PV^{\gamma} = constant
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{or,} \quad V^{\gamma}\,dP + P\gamma V^{\gamma-1}\,dV =0 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{or,} \quad V^{\gamma}\,dP =- P\gamma V^{\gamma-1}\,dV
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{or,} \quad \,dP =- P \gamma V^{-1}\,dV
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{or,} \quad -\frac{\,dP}{\,dV/V} = P \gamma = B
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\therefore \quad v = \sqrt{\frac{\gamma P}{\rho}}=332 \,m/s \quad [\gamma=1.4] 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{Also,} \quad v = \sqrt{\frac{\gamma R T}{M}}\quad \text{(In Ideal Gas)} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left[\because\quad PV = nRT = \frac{m}{M}RT]  \quad  \text{or,} \quad P = \frac{RT}{\rho \,M}\right]. 
+\end{equation*}
+</div>
+<div class="para">Here <span class="process-math">\(n, \, M,\)</span> and <span class="process-math">\(T\)</span> stand for number of moles, molar mass, and absolute temperature of gas, respectively.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-speed_LW-7" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 4.4.2: Speed of a Longitudinal Wave"><a href="#subsec-speed_LW" title="Copy heading and permalink for Subsection 4.4.2: Speed of a Longitudinal Wave">🔗</a></div></section><section class="subsection" id="subsec-energy_MW"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.4.3</span><span class="space"> </span><span class="title">Energy Transport in a Mechanical Wave</span>
+</h3>
+<div class="para logical" id="subsec-energy_MW-2">
+<div class="para">When wave passes through the medium it transfers energy to that medium. Consider a small portion of oscillating string in which sinusoidal wave is propagated then average energy attains by the particle of a string is given by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+E_{avg} =\frac{1}{2}\,m v^{2}_{max}=\frac{1}{2}\mu \,dx (A\omega)^{2}
+\end{equation*}
+</div>
+<div class="para">where m and <span class="process-math">\(v_{max}\)</span> is the mass and maximum velocity of the particle of that string.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{or,}\quad P_{avg} =\frac{\,dE}{\,dt}= \frac{1}{2}\mu v A^{2}\omega^{2} =\frac{1}{2}\mu \sqrt{\frac{T}{\mu}} A^{2}\omega^{2}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\therefore \quad P_{avg} = \frac{1}{2}\sqrt{\mu T} \omega^{2}A^{2}	\quad \text{(In String)}
+\end{equation*}
+</div>
+<div class="para">Waves on a string carry energy along the length of the string, but when waves pass through a solid or a fluid they carry energy along all three dimensions of space. Hence we need to define intensity of wave, which is energy transmitted by the wave in unit area of this material in unit time.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I = \frac{E}{A t} = \frac{\frac{1}{2}mv^{2}_{max}} {A t} =\frac{\frac{1}{2}\rho V (s_{o}\omega)^{2}} {A t} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\therefore \quad I =\frac{1}{2} \rho v s^{2}_{o}\omega^{2} 
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="eqn-ia_rel1">
+\begin{equation}
+I \propto A^2  \quad [\because \quad s_o=A.]\tag{4.4.6}
+\end{equation}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\frac{1}{2}\sqrt{\rho B} \omega^{2} s^{2}_{o}\quad	\text{(In Fluid)}
+\end{equation*}
+</div>
+<div class="para">here <span class="process-math">\(V=A.x\text{,}\)</span> <span class="process-math">\(s_{o}\)</span> is amplitude of oscillation, and v is wave speed.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I = \frac{1}{2}\sqrt{\rho Y} \omega^{2}s^{2}_{o}	\quad	\text{(In Solid)} 
+\end{equation*}
+</div>
+<div class="para">Since intensity obeys inverse square law as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I=\frac{P}{A} = \frac{P}{4\pi r^{2}}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+or, I\propto \frac{1}{r^{2}} 
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(4\pi r^{2}\)</span> is the surface area of a sphere of radius, r of space in which wave is propagated. Hence intensity of the wave decreases by the square of the distance it propagated.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-energy_MW-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 4.4.3: Energy Transport in a Mechanical Wave"><a href="#subsec-energy_MW" title="Copy heading and permalink for Subsection 4.4.3: Energy Transport in a Mechanical Wave">🔗</a></div></section><section class="subsection" id="subsec-interferMW"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.4.4</span><span class="space"> </span><span class="title">Interference of Mechanical Waves</span>
+</h3>
+<div class="para" id="subsec-interferMW-2">When a wave travels to the end of a medium all or part of it is reflected back. The nature of the reflected wave depends upon the state of boundary known as <em class="emphasis">boundary conditions</em>. Consider a wave (e.g. a pulse) on a stretched string approaches the fixed end to the right it exerts a force on a fixed support and according to Newton’s third law a fixed support also exerts a force on the string, as a result an inverted pulse (wave) travels back to the left and when these two incident and reflected waves overlap they cancels each other as shown in <a href="sec_fourth-medwave.html#fixep" class="xref" data-knowl="./knowl/xref/fixep.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.4.3">Figure 4.4.3</a>.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-interferMW-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fixep"><div class="sidebyside"><div class="sbsrow" style="margin-left:1.666666666666667%;margin-right:1.666666666666667%;">
+<div class="sbspanel top" style="width:31.0344827586207%;"><figure class="figure figure-like" id="pulsea"><img src="external/pulsea.png" class="contained"><figcaption><span class="codenumber">(a)</span><span class="space"> </span>Incident Pulse<div class="autopermalink" data-description="Figure 4.4.3.(a)"><a href="#pulsea" title="Copy heading and permalink for Figure 4.4.3.(a)">🔗</a></div></figcaption></figure></div>
+<div class="sbspanel top" style="width:31.0344827586207%;"><figure class="figure figure-like" id="pulseb"><img src="external/pulseb.png" class="contained"><figcaption><span class="codenumber">(b)</span><span class="space"> </span>Reflected Pulse<div class="autopermalink" data-description="Figure 4.4.3.(b)"><a href="#pulseb" title="Copy heading and permalink for Figure 4.4.3.(b)">🔗</a></div></figcaption></figure></div>
+<div class="sbspanel top" style="width:31.0344827586207%;"><figure class="figure figure-like" id="pulsec"><img src="external/pulsec.png" class="contained"><figcaption><span class="codenumber">(c)</span><span class="space"> </span>Amplitude Zero<div class="autopermalink" data-description="Figure 4.4.3.(c)"><a href="#pulsec" title="Copy heading and permalink for Figure 4.4.3.(c)">🔗</a></div></figcaption></figure></div>
+</div></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.4.3<span class="period">.</span></span><span class="space"> </span>Fixed End Pulse Overlapping<div class="autopermalink" data-description="Figure 4.4.3"><a href="#fixep" title="Copy heading and permalink for Figure 4.4.3">🔗</a></div></figcaption></figure><div class="para" id="subsec-interferMW-4">On the other hand, when a wave pulse travels along a string with a free end (one end of string attached to a ring that is free to slide along a pole) and when the wave reaches to the free end at its maximum displacement both wave and string come to at rest for a moment. During this time string is stretched to highest value and applies a maximum tension on string due to which string gets pulled back down which constitutes a reflected wave pulse but in the same phase as incident wave pulse. When they overlap the amplitude of pulse increased by double as shown in <a href="sec_fourth-medwave.html#freep" class="xref" data-knowl="./knowl/xref/freep.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.4.4">Figure 4.4.4</a>. The total displacement of overlapping wave pulses is an algebraic sum of their displacement in individual pulses.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-interferMW-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="freep"><div class="sidebyside"><div class="sbsrow" style="margin-left:1.666666666666667%;margin-right:1.666666666666667%;">
+<div class="sbspanel top" style="width:31.0344827586207%;"><figure class="figure figure-like" id="pulsed"><img src="external/pulsed.png" class="contained"><figcaption><span class="codenumber">(a)</span><span class="space"> </span>Incident Pulse<div class="autopermalink" data-description="Figure 4.4.4.(a)"><a href="#pulsed" title="Copy heading and permalink for Figure 4.4.4.(a)">🔗</a></div></figcaption></figure></div>
+<div class="sbspanel top" style="width:31.0344827586207%;"><figure class="figure figure-like" id="pulsee"><img src="external/pulsee.png" class="contained"><figcaption><span class="codenumber">(b)</span><span class="space"> </span>Reflected Pulse<div class="autopermalink" data-description="Figure 4.4.4.(b)"><a href="#pulsee" title="Copy heading and permalink for Figure 4.4.4.(b)">🔗</a></div></figcaption></figure></div>
+<div class="sbspanel top" style="width:31.0344827586207%;"><figure class="figure figure-like" id="pulsef"><img src="external/pulsef.png" class="contained"><figcaption><span class="codenumber">(c)</span><span class="space"> </span>Amplitude Doubled<div class="autopermalink" data-description="Figure 4.4.4.(c)"><a href="#pulsef" title="Copy heading and permalink for Figure 4.4.4.(c)">🔗</a></div></figcaption></figure></div>
+</div></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.4.4<span class="period">.</span></span><span class="space"> </span>Free End Pulse Overlapping<div class="autopermalink" data-description="Figure 4.4.4"><a href="#freep" title="Copy heading and permalink for Figure 4.4.4">🔗</a></div></figcaption></figure><div class="para" id="subsec-interferMW-6">Overlapping of two or more waves at the same region at same time is known as <dfn class="terminology">interference</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-interferMW-6" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 4.4.4: Interference of Mechanical Waves"><a href="#subsec-interferMW" title="Copy heading and permalink for Subsection 4.4.4: Interference of Mechanical Waves">🔗</a></div></section><section class="subsection" id="subsec-super_princple"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.4.5</span><span class="space"> </span><span class="title">Principle of Superposition</span>
+</h3>
+<div class="para" id="subsec-super_princple-2"> When two wave pulses traveling along a rope in opposite direction they pass through each other undisturbed and continue moving with their individual original amplitude and velocity. They interact only at a point of overlap where their amplitude become algebraic sum of their individual amplitudes as shown in <a href="sec_fourth-medwave.html#spmw" class="xref" data-knowl="./knowl/xref/spmw.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.4.5">Figure 4.4.5</a>.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-super_princple-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="spmw"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:25%;"><figure class="figure figure-like" id="pulsesame"><img src="external/pulsesame.png" class="contained"><figcaption><span class="codenumber">(a)</span><span class="space"> </span>in same phase<div class="autopermalink" data-description="Figure 4.4.5.(a)"><a href="#pulsesame" title="Copy heading and permalink for Figure 4.4.5.(a)">🔗</a></div></figcaption></figure></div>
+<div class="sbspanel top" style="width:25%;"><figure class="figure figure-like" id="pulseresa"><img src="external/pulseresa.png" class="contained"><figcaption><span class="codenumber">(b)</span><span class="space"> </span>Double amplitude<div class="autopermalink" data-description="Figure 4.4.5.(b)"><a href="#pulseresa" title="Copy heading and permalink for Figure 4.4.5.(b)">🔗</a></div></figcaption></figure></div>
+<div class="sbspanel top" style="width:25%;"><figure class="figure figure-like" id="pulseopp"><img src="external/pulseopp.png" class="contained"><figcaption><span class="codenumber">(c)</span><span class="space"> </span>in oppsite phase<div class="autopermalink" data-description="Figure 4.4.5.(c)"><a href="#pulseopp" title="Copy heading and permalink for Figure 4.4.5.(c)">🔗</a></div></figcaption></figure></div>
+<div class="sbspanel top" style="width:25%;"><figure class="figure figure-like" id="pulseresb"><img src="external/pulseresb.png" class="contained"><figcaption><span class="codenumber">(d)</span><span class="space"> </span>Zero amplitude<div class="autopermalink" data-description="Figure 4.4.5.(d)"><a href="#pulseresb" title="Copy heading and permalink for Figure 4.4.5.(d)">🔗</a></div></figcaption></figure></div>
+</div></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.4.5<span class="period">.</span></span><span class="space"> </span>Superposition of two waves<div class="autopermalink" data-description="Figure 4.4.5"><a href="#spmw" title="Copy heading and permalink for Figure 4.4.5">🔗</a></div></figcaption></figure><div class="para logical" id="subsec-super_princple-4">
+<div class="para">When two or more waves superimpose (overlap) at a point then the resultant displacement of the medium particle is the algebraic sum of the displacement of the particle due to individual waves. This is known as <dfn class="terminology">principle of superposition</dfn>. Let <span class="process-math">\(y_{1}(x,t)\)</span> and <span class="process-math">\(y_{2}(x,t)\)</span> are the wave functions of two waves, then from priciple of superposition the resulting displacement of a particle at that point is given by the wave function</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y(x,t) = y_{1}(x,t)+y_{2}(x,t)
+\end{equation*}
+</div>
+<div class="para">Wave function has a linear property (meaning wave function depends only the first power of x and t but not on their higher power) hence the principle of superposition holds good only in a medium which obeys Hooke’s Law. Superposition of two or more waves gives rise to interference. When two similar waves superimpose in the same phase their amplitude re-enforce each other and resultant amplitude is just the double of their individual amplitude such interference is called a <em class="emphasis">constructive interference</em>. For constructive interference the path difference between two superimposing waves is given by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Delta x = n \lambda, \quad n = 0, 1, 2,\cdots
+\end{equation*}
+</div>
+<div class="para">When two similar waves superimpose in the opposite phase their amplitude cancels out each other and resultant amplitude is just zero such interference is called a <em class="emphasis">destructive interference</em>. For destructive interference the path difference between two superimposing waves is given by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Delta x = \frac{n}{2} \lambda, \quad n = 1, 3, 5,\cdots
+\end{equation*}
+</div>
+<div class="para">The path difference of two waves is related to their phase difference by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Delta \theta = 2\pi \left(\frac{\Delta x}{\lambda}\right)
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-super_princple-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 4.4.5: Principle of Superposition"><a href="#subsec-super_princple" title="Copy heading and permalink for Subsection 4.4.5: Principle of Superposition">🔗</a></div></section><section class="subsection" id="subsec-prog_wave"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.4.6</span><span class="space"> </span><span class="title">Traveling Waves (or Progressive Waves):</span>
+</h3>
+<div class="para logical" id="subsec-prog_wave-2">
+<div class="para"> A wave which can propagate in a medium  and carry energy from one location to another is known as progressive or traveling wave. As progressive wave  passes through a medium each particle executes same type of vibration as the preceding one. No particle is permanently at rest except at its extreme position. All the particles of the medium attain same maximum velocity as they cross their mean position.  A progressive wave is represented by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{\,d^{2}y}{\,dx^{2}} = \frac{1}{v^{2}}\frac{\,d^{2}y}{\,dt^{2}}
+\end{equation*}
+</div>
+<div class="para">where v is the velocity of the wave. The wave function is given by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y(x,t)=A\sin(kx-\omega t)
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(\omega=2\pi\nu\)</span> is the angular frequency and <span class="process-math">\(k=\frac{2\pi}{\lambda}\)</span> is the wave number.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-prog_wave-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 4.4.6: Traveling Waves (or Progressive Waves):"><a href="#subsec-prog_wave" title="Copy heading and permalink for Subsection 4.4.6: Traveling Waves (or Progressive Waves):">🔗</a></div></section><section class="subsection" id="subsec-stand_wave"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.4.7</span><span class="space"> </span><span class="title">Standing Waves (or stationary waves):</span>
+</h3>
+<section class="introduction" id="subsec-stand_wave-2"><div class="para" id="subsec-stand_wave-2-1"> A wave which appears stand still and does not seem to be moving is called a standing wave. It is a pattern of waves rather than wave itself. When two (or more) progressive waves of same frequency travel in a same medium in opposite directions overlap in such a way that the position of medium particles seem stand still at the same point is know as a standing wave. It is a superposition of progressive wave with its own reflection. There is no onward motion of the disturbance as no particle transfers its motion to the next. Since the waves seem stand still the position of medium particles form a pattern of nodes and antinodes. The point in a medium where amplitude of oscillation is zero is called <dfn class="terminology">nodes</dfn>. The point in a medium where oscillations reach to their maximum value is called  <dfn class="terminology">antinodes</dfn>. All points on the string oscillate at the same frequency but with different amplitudes. Standing wave is one of the normal modes of vibrations of stretched string.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-stand_wave-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="standwave"><div class="image-box" style="width: 55%; margin-left: 22.5%; margin-right: 22.5%;"><img src="external/standwave.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.4.6<span class="period">.</span></span><span class="space"> </span>Standing wave<div class="autopermalink" data-description="Figure 4.4.6"><a href="#standwave" title="Copy heading and permalink for Figure 4.4.6">🔗</a></div></figcaption></figure><div class="para logical" id="subsec-stand_wave-2-3">
+<div class="para">The wave function of standing wave can be found as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y_{1}(x,t)=A\sin (kx-\omega t)\quad [\text{wave travels along +x axis.}]
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y_{2}(x,t)=A\sin (kx+\omega t)\quad [\text{wave travels along -x axis.}]
+\end{equation*}
+</div>
+<div class="para">From the principle of superposition the resultant wave is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y(x,t)=y_{1}(x,t)+y_{2}(x,t)
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= A\left[\sin (kx-\omega t)+\sin (kx+\omega t)\right]
+\end{equation*}
+</div>
+<div class="para"><details class="ptx-footnote" aria-live="polite" id="subsec-stand_wave-2-3-5"><summary class="ptx-footnote__number" title="Footnote 4.4.3"><sup> 3 </sup></summary><div class="ptx-footnote__contents" id="subsec-stand_wave-2-3-5">See Appendix for trigonometric identities <span class="process-math">\(\sin\alpha+\sin\beta\)</span> and <span class="process-math">\(\cos(-\theta) =\cos\theta\text{.}\)</span>
+</div></details></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-stand_wave-2-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-stand_wave-2-4">
+<div class="displaymath process-math">
+\begin{equation*}
+or,\quad y(x,t)= A\left[2\sin\frac{(kx-\omega t)+ (kx+\omega t)}{2}\cos\frac{(kx-\omega t)- (kx+\omega t)}{2}\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="eqn-standw1">
+\begin{equation}
+\therefore\quad y(x,t) = 2A\sin kx\cos\omega t\tag{4.4.7}
+\end{equation}
+</div>
+<div class="para">The term  <span class="process-math">\(\sin kx \)</span> describes the sinusoidal shape of the wave pattern and the term <span class="process-math">\(\cos\omega t\)</span> describes the flip-flop (up-down oscillatory)  motion of each wave segment. This  is no longer a progressive wave equation as position and time dependence of the wave equation have been separated from each other. The term <span class="process-math">\(2A \,\sin kx \)</span> defines the amplitude of a wave at a given location and the term <span class="process-math">\(\cos\omega t\)</span> defines the variation in displacement of a medium particle with time, t.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-stand_wave-2-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><section class="subsubsection" id="subsubsec-node_antinode"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">4.4.7.1</span><span class="space"> </span><span class="title">Position of nodes and antinodes</span>
+</h4>
+<div class="para logical" id="subsubsec-node_antinode-2">
+<div class="para">Since the amplitude of standing wave is zero we can set in eqn. <a href="sec_fourth-medwave.html#eqn-standw1" class="xref" data-knowl="./knowl/xref/eqn-standw1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.4.7">(4.4.7)</a> as</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-standw1.html">
+\begin{equation*}
+2A\,\sin kx=0 \Rightarrow \sin kx=0 =\sin n\pi
+\end{equation*}
+</div>
+<div class="para"><span class="process-math">\([\text{as}\quad 2A\neq 0\quad \text{and}\quad n=0,1,2,3,\cdots]\)</span></div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-standw1.html">
+\begin{equation*}
+\therefore\quad x=\frac{n\pi}{k}=\frac{n\lambda}{2}
+\end{equation*}
+</div>
+<div class="para"><span class="process-math">\(\because k=\frac{2\pi}{\lambda}\quad \text{and}\quad n=0,1,2,3,\cdots]\)</span></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-node_antinode-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsubsec-node_antinode-3">
+<div class="para">Since the displacement of particles are maximum at antinodes in  standing wave we can set in eqn. <a href="sec_fourth-medwave.html#eqn-standw1" class="xref" data-knowl="./knowl/xref/eqn-standw1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.4.7">(4.4.7)</a> as</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-standw1.html">
+\begin{equation*}
+2A\,\sin kx=2A \Rightarrow \sin kx= \pm1 = \sin (n+\frac{1}{2})\pi 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-standw1.html">
+\begin{equation*}
+\therefore \quad x= \frac{(n+\frac{1}{2})\pi}{k} = (n+\frac{1}{2})\frac{\lambda}{2} \qquad n=0,1,2,3,\cdots
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-node_antinode-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsubsection 4.4.7.1: Position of nodes and antinodes"><a href="#subsubsec-node_antinode" title="Copy heading and permalink for Subsubsection 4.4.7.1: Position of nodes and antinodes">🔗</a></div></section><div class="autopermalink" data-description="Subsection 4.4.7: Standing Waves (or stationary waves):"><a href="#subsec-stand_wave" title="Copy heading and permalink for Subsection 4.4.7: Standing Waves (or stationary waves):">🔗</a></div></section><div class="autopermalink" data-description="Section 4.4: Waves in a Medium"><a href="#sec_fourth-medwave" title="Copy heading and permalink for Section 4.4: Waves in a Medium">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="sec_fourth-examplesA.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec_fourth-organ.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

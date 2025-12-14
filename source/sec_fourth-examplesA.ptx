@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_fourth-examplesA" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Examples A</title>
+  
+
+  <example>
+    <statement>
+      <p>
+        A simple harmonic oscillator of mass 100 g is released from rest at a displacement of 5 cm 
+        and oscillates with a frequency of 120 rpm. Find 
+        <ol marker="a.">
+          <li>
+            its angular frequency, 
+          </li>
+          <li>
+            its effective force constant,
+          </li>
+          <li>
+            its amplitude,
+          </li>
+          <li>
+            its energy,
+          </li>
+          <li>
+            its speed when passing through x = 2 cm, 
+          </li>
+          <li>
+            the time to first reach x = 2 cm,
+          </li>
+          <li>
+            the force on the mass when x = 2 cm,
+          </li>
+          <li>
+            the time to make one complete cycle. 
+          </li>
+        </ol>
+             </p>
+    </statement>
+    <solution>
+      <p>
+        Given: <m>m=0.1\,kg, \quad A = 0.05 \,m,\quad f = 2\,Hz, \quad x=0.02\,m</m>
+      </p>
+      <p>
+        <ol marker="a.">
+          <li>
+           <m> \omega =120 \,rpm= \frac{120\times 2\pi}{60}(rad/sec) = 12.566 \,rad/s</m>
+          </li>
+          <li>
+            <me>
+              \omega = \sqrt{\frac{k}{m}}
+            </me>
+            <m>\therefore\quad  k= m\omega^{2} = 15.79 \,N/m</m>
+              </li>
+          <li>
+            <m>A=5cm=0.05\,m</m>
+          </li>
+          <li>
+           <m> E = \frac{1}{2}kA^{2} = = 0.0197 \,J</m>
+          </li>
+          <li>
+           <m>\frac{1}{2}kA^{2} =  \frac{1}{2}mv^{2} +  \frac{1}{2}kx^{2}</m> 
+           <me>
+            \therefore\quad v = 0.576 \,m/s
+           </me>
+             </li>
+          <li>
+            <me>
+              x = A\cos\omega t 
+            </me>
+            <me>
+              \therefore\quad t = 0.293 \,s
+            </me>
+              </li>
+          <li>
+            <me>
+              F = -kx 
+            </me>
+            <me>
+              \therefore\quad F = - 0.316 \,N 
+            </me>
+             </li>
+          <li>
+            <me>
+              T = \frac{1}{f}
+           </me>
+            <me>
+              \therefore\quad T = 0.5 \,s
+            </me>
+              </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+  
+
+  <example>
+    <statement>
+      <p>
+        A transverse wave is expressed in MKS units as <m>y(x,t) = 0.02 \sin (3t+2x).</m> Find 
+        <ol marker="a.">
+          <li>
+            its amplitude,
+          </li>
+          <li>
+            its wavelength,
+          </li>
+          <li>
+            its frequency, 
+          </li>
+          <li>
+            its period,
+          </li>
+          <li>
+            its velocity,
+          </li>
+          <li>
+            the particle displacement at t = 1 s and x = 2 m,
+          </li>
+          <li>
+            the particle velocity at that time and place, 
+          </li>
+          <li>
+            the acceleration of the particle at that time and place, 
+          </li>
+          <li>
+            the concavity of the wave at that time and place.
+          </li>
+        </ol>
+           </p>
+    </statement>
+    <solution>
+      <p>
+        Given: <m>A =0.02\,m, \quad k=2\, N/m, \quad t = 1 \,s,\quad  x=2\,m </m>
+      </p>
+      <p>
+        Evaluate the given equation with 
+        <me>
+          y(x,t) = A\sin(\omega t + kx) 
+        </me>
+        <ol marker="a.">
+          <li>
+          <m>\because \quad y(x,t) = A\sin(\omega t + kx) \quad \Rightarrow \quad A =0.02 \,m</m>
+          </li>
+          <li>
+           <m>k = \frac{2\pi}{\lambda} \quad\Rightarrow\quad \lambda = \pi= 3.14 \,m</m>
+          </li>
+          <li>
+           <m> \omega = 2\pi f \quad \Rightarrow \quad f = 0.477 \,Hz</m>
+          </li>
+          <li>
+          <m>\omega = \frac{2\pi}{T} \quad \Rightarrow \quad T = 2.09 \,s</m>
+          </li>
+          <li>
+           <m>v=\frac{\omega}{k}  \quad \Rightarrow  \quad v = -1.5 \,m/s</m>
+          </li>
+          <li>
+           <m>y(2,1)  = 0.02 \sin (3\times 1+2\times 2) = 0.0131 \,m</m>
+          </li>
+          <li>
+           <m>v_{y} = \frac{\,dy}{\,dt} =\omega A\cos(\omega t +kx)\quad \Rightarrow \quad v_{y}(2,1) = 0.0452 \,m/s</m>
+          </li>
+          <li>
+           <m> a_{y} = \frac{\,d^{2}y}{\,dt^{2}} = -\omega^{2}y \quad \Rightarrow \quad a_{y}(2,1)=-0.118 \,m/s^{2}</m>
+          </li>
+          <li>
+           <m>\frac{\,d^{2}y}{\,dx^{2}} = \frac{1}{v^{2}}\frac{\,d^{2}y}{\,dt^{2}} = -k^{2}y = -0.0526</m>
+          </li>
+        </ol>
+            </p>
+    </solution>
+  </example>
+</section>

@@ -1,0 +1,1555 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Examples B</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="General Physics">
+<meta property="book:author" content="Sunil Karna">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.11.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.49eb29f446982553.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.731d8387162b79c1.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.f4ab138da65f4203.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="changeme" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="calphysii.html"><span class="title">General Physics</span> <span class="subtitle">Volume II</span></a></h1>
+<p class="byline">Sunil Karna</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="backmatter-5.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec_fifth-examplesA.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch_fifth.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec_fifth-opinst.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} 
+   \newcommand{\Z}{\mathbb Z} 
+   \newcommand{\Q}{\mathbb Q} 
+   \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="front-colophon.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-dedication"><div class="toc-title-box"><a href="frontmatter-4.html" class="internal"><span class="title">Dedication</span></a></div></li>
+<li class="toc-item toc-acknowledgement"><div class="toc-title-box"><a href="frontmatter-5.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="frontmatter-6.html" class="internal"><span class="title">Preface</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch_first.html" class="internal"><span class="codenumber">1</span> <span class="title">Electrostatics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_first-intro.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Electrostatic Induction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_first-intro.html#subsec-charg_transf" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Methods of Transferring Charges:</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-intro.html#subsubsec-electroscope" class="internal"><span class="codenumber">1.1.1.1</span> <span class="title">Electrophorus:</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-intro.html#subsubsec-electrscp" class="internal"><span class="codenumber">1.1.1.2</span> <span class="title">Electroscope:</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_first-intro.html#subsec-coulmb_law" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Coulumb’s Law</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-intro.html#subsubsec-1d_colmb" class="internal"><span class="codenumber">1.1.2.1</span> <span class="title">Coulumb’s Law in One Dimension</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-intro.html#subsubsec-2d_colmb" class="internal"><span class="codenumber">1.1.2.2</span> <span class="title">Coulomb’s Law in Two and Three Dimensions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_first-intro.html#subsec-superp_th" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Principle of Superposition</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_first-el_field.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Electric Field</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_first-el_field.html#subsec-chrg_dist" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Electric Field of a Continuous Charge Distribution</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_first-examplesA.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Examples A</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_first-flux.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Electric Flux</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_first-flux.html#subsec-gauss" class="internal"><span class="codenumber">1.4.1</span> <span class="title">Gauss’s Law</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-flux.html#subsubsec-appl_gauss" class="internal"><span class="codenumber">1.4.1.1</span> <span class="title">Applications of Gauss’s Law</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_first-flux.html#subsec-sph_symmtr" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Cases of spherical symmetry:</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-flux.html#subsubsec-point_chrg" class="internal"><span class="codenumber">1.4.2.1</span> <span class="title">Electric field due to a point charge</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-flux.html#subsubsec-sph_chrg" class="internal"><span class="codenumber">1.4.2.2</span> <span class="title">Electric field due to a  spherical symmetric charged distribution</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-flux.html#subsubsec-hsph_chrg" class="internal"><span class="codenumber">1.4.2.3</span> <span class="title">Electric field due to a uniformly charged non-conducting hollow sphere</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_first-flux.html#subsec-cyl_symtr" class="internal"><span class="codenumber">1.4.3</span> <span class="title">Cases of cylindrical symmetry:</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-flux.html#subsubsec-long_wire" class="internal"><span class="codenumber">1.4.3.1</span> <span class="title">Electric field due to infinitely long charged conductor</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-flux.html#subsubsec-long_cyl" class="internal"><span class="codenumber">1.4.3.2</span> <span class="title">Electric field due to a uniform infinite cylindrical charge</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-flux.html#subsubsec-chrgd_sheet" class="internal"><span class="codenumber">1.4.3.3</span> <span class="title">Electric field due to infinite sheet of charge</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-flux.html#subsubsec-out_cond" class="internal"><span class="codenumber">1.4.3.4</span> <span class="title">Electric field just outside a charged conductor</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_first-examplesB.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Examples B</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_firstA.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Exercise A</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_first-pot.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Electric Potential</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_first-pot.html#subsec-capctrs" class="internal"><span class="codenumber">1.7.1</span> <span class="title">Capacitors</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-pot.html#subsubsec-cap_comb" class="internal"><span class="codenumber">1.7.1.1</span> <span class="title">Combination of Capacitors</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-pot.html#subsubsec-paralle_cap" class="internal"><span class="codenumber">1.7.1.2</span> <span class="title">Parallel-Plate Capacitor</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-pot.html#subsubsec-spher_cap" class="internal"><span class="codenumber">1.7.1.3</span> <span class="title">Spherical Capacitor</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-pot.html#subsubsec-cyl_cap" class="internal"><span class="codenumber">1.7.1.4</span> <span class="title">Cylindrical Capacitor</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_first-pot.html#subsec-enrgy_cap" class="internal"><span class="codenumber">1.7.2</span> <span class="title">Energy Stored in a Capacitor</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_first-pot.html#subsubsec-elf_enrgdenst" class="internal"><span class="codenumber">1.7.2.1</span> <span class="title">Electric Field Energy Density</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_first-pot.html#subsec-cap_enrgloss" class="internal"><span class="codenumber">1.7.3</span> <span class="title">Loss of Energy in Combining two Capacitors</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_first-examplesC.html" class="internal"><span class="codenumber">1.8</span> <span class="title">Examples C</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_firstB.html" class="internal"><span class="codenumber">1.9</span> <span class="title">Exercise B</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch_second.html" class="internal"><span class="codenumber">2</span> <span class="title">Electricity</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_second-intro.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Conduction Mechanism of Current in a Metal</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_second-intro.html#subsec-ohm_law" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Ohm’s Law:</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_second-intro.html#subsubsec-restvty" class="internal"><span class="codenumber">2.1.1.1</span> <span class="title">Resistivity or Specific Resistance, <span class="process-math">\(\rho\text{:}\)</span></span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_second-intro.html#subsubsec-temp_restvty" class="internal"><span class="codenumber">2.1.1.2</span> <span class="title">Temperature Coefficient of Resistivity</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_second-intro.html#subsubsec-el_power" class="internal"><span class="codenumber">2.1.1.3</span> <span class="title">Electrical Power:</span></a></div></li>
+</ul>
+</li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_second-examplesA.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Examples A</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_second-elcircuits.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Electrical Circuits</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_second-elcircuits.html#subsec-emf" class="internal"><span class="codenumber">2.3.1</span> <span class="title">A summary on internal resistance, emf, and terminal potential difference:</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_second-elcircuits.html#subsec-res_circt" class="internal"><span class="codenumber">2.3.2</span> <span class="title">Resistance Circuits:</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_second-elcircuits.html#subsubsec-res_comb" class="internal"><span class="codenumber">2.3.2.1</span> <span class="title">Combination of Resistances</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_second-elcircuits.html#subsec-maxptr" class="internal"><span class="codenumber">2.3.3</span> <span class="title">Maximum Power Transfer Theorem</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_second-elcircuits.html#subsec-el_instrmnt" class="internal"><span class="codenumber">2.3.4</span> <span class="title">Electrical Instruments:</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_second-kirchhf.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Kirchhoff’s Law</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_second-kirchhf.html#subsec-cir_anals" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Analysis of DC Electric Circuit</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_second-kirchhf.html#subsec-wheat_stone" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Wheat-Stone’s Bridge Circuit</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_second-kirchhf.html#subsec-chrg_dischrg" class="internal"><span class="codenumber">2.4.3</span> <span class="title">Charging and Discharging of a Capacitor</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_second-examplesB.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Examples B</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_second.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Exercise</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch_third.html" class="internal"><span class="codenumber">3</span> <span class="title">Magnetism</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_third-intro.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Magnetic Field</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_third-intro.html#subsec-mag_mater" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Magnetic Materials</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-intro.html#subsubsec-ferro" class="internal"><span class="codenumber">3.1.1.1</span> <span class="title">Ferromagnetic Material:</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-intro.html#subsubsec-para" class="internal"><span class="codenumber">3.1.1.2</span> <span class="title">Paramagnetic Material:</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-intro.html#subsubsec-dia" class="internal"><span class="codenumber">3.1.1.3</span> <span class="title">Diamagnetic Material:</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-intro.html#subsec-geo_mag" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Geomagnetism</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-intro.html#subsec-mag_force" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Magnetic Force on a Moving Charge</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-intro.html#subsec-lorentz" class="internal"><span class="codenumber">3.1.4</span> <span class="title">Electromagnetic Force on a Moving Charge (or Lorentz Force)</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_third-intro.html#subsec-mag_flux" class="internal"><span class="codenumber">3.1.5</span> <span class="title">Magnetic Flux, <span class="process-math">\(\Phi_{B}\)</span></span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-intro.html#subsubsec-gauss_mag" class="internal"><span class="codenumber">3.1.5.1</span> <span class="title">Gauss’s Law for Magnetism</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-intro.html#subsubsec-vel_select" class="internal"><span class="codenumber">3.1.5.2</span> <span class="title">Velocity Selector</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-intro.html#subsubsec-cyclotron" class="internal"><span class="codenumber">3.1.5.3</span> <span class="title">Cyclotron Frequency</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-intro.html#subsubsec-masspect" class="internal"><span class="codenumber">3.1.5.4</span> <span class="title">Mass Spectrometer</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-intro.html#subsubsec-Hall_effect" class="internal"><span class="codenumber">3.1.5.5</span> <span class="title">Hall Effect</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_third-Aforce.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Magnetic Forces on Currents</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-Aforce.html#subsec-ilb" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Magnetic Force on a Current Element</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_third-Aforce.html#subsec-IA" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Magnetic Dipole Moment of a Current Loop</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-Aforce.html#subsubsec-solenoid" class="internal"><span class="codenumber">3.2.2.1</span> <span class="title">Solenoid</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-Aforce.html#subsec-mag_torq" class="internal"><span class="codenumber">3.2.3</span> <span class="title">Magnetic Torque on a Current Loop</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-Aforce.html#subsec-mag_potE" class="internal"><span class="codenumber">3.2.4</span> <span class="title">Potential Energy of Magnetic Dipole</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_third-examplesA.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Examples A</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_third-magS.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Sources of Magnetic Fields</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_third-magS.html#subsec-magfld_movcharge" class="internal"><span class="codenumber">3.4.1</span> <span class="title">Magnetic Field of a Moving Charge:</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-magS.html#subsubsec-free_permblt" class="internal"><span class="codenumber">3.4.1.1</span> <span class="title">Permeability of Free Space, <span class="process-math">\(\mu_{o}\)</span></span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-magS.html#subsubsec-biot_savrt" class="internal"><span class="codenumber">3.4.1.2</span> <span class="title">Magnetic Field of a Current Element (Biot Savart Law)</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-magS.html#subsubsec-stwire_magf" class="internal"><span class="codenumber">3.4.1.3</span> <span class="title">Magnetic Field of a straight wire</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-magS.html#subsubsec-magcrnt_loop" class="internal"><span class="codenumber">3.4.1.4</span> <span class="title">Magnetic field due to a current loop</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-magS.html#subsubsec-helmholtz" class="internal"><span class="codenumber">3.4.1.5</span> <span class="title">Magnetic field at the center of a Helmholtz coil</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-magS.html#subsubsec-solenoid_curnt" class="internal"><span class="codenumber">3.4.1.6</span> <span class="title">Magnetic field at a point due to current carrying solenoid</span></a></div></li>
+</ul>
+</li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_third-ampre.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Amper’s Law</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-ampre.html#subsec-mag_longcond" class="internal"><span class="codenumber">3.5.1</span> <span class="title">Magnetic field  due to infinitely long current carrying  conductor</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-ampre.html#subsec-mag_sheetcond" class="internal"><span class="codenumber">3.5.2</span> <span class="title">Magnetic field  due to infinitely long current carrying flat sheet</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-ampre.html#subsec-mag_solnd" class="internal"><span class="codenumber">3.5.3</span> <span class="title">Magnetic field at a point due to infinitely long solenoid</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-ampre.html#subsec-mag_toroid" class="internal"><span class="codenumber">3.5.4</span> <span class="title">Magnetic field at a point due to toroid</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-ampre.html#subsec-mag_parallelcond" class="internal"><span class="codenumber">3.5.5</span> <span class="title">Magnetic Force between Parallel Wires</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_third-examplesB.html" class="internal"><span class="codenumber">3.6</span> <span class="title">Examples B</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_third-elmag.html" class="internal"><span class="codenumber">3.7</span> <span class="title">Electromagnetic Induction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsec-faraday" class="internal"><span class="codenumber">3.7.1</span> <span class="title">Faraday’s Law</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsec-lenz" class="internal"><span class="codenumber">3.7.2</span> <span class="title">Lenz’s Law</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsec-motional_emf" class="internal"><span class="codenumber">3.7.3</span> <span class="title">Motional Electromotive Force</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_third-elmag.html#subsec-induced_elf" class="internal"><span class="codenumber">3.7.4</span> <span class="title">Induced Electric Fields</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsubsec-eddy" class="internal"><span class="codenumber">3.7.4.1</span> <span class="title">Eddy Currents</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsubsec-genertr" class="internal"><span class="codenumber">3.7.4.2</span> <span class="title">Generator</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsubsec-skineffect" class="internal"><span class="codenumber">3.7.4.3</span> <span class="title">Skin Effect</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsubsec-supercond" class="internal"><span class="codenumber">3.7.4.4</span> <span class="title">Superconductivity</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_third-elmag.html#subsec-self_induct" class="internal"><span class="codenumber">3.7.5</span> <span class="title">Self-Inductance:</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsubsec-self_solenoid" class="internal"><span class="codenumber">3.7.5.1</span> <span class="title">Self-inductance of a solenoid:</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsubsec-mutual_ind" class="internal"><span class="codenumber">3.7.5.2</span> <span class="title">Mutual Inductance:</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsubsec-maf_fieldenergy" class="internal"><span class="codenumber">3.7.5.3</span> <span class="title">Magnetic-Field Energy</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsec-rlc" class="internal"><span class="codenumber">3.7.6</span> <span class="title">R-L Circuit</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsec-lc" class="internal"><span class="codenumber">3.7.7</span> <span class="title">L-C Circuit</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-elmag.html#subsec-lcr" class="internal"><span class="codenumber">3.7.8</span> <span class="title">L-C-R Circuit</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_third-examplesC.html" class="internal"><span class="codenumber">3.8</span> <span class="title">Examples C</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_third-accircuits.html" class="internal"><span class="codenumber">3.9</span> <span class="title">AC Circuits</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsec-rmsI" class="internal"><span class="codenumber">3.9.1</span> <span class="title">RMS value of emf or current</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_third-accircuits.html#subsec-complex_number" class="internal"><span class="codenumber">3.9.2</span> <span class="title">The Complex Number Method for A.C. Analysis</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsubsec-ZXY" class="internal"><span class="codenumber">3.9.2.1</span> <span class="title">Impedance, Reactance, and Admittance</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsubsec-acR" class="internal"><span class="codenumber">3.9.2.2</span> <span class="title">Resistance in an AC Circuit</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsubsec-acL" class="internal"><span class="codenumber">3.9.2.3</span> <span class="title">Inductance in an AC Circuit</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsubsec-acC" class="internal"><span class="codenumber">3.9.2.4</span> <span class="title">Capacitance in an AC Circuit</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsubsec-rlc_variation" class="internal"><span class="codenumber">3.9.2.5</span> <span class="title">Variation of reactance due to R, L and C with angular frequency <span class="process-math">\(\omega\)</span> in an AC circuit</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsubsec-acPower" class="internal"><span class="codenumber">3.9.2.6</span> <span class="title">Power in an AC Circuit</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsubsec-acRL" class="internal"><span class="codenumber">3.9.2.7</span> <span class="title">AC Circuit with Resistance and  Inductance in Series</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsubsec-acRC" class="internal"><span class="codenumber">3.9.2.8</span> <span class="title">AC Circuit with Resistance and  Capacitance in Series</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsubsec-acRLC_series" class="internal"><span class="codenumber">3.9.2.9</span> <span class="title">AC Circuit with Resistance,  Capacitance, and Inductance in Series</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsubsec-acRLC_parallel" class="internal"><span class="codenumber">3.9.2.10</span> <span class="title">AC Circuit with Resistance,  Capacitance, and Inductance in Parallel</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsec-transformer" class="internal"><span class="codenumber">3.9.3</span> <span class="title">Transformer</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_third-accircuits.html#subsec-ac_preferential" class="internal"><span class="codenumber">3.9.4</span> <span class="title">AC is preferential over dc in power transmission</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_third-examplesD.html" class="internal"><span class="codenumber">3.10</span> <span class="title">Examples D</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_third.html" class="internal"><span class="codenumber">3.11</span> <span class="title">Exercise</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch_fourth.html" class="internal"><span class="codenumber">4</span> <span class="title">Waves and Acoustics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_fourth-intro.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Simple Harmonic Motion</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fourth-intro.html#subsec-shm_energy" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Energy in SHM</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_fourth-waves.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Waves</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fourth-waves.html#subsec-shm_wfn" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Simple harmonic wave function</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fourth-waves.html#subsubsec-wave_eq" class="internal"><span class="codenumber">4.2.1.1</span> <span class="title">Wave equation</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fourth-waves.html#subsubsec-waveeq_string" class="internal"><span class="codenumber">4.2.1.2</span> <span class="title">Wave Equation in Stretched String</span></a></div></li>
+</ul>
+</li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_fourth-examplesA.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Examples A</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_fourth-medwave.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Waves in a Medium</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fourth-medwave.html#subsec-speed_TW" class="internal"><span class="codenumber">4.4.1</span> <span class="title">Speed of a Transverse Wave</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fourth-medwave.html#subsec-speed_LW" class="internal"><span class="codenumber">4.4.2</span> <span class="title">Speed of a Longitudinal Wave</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fourth-medwave.html#subsec-energy_MW" class="internal"><span class="codenumber">4.4.3</span> <span class="title">Energy Transport in a Mechanical Wave</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fourth-medwave.html#subsec-interferMW" class="internal"><span class="codenumber">4.4.4</span> <span class="title">Interference of Mechanical Waves</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fourth-medwave.html#subsec-super_princple" class="internal"><span class="codenumber">4.4.5</span> <span class="title">Principle of Superposition</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fourth-medwave.html#subsec-prog_wave" class="internal"><span class="codenumber">4.4.6</span> <span class="title">Traveling Waves (or Progressive Waves):</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fourth-medwave.html#subsec-stand_wave" class="internal"><span class="codenumber">4.4.7</span> <span class="title">Standing Waves (or stationary waves):</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fourth-medwave.html#subsubsec-node_antinode" class="internal"><span class="codenumber">4.4.7.1</span> <span class="title">Position of nodes and antinodes</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_fourth-organ.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Musical Instruments</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fourth-organ.html#subsec-string" class="internal"><span class="codenumber">4.5.1</span> <span class="title">Stretched String</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fourth-organ.html#subsec-organ_pipe" class="internal"><span class="codenumber">4.5.2</span> <span class="title">Organ Pipe</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_fourth-sound.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Sound</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fourth-sound.html#subsec-echo" class="internal"><span class="codenumber">4.6.1</span> <span class="title">Reverberation and Echo</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fourth-sound.html#subsec-beatsf" class="internal"><span class="codenumber">4.6.2</span> <span class="title">Beats</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fourth-sound.html#subsec-dopplerefct" class="internal"><span class="codenumber">4.6.3</span> <span class="title">Doppler Effect</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fourth-sound.html#subsubsec-ssl" class="internal"><span class="codenumber">4.6.3.1</span> <span class="title">Stationary source and listener</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fourth-sound.html#subsubsec-smsl" class="internal"><span class="codenumber">4.6.3.2</span> <span class="title">Source is moving towards stationary listener</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fourth-sound.html#subsubsec-smaway_sl" class="internal"><span class="codenumber">4.6.3.3</span> <span class="title">Source is moving away from stationary listner</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fourth-sound.html#subsubsec-lmss" class="internal"><span class="codenumber">4.6.3.4</span> <span class="title">Listener is moving towards a stationary source</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fourth-sound.html#subsubsec-lmaway_ss" class="internal"><span class="codenumber">4.6.3.5</span> <span class="title">Listener is moving away from a stationary source</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fourth-sound.html#subsubsec-sl_eo" class="internal"><span class="codenumber">4.6.3.6</span> <span class="title">Source and listener move towards each other</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fourth-sound.html#subsubsec-slaway_eo" class="internal"><span class="codenumber">4.6.3.7</span> <span class="title">Source and listener move away from each other</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fourth-sound.html#subsec-sonic_boom" class="internal"><span class="codenumber">4.6.4</span> <span class="title">Sonic Boom</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_fourth-examplesB.html" class="internal"><span class="codenumber">4.7</span> <span class="title">Examples B</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_fourth.html" class="internal"><span class="codenumber">4.8</span> <span class="title">Exercise</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch_fifth.html" class="internal"><span class="codenumber">5</span> <span class="title">Optics</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_fifth-intro.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Light</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-intro.html#subsec-speed_light" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Speed of Light</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-intro.html#subsec-huygens" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Huygens’s Principle</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_fifth-geoopt.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Geometrical Optics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsec-refl" class="internal"><span class="codenumber">5.2.1</span> <span class="title">Reflection</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-refl_laws" class="internal"><span class="codenumber">5.2.1.1</span> <span class="title">Laws of Reflection</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-reg_diff" class="internal"><span class="codenumber">5.2.1.2</span> <span class="title">Regular and Diffuse Reflection</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-image_pmirror" class="internal"><span class="codenumber">5.2.1.3</span> <span class="title">Image formed by a mirror</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-plan_mirror" class="internal"><span class="codenumber">5.2.1.4</span> <span class="title">Plane Mirror</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-inclined_mir" class="internal"><span class="codenumber">5.2.1.5</span> <span class="title">Inclined Mirrors</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsec-sp_mir" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Spherical Mirror</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-fr_rel" class="internal"><span class="codenumber">5.2.2.1</span> <span class="title">Relation between f and R</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-mir_form" class="internal"><span class="codenumber">5.2.2.2</span> <span class="title">Mirror Formula</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-lateral_magmir" class="internal"><span class="codenumber">5.2.2.3</span> <span class="title">Lateral Magnification, m</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-concave_image" class="internal"><span class="codenumber">5.2.2.4</span> <span class="title">Formation of Image by a Concave Mirror</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-convex_image" class="internal"><span class="codenumber">5.2.2.5</span> <span class="title">Formation of Image by a Convex Mirror</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsec-refraction" class="internal"><span class="codenumber">5.2.3</span> <span class="title">Refraction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-" class="internal"><span class="codenumber">5.2.3.1</span> <span class="title">Laws of Refraction</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-real_apprnt" class="internal"><span class="codenumber">5.2.3.2</span> <span class="title">Real and Apparent Depth</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-lateral_shift" class="internal"><span class="codenumber">5.2.3.3</span> <span class="title">Lateral Shift</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-reversblty_prncple" class="internal"><span class="codenumber">5.2.3.4</span> <span class="title">Principle of Reversibility of Light</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsec-tir" class="internal"><span class="codenumber">5.2.4</span> <span class="title">Total Internal Reflection</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-mirage" class="internal"><span class="codenumber">5.2.4.1</span> <span class="title">Mirage</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsec-prism_ref" class="internal"><span class="codenumber">5.2.5</span> <span class="title">Refraction through a Prism</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsec-srs_img" class="internal"><span class="codenumber">5.2.6</span> <span class="title">Image formed by Spherical Refracting Surfaces</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-srs_mag" class="internal"><span class="codenumber">5.2.6.1</span> <span class="title">Lateral or Transverse Magnification, m</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-longmag_srs" class="internal"><span class="codenumber">5.2.6.2</span> <span class="title">Longitudinal Magnification, L</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsec-thin_lens" class="internal"><span class="codenumber">5.2.7</span> <span class="title">Thin Lenses</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-lens_formula" class="internal"><span class="codenumber">5.2.7.1</span> <span class="title">Lens Formula</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-vexlens_img" class="internal"><span class="codenumber">5.2.7.2</span> <span class="title">Image formed by a convex lens</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-cavelens_img" class="internal"><span class="codenumber">5.2.7.3</span> <span class="title">Image formed by a concave lens</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsec-lensmakers" class="internal"><span class="codenumber">5.2.8</span> <span class="title">Lens Maker’s Formula</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-fr_dependence" class="internal"><span class="codenumber">5.2.8.1</span> <span class="title">Dependence of f of a lens on R of its surfaces</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-mindist_rimge" class="internal"><span class="codenumber">5.2.8.2</span> <span class="title">Minimum distance between object and its real image in a convex lens</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-geoopt.html#subsubsec-eqf_thinlens" class="internal"><span class="codenumber">5.2.8.3</span> <span class="title">Equivalent focal length of two thin lenses</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_fifth-dispers.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Dispersion</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-dispers.html#subsec-achrom_prism" class="internal"><span class="codenumber">5.3.1</span> <span class="title">Deviation Without Dispersion (Achromatic Prism)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-dispers.html#subsec-diswdev1" class="internal"><span class="codenumber">5.3.2</span> <span class="title">Dispersion Without Deviation</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-dispers.html#subsec-chrom_abr" class="internal"><span class="codenumber">5.3.3</span> <span class="title">Chromatic Aberation in a Lens</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-dispers.html#subsubsec-achrom" class="internal"><span class="codenumber">5.3.3.1</span> <span class="title">Achromatism</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-dispers.html#subsec-rainbow" class="internal"><span class="codenumber">5.3.4</span> <span class="title">Rainbow</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-dispers.html#subsubsec-prainbow" class="internal"><span class="codenumber">5.3.4.1</span> <span class="title">Primary Rainbow</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-dispers.html#subsubsec-srainbow" class="internal"><span class="codenumber">5.3.4.2</span> <span class="title">Secondary Rainbow</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-dispers.html#subsec-scattering" class="internal"><span class="codenumber">5.3.5</span> <span class="title">Scattering</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_fifth-examplesA.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Examples A</span></a></div></li>
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec_fifth-examplesB.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Examples B</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_fifth-opinst.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Optical Instruments</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsec-camera" class="internal"><span class="codenumber">5.6.1</span> <span class="title">Camera</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-opinst.html#subsec-opvision" class="internal"><span class="codenumber">5.6.2</span> <span class="title">Optical Vision</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-myopia" class="internal"><span class="codenumber">5.6.2.1</span> <span class="title">Myopia:</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-hyperopia" class="internal"><span class="codenumber">5.6.2.2</span> <span class="title">Hypermetropia  (or hyperopia):</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-visangle" class="internal"><span class="codenumber">5.6.2.3</span> <span class="title">Visual Angle</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-magpower" class="internal"><span class="codenumber">5.6.2.4</span> <span class="title">Angular Magnification  (or Magnifying Power:)</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-opinst.html#subsec-microscope" class="internal"><span class="codenumber">5.6.3</span> <span class="title">Microscope</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-handlens" class="internal"><span class="codenumber">5.6.3.1</span> <span class="title">Simple Microscope</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-compmicros" class="internal"><span class="codenumber">5.6.3.2</span> <span class="title">Compound Microscope</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-opinst.html#subsec-telescope" class="internal"><span class="codenumber">5.6.4</span> <span class="title">Telescope</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-astrts" class="internal"><span class="codenumber">5.6.4.1</span> <span class="title">Astronomical Telescope</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-terrts" class="internal"><span class="codenumber">5.6.4.2</span> <span class="title">Terrestrial Telescope</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-galilots" class="internal"><span class="codenumber">5.6.4.3</span> <span class="title">Galileo’s Telescope</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-opinst.html#subsec-photmtry" class="internal"><span class="codenumber">5.6.5</span> <span class="title">Photometry</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-stcandle" class="internal"><span class="codenumber">5.6.5.1</span> <span class="title">Standard Candle</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-sangl" class="internal"><span class="codenumber">5.6.5.2</span> <span class="title">Solid Angle, <span class="process-math">\(\omega\)</span></span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-lumenflx" class="internal"><span class="codenumber">5.6.5.3</span> <span class="title">Luminous Flux, <span class="process-math">\(\phi\)</span></span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsec-isl" class="internal"><span class="codenumber">5.6.6</span> <span class="title">Inverse Square Law</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsec-iil" class="internal"><span class="codenumber">5.6.7</span> <span class="title">Intensity of Illumination</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-opinst.html#subsec-bsil" class="internal"><span class="codenumber">5.6.8</span> <span class="title">Brightness of a surface and illumination</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-opinst.html#subsubsec-bgsp" class="internal"><span class="codenumber">5.6.8.1</span> <span class="title">Bunsen’s Grease Spot Photometer</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_fifth-examplesC.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Examples C</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_fifth-physopt.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Physical Optics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-physopt.html#subsec-interfnc" class="internal"><span class="codenumber">5.8.1</span> <span class="title">Interference</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsubsec-coherent" class="internal"><span class="codenumber">5.8.1.1</span> <span class="title">Coherent Sources</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsubsec-phase_path" class="internal"><span class="codenumber">5.8.1.2</span> <span class="title">Phase Difference and Path Difference</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsec-inter_fringe" class="internal"><span class="codenumber">5.8.2</span> <span class="title">Theory of Interference Fringes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsec-thin_film" class="internal"><span class="codenumber">5.8.3</span> <span class="title">Thickness of Thin Sheet of Transparent Material</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-physopt.html#subsec-thinfilm_interf" class="internal"><span class="codenumber">5.8.4</span> <span class="title">Interference in Thin Films</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsubsec-thinf_interr" class="internal"><span class="codenumber">5.8.4.1</span> <span class="title">Interference due to Reflected Light in Thin Films</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsubsec-thinf_intert" class="internal"><span class="codenumber">5.8.4.2</span> <span class="title">Interference due to Transmitted Light in Thin Films</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsec-thinf_color" class="internal"><span class="codenumber">5.8.5</span> <span class="title">Colors of Thin Films</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-physopt.html#subsec-diffraction" class="internal"><span class="codenumber">5.8.6</span> <span class="title">Diffraction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsubsec-ssdiffrct" class="internal"><span class="codenumber">5.8.6.1</span> <span class="title">Single Slit Diffraction</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsubsec-issdiff" class="internal"><span class="codenumber">5.8.6.2</span> <span class="title">Intensity of Diffraction Pattern due to a Single Slit</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-physopt.html#subsec-dsdiffrc" class="internal"><span class="codenumber">5.8.7</span> <span class="title">Double Slits Diffraction</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsubsec-idsdiffrc" class="internal"><span class="codenumber">5.8.7.1</span> <span class="title">Intensity of Diffraction Pattern due to Double Slits</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsec-msdiffrc" class="internal"><span class="codenumber">5.8.8</span> <span class="title">Multiple Slits Diffraction</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_fifth-physopt.html#subsec-diffgrating" class="internal"><span class="codenumber">5.8.9</span> <span class="title">Diffraction Grating</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsubsec-grat_spectrom" class="internal"><span class="codenumber">5.8.9.1</span> <span class="title">Grating Spectrometer</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsubsec-resolv_power" class="internal"><span class="codenumber">5.8.9.2</span> <span class="title">Resolving Power</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_fifth-physopt.html#subsec-polrzn" class="internal"><span class="codenumber">5.8.10</span> <span class="title">Polarization</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_fifth-examplesD.html" class="internal"><span class="codenumber">5.9</span> <span class="title">Examples D</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_fifth.html" class="internal"><span class="codenumber">5.10</span> <span class="title">Exercise</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="append_math.html" class="internal"><span class="codenumber">A</span> <span class="title">Mathematical Relations</span></a></div></li>
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="append_physTable.html" class="internal"><span class="codenumber">B</span> <span class="title">Useful Data and Greek Letters</span></a></div></li>
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="backmatter-4.html" class="internal"><span class="codenumber">C</span> <span class="title">List of Symbols</span></a></div></li>
+<li class="toc-item toc-index"><div class="toc-title-box"><a href="backmatter-5.html" class="internal"><span class="title">Index</span></a></div></li>
+<li class="toc-item toc-references"><div class="toc-title-box"><a href="refs-list.html" class="internal"><span class="title">References</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-7.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec_fifth-examplesB"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">5.5</span><span class="space"> </span><span class="title">Examples B</span>
+</h2>
+<details id="sec_fifth-examplesB-2" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.5.1</span><span class="period">.</span>
+</h3></summary><article class="example example-like knowl__content"><div class="para logical" id="sec_fifth-examplesB-2-1-1">
+<div class="para">A small fish of length 1 cm is located at the center of a thin spherical fishbowl 20 cm in diameter. The index of refraction of water is 1.33 and that of the glass fishbowl is 1.5.</div>
+<ol class="lower-alpha ol-marker-2" id="sec_fifth-examplesB-2-1-1-1">
+<li id="sec_fifth-examplesB-2-1-1-1-1">
+<div class="para" id="p-derived-sec_fifth-examplesB-2-1-1-1-1">Does the thin layer of glass affect the refraction of the light rays?</div>
+<div class="autopermalink" data-description="Item a"><a href="#sec_fifth-examplesB-2-1-1-1-1" title="Copy heading and permalink for Item a">🔗</a></div>
+</li>
+<li id="sec_fifth-examplesB-2-1-1-1-2">
+<div class="para" id="p-derived-sec_fifth-examplesB-2-1-1-1-2">When viewed from outside, where does the fish appear to be located?</div>
+<div class="autopermalink" data-description="Item b"><a href="#sec_fifth-examplesB-2-1-1-1-2" title="Copy heading and permalink for Item b">🔗</a></div>
+</li>
+<li id="sec_fifth-examplesB-2-1-1-1-3">
+<div class="para" id="p-derived-sec_fifth-examplesB-2-1-1-1-3">What is its magnification?</div>
+<div class="autopermalink" data-description="Item c"><a href="#sec_fifth-examplesB-2-1-1-1-3" title="Copy heading and permalink for Item c">🔗</a></div>
+</li>
+<li id="sec_fifth-examplesB-2-1-1-1-4">
+<div class="para" id="p-derived-sec_fifth-examplesB-2-1-1-1-4">How long does the fish appear to be?</div>
+<div class="autopermalink" data-description="Item d"><a href="#sec_fifth-examplesB-2-1-1-1-4" title="Copy heading and permalink for Item d">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_fifth-examplesB-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec_fifth-examplesB-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="sec_fifth-examplesB-2-2-1">Given:  <span class="process-math">\(n_{1} =1,\, n_{2} = 1.5,\, \)</span> and <span class="process-math">\(n_{3} = 1.33.  \)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_fifth-examplesB-2-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec_fifth-examplesB-2-2-2">
+<ol class="lower-alpha ol-marker-2" id="sec_fifth-examplesB-2-2-2-1">
+<li id="sec_fifth-examplesB-2-2-2-1-1">
+<div class="para" id="p-derived-sec_fifth-examplesB-2-2-2-1-1">
+<div class="displaymath process-math">
+\begin{equation*}
+n_{1}\sin\theta_{1}=n_{2}\sin\theta_{2}\quad \text{air to glass}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+n_{2}\sin\theta_{2}=n_{3}\sin\theta_{3}\quad \text{glass to water}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+n_{1}\sin\theta_{1}=n_{3}\sin\theta_{3}\quad \text{air to water}
+\end{equation*}
+</div>Since the air to glass to water result for <span class="process-math">\(\theta_{3}\)</span> is the same as that for air to water, the glass has no effect on the refraction.</div>
+<div class="autopermalink" data-description="Item a"><a href="#sec_fifth-examplesB-2-2-2-1-1" title="Copy heading and permalink for Item a">🔗</a></div>
+</li>
+<li id="sec_fifth-examplesB-2-2-2-1-2">
+<div class="para" id="p-derived-sec_fifth-examplesB-2-2-2-1-2">
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{n}{s}+ \frac{n'}{s'}= \frac{n' -n}{R} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{or,} \quad \frac{1.33}{10}+ \frac{1}{s'}= \frac{1-1.33}{-10} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Rightarrow  s' = -10 \,cm   \quad \text{(virtual at center) }
+\end{equation*}
+</div>
+</div>
+<div class="autopermalink" data-description="Item b"><a href="#sec_fifth-examplesB-2-2-2-1-2" title="Copy heading and permalink for Item b">🔗</a></div>
+</li>
+<li id="sec_fifth-examplesB-2-2-2-1-3">
+<div class="para" id="p-derived-sec_fifth-examplesB-2-2-2-1-3"><div class="displaymath process-math">
+\begin{equation*}
+m=-\frac{ns'}{n's} =-\frac{(1.33) (-10)}{(1)(10)}=1.33 \quad \text{(enlarged)}
+\end{equation*}
+</div></div>
+<div class="autopermalink" data-description="Item c"><a href="#sec_fifth-examplesB-2-2-2-1-3" title="Copy heading and permalink for Item c">🔗</a></div>
+</li>
+<li id="sec_fifth-examplesB-2-2-2-1-4">
+<div class="para" id="p-derived-sec_fifth-examplesB-2-2-2-1-4">
+<div class="displaymath process-math">
+\begin{equation*}
+m=\frac{y'}{y}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{or,} \quad 1.33=\frac{y'}{1} \quad \Rightarrow \quad y' =1.33 \,cm
+\end{equation*}
+</div>
+</div>
+<div class="autopermalink" data-description="Item d"><a href="#sec_fifth-examplesB-2-2-2-1-4" title="Copy heading and permalink for Item d">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_fifth-examplesB-2-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.5.1.1"><a href="#sec_fifth-examplesB-2-2" title="Copy heading and permalink for Solution 5.5.1.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 5.5.1"><a href="#sec_fifth-examplesB-2" title="Copy heading and permalink for Example 5.5.1">🔗</a></div></article></details><details id="sec_fifth-examplesB-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.5.2</span><span class="period">.</span>
+</h3></summary><article class="example example-like knowl__content"><div class="para" id="sec_fifth-examplesB-3-1-1">A mosquito is found embedded in an amber sphere of radius of curvature 3.0 mm and of refractive index 1.6. The mosquito is located on the principal axis and appears to be embedded at 5.0 mm into the amber. How deep is the mosquito really? What is the magnification?<div class="autopermalink" data-description="Paragraph"><a href="#sec_fifth-examplesB-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec_fifth-examplesB-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="sec_fifth-examplesB-3-2-1">Given: <span class="process-math">\(n_{a}=1.6, \quad n_{b}=1\)</span> , <span class="process-math">\(R=-3 \,mm, \quad v=-5\,mm \quad (virtual image).\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_fifth-examplesB-3-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="external/mosqref.png" class="contained"></div>
+<div class="para logical" id="sec_fifth-examplesB-3-2-3">
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{n_{a}}{s}+\frac{n_{b}}{s'} =\frac{n_{b}-n_{a}}{R} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{1.6}{s}+\frac{1}{-5} =\frac{1-1.6}{-3} =0.2
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\therefore\quad s = 4.0 \,mm\quad \text{(real object)}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+m=-\frac{n_{a}s'}{n_{b}s} = \frac{1.6\times 5}{1\times 4}=2
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_fifth-examplesB-3-2-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.5.2.1"><a href="#sec_fifth-examplesB-3-2" title="Copy heading and permalink for Solution 5.5.2.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 5.5.2"><a href="#sec_fifth-examplesB-3" title="Copy heading and permalink for Example 5.5.2">🔗</a></div></article></details><details id="sec_fifth-examplesB-4" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.5.3</span><span class="period">.</span>
+</h3></summary><article class="example example-like knowl__content"><div class="para logical" id="sec_fifth-examplesB-4-1-1">
+<div class="para">A clear crystal ball of diameter 20 cm is made from solid glass of index of refraction 1.5. One half of the ball is silvered so as to form a mirror on the ball’s surface. A person whose face is 25 cm high and 30 cm from the ball looks at his reflection through the ball. Light travels from his face through the clear surface of the ball, is reflected from the silvered surface, and passes back through the clear surface so as to form a final image.</div>
+<ol class="lower-alpha ol-marker-2" id="sec_fifth-examplesB-4-1-1-1">
+<li id="sec_fifth-examplesB-4-1-1-1-1">
+<div class="para" id="p-derived-sec_fifth-examplesB-4-1-1-1-1">Where is this final image located?</div>
+<div class="autopermalink" data-description="Item a"><a href="#sec_fifth-examplesB-4-1-1-1-1" title="Copy heading and permalink for Item a">🔗</a></div>
+</li>
+<li id="sec_fifth-examplesB-4-1-1-1-2">
+<div class="para" id="p-derived-sec_fifth-examplesB-4-1-1-1-2">What is the magnification of the complete optical system?</div>
+<div class="autopermalink" data-description="Item b"><a href="#sec_fifth-examplesB-4-1-1-1-2" title="Copy heading and permalink for Item b">🔗</a></div>
+</li>
+<li id="sec_fifth-examplesB-4-1-1-1-3">
+<div class="para" id="p-derived-sec_fifth-examplesB-4-1-1-1-3">What is the height of the final image?</div>
+<div class="autopermalink" data-description="Item c"><a href="#sec_fifth-examplesB-4-1-1-1-3" title="Copy heading and permalink for Item c">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_fifth-examplesB-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec_fifth-examplesB-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/fig76.png" class="contained"></div>
+<div class="para logical" id="sec_fifth-examplesB-4-2-2">
+<ol class="lower-alpha ol-marker-2" id="sec_fifth-examplesB-4-2-2-1">
+<li id="sec_fifth-examplesB-4-2-2-1-1">
+<div class="para" id="p-derived-sec_fifth-examplesB-4-2-2-1-1">
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{n_{1}}{s_{1}}+\frac{n'_{1}}{s'_{1}} = \frac{n'_{1}-n_{1}}{R_{1}} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{or,}\quad \frac{1}{30}+\frac{1.5}{s'_{1}} = \frac{1.5-1}{10} \Longrightarrow s'_{1} = 90 \,cm
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+s'_{1} +s_{2} = D \Longrightarrow 90 +s_{2} =20 \Longrightarrow s_{2} = -70\,cm
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{1}{s_{2}}+\frac{1}{s'_{2}}=\frac{2}{R_{2}}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{or,}\quad \frac{1}{-70}+\frac{1}{s'_{2}}=\frac{2}{10} \Rightarrow s'_{2} =4.67 \,cm
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+s'_{2} +s_{3} = D \Longrightarrow 4.67 +s_{3} =20 \Longrightarrow s_{3} = 15.33 \,cm
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{n_{3}}{s_{3}}+\frac{n'_{3}}{s'_{3}} = \frac{n'_{3}-n_{3}}{R_{3}}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{or,}\quad \frac{1.5}{15.33}+\frac{1}{s'_{3}} = \frac{1-1.5}{-10} \Longrightarrow s'_{3} = -20.9 \,cm
+\end{equation*}
+</div>
+</div>
+<div class="autopermalink" data-description="Item a"><a href="#sec_fifth-examplesB-4-2-2-1-1" title="Copy heading and permalink for Item a">🔗</a></div>
+</li>
+<li id="sec_fifth-examplesB-4-2-2-1-2">
+<div class="para" id="p-derived-sec_fifth-examplesB-4-2-2-1-2">
+<div class="displaymath process-math">
+\begin{equation*}
+m=-\frac{s'_{1}}{s_{1}}\times-\frac{s'_{2}}{s_{2}}\times-\frac{s'_{3}}{s_{3}}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\frac{-90}{30}\times\frac{-4.67}{-70}\times\frac{-(-20.9)}{15.33} \Rightarrow m = -0.273
+\end{equation*}
+</div>
+</div>
+<div class="autopermalink" data-description="Item b"><a href="#sec_fifth-examplesB-4-2-2-1-2" title="Copy heading and permalink for Item b">🔗</a></div>
+</li>
+<li id="sec_fifth-examplesB-4-2-2-1-3">
+<div class="para" id="p-derived-sec_fifth-examplesB-4-2-2-1-3"><div class="displaymath process-math">
+\begin{equation*}
+m=\frac{y'_{3}}{y1} \Rightarrow -0.273 = \frac{y'_{3}}{25}\Rightarrow y'_{3}= -6.82
+\end{equation*}
+</div></div>
+<div class="autopermalink" data-description="Item c"><a href="#sec_fifth-examplesB-4-2-2-1-3" title="Copy heading and permalink for Item c">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_fifth-examplesB-4-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.5.3.1"><a href="#sec_fifth-examplesB-4-2" title="Copy heading and permalink for Solution 5.5.3.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 5.5.3"><a href="#sec_fifth-examplesB-4" title="Copy heading and permalink for Example 5.5.3">🔗</a></div></article></details><details id="sec_fifth-examplesB-5" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.5.4</span><span class="period">.</span>
+</h3></summary><article class="example example-like knowl__content"><div class="para" id="sec_fifth-examplesB-5-1-1">A convex surface of radius of curvature 40 cm separates two media of refractive indices 4/3 and 3/2. An object is kept in the first medium at a distance of 20 cm from the surface. Calculate the position of the image?<div class="autopermalink" data-description="Paragraph"><a href="#sec_fifth-examplesB-5-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec_fifth-examplesB-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="sec_fifth-examplesB-5-2-1">Given: <span class="process-math">\(n=4/3, \, n'=1.5,\, R= + 40 cm.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_fifth-examplesB-5-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="external/spref1.png" class="contained"></div>
+<div class="para logical" id="sec_fifth-examplesB-5-2-3">
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{n}{s}+\frac{n'}{s'}=\frac{n'-n}{R} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+or,\quad  \frac{4}{3\times 20}+\frac{1.5}{s'}=\frac{1.5-4/3}{40}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Rightarrow s'=-24 \,cm.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_fifth-examplesB-5-2-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec_fifth-examplesB-5-2-4">Which is virtual in nature and formed in the first medium just before the real object.<div class="autopermalink" data-description="Paragraph"><a href="#sec_fifth-examplesB-5-2-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.5.4.1"><a href="#sec_fifth-examplesB-5-2" title="Copy heading and permalink for Solution 5.5.4.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 5.5.4"><a href="#sec_fifth-examplesB-5" title="Copy heading and permalink for Example 5.5.4">🔗</a></div></article></details><details id="sec_fifth-examplesB-6" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.5.5</span><span class="period">.</span>
+</h3></summary><article class="example example-like knowl__content"><div class="para" id="sec_fifth-examplesB-6-1-1">A small filament is at the center of a hollow glass sphere of inner and outer radii 8 cm and 9 cm, respectively.  Calculate the image position of the filament when viewed from outside of the sphere. Assume refractive index of glass = 1.5.<div class="autopermalink" data-description="Paragraph"><a href="#sec_fifth-examplesB-6-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec_fifth-examplesB-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="sec_fifth-examplesB-6-2-1"><div class="autopermalink" data-description="Paragraph"><a href="#sec_fifth-examplesB-6-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="external/spref2.png" class="contained"></div>
+<div class="para logical" id="sec_fifth-examplesB-6-2-3">
+<div class="para">Given: <span class="process-math">\(n=1, \quad n'=1.5,\quad R_{1} = -8\,cm,\quad R_{2} = -9\,cm.\)</span> For first concave surface,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{n}{s}+\frac{n'}{s'}=\frac{n'-n}{R_{1}} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+or,\quad   \frac{1}{8}+\frac{1.5}{s'}=\frac{1.5-1}{-8}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Rightarrow s'=-8 \,cm.
+\end{equation*}
+</div>
+<div class="para">The image of the object is formed at the center of first sphere and is virtual.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_fifth-examplesB-6-2-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec_fifth-examplesB-6-2-4">
+<div class="para">For second concave surface,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{n}{s}+\frac{n'}{s'}=\frac{n'-n}{R_{2}} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+or,\quad   \frac{1}{9}+\frac{1.5}{s'}=\frac{1.5-1}{-9}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Rightarrow s'=-9 \,cm. 
+\end{equation*}
+</div>
+<div class="para">Thus the final image is also formed at the center  and is virtual.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_fifth-examplesB-6-2-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.5.5.1"><a href="#sec_fifth-examplesB-6-2" title="Copy heading and permalink for Solution 5.5.5.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 5.5.5"><a href="#sec_fifth-examplesB-6" title="Copy heading and permalink for Example 5.5.5">🔗</a></div></article></details><details id="sec_fifth-examplesB-7" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.5.6</span><span class="period">.</span>
+</h3></summary><article class="example example-like knowl__content"><div class="para" id="sec_fifth-examplesB-7-1-1">Two fish are at the bottom of 10 m deep water. A wall between them blocks their view so that they cannot see each other directly. However, they know the presence each other through their mirror images created above the water surface. At least how far are they separated? Assume that the index of reflection of air and water is 1.00  and 1.52, respectively.<div class="autopermalink" data-description="Paragraph"><a href="#sec_fifth-examplesB-7-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec_fifth-examplesB-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="sec_fifth-examplesB-7-2-1">For fish to see each other angle of incidence of the light from them to the water-air interface must suffers total internal reflection and must be greater than or equal to critical angle. Suppose the fish are at a distance r from each other which is a minimum distance for them to see each other then angle of incidence <span class="process-math">\(\angle i = \angle c\text{.}\)</span> From Snell’s Law<div class="autopermalink" data-description="Paragraph"><a href="#sec_fifth-examplesB-7-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="external/fish3.png" class="contained"></div>
+<div class="para logical" id="sec_fifth-examplesB-7-2-3">
+<div class="displaymath process-math">
+\begin{equation*}
+\eta_{1}\sin\theta_{1} =\eta_{2}\sin\theta_{2}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{or,} \quad 1.52 \sin c =1\sin 90 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Rightarrow \quad c = \sin^{-1}\left(\frac{1}{1.52}\right)=41.14^{o}
+\end{equation*}
+</div>
+<div class="para">Now from right angle <span class="process-math">\(\triangle OAP,\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\tan c = \frac{r/2}{d}=\frac{r}{2d}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+r=2d\tan c = 2\times 10\times \tan 41.14^{o}=17.47 \,m
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_fifth-examplesB-7-2-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.5.6.1"><a href="#sec_fifth-examplesB-7-2" title="Copy heading and permalink for Solution 5.5.6.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 5.5.6"><a href="#sec_fifth-examplesB-7" title="Copy heading and permalink for Example 5.5.6">🔗</a></div></article></details><details id="sec_fifth-examplesB-8" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.5.7</span><span class="period">.</span>
+</h3></summary><article class="example example-like knowl__content"><div class="para" id="sec_fifth-examplesB-8-1-1">A ray of light is incident at an angle of <span class="process-math">\(60^{o}\)</span> onto the surface of a pool of water. Part of the light is reflected and part refracted. What is the angle between the reflected ray and the refracted ray? Assume <span class="process-math">\(n(water) = 1.33.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_fifth-examplesB-8-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec_fifth-examplesB-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="sec_fifth-examplesB-8-2-1">Given: <span class="process-math">\(\theta_{1}=60^{o},\quad n_{1}=1,\quad n_{3}=1.33\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_fifth-examplesB-8-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec_fifth-examplesB-8-2-2">
+<div class="displaymath process-math">
+\begin{equation*}
+\theta_{1} =\theta_{2}=60^{o}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+n_{1} \sin \theta_{1}  = n_{3} \sin \theta_{3} \quad \Rightarrow \quad \theta_{3}=40.63^{o}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\theta =(90^{o}-\theta_{2})+(90^{o}-\theta_{3})\quad \Rightarrow \quad \theta=79.4^{o}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_fifth-examplesB-8-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.5.7.1"><a href="#sec_fifth-examplesB-8-2" title="Copy heading and permalink for Solution 5.5.7.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 5.5.7"><a href="#sec_fifth-examplesB-8" title="Copy heading and permalink for Example 5.5.7">🔗</a></div></article></details><details id="sec_fifth-examplesB-9" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.5.8</span><span class="period">.</span>
+</h3></summary><article class="example example-like knowl__content"><div class="para" id="sec_fifth-examplesB-9-1-1">A <span class="process-math">\(30-60-90^{o}\)</span> prism of index of refraction 1.50 is oriented as shown below with its long face (Face 2) horizontally facing upward, a drop of oil of unknown index of refraction is placed on the top face of the prism, and a ray of light enters normally into the prism through its short face (Face 1) so as to strike the top face from below.<div class="autopermalink" data-description="Paragraph"><a href="#sec_fifth-examplesB-9-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/fig67.png" class="contained"></div> <div class="para logical" id="sec_fifth-examplesB-9-1-3">
+<ol class="lower-alpha ol-marker-2" id="sec_fifth-examplesB-9-1-3-1">
+<li id="sec_fifth-examplesB-9-1-3-1-1">
+<div class="para" id="p-derived-sec_fifth-examplesB-9-1-3-1-1">What is the minimum index of refraction of the oil that will cause the internal ray to be totally reflected from the top face?</div>
+<div class="autopermalink" data-description="Item a"><a href="#sec_fifth-examplesB-9-1-3-1-1" title="Copy heading and permalink for Item a">🔗</a></div>
+</li>
+<li id="sec_fifth-examplesB-9-1-3-1-2">
+<div class="para" id="p-derived-sec_fifth-examplesB-9-1-3-1-2">What is the angle of incident that the internally reflected ray makes with the other face (Face 3) of the prism.</div>
+<div class="autopermalink" data-description="Item b"><a href="#sec_fifth-examplesB-9-1-3-1-2" title="Copy heading and permalink for Item b">🔗</a></div>
+</li>
+<li id="sec_fifth-examplesB-9-1-3-1-3">
+<div class="para" id="p-derived-sec_fifth-examplesB-9-1-3-1-3">Is the light totally reflected off the third face or is it refracted through the surface?</div>
+<div class="autopermalink" data-description="Item c"><a href="#sec_fifth-examplesB-9-1-3-1-3" title="Copy heading and permalink for Item c">🔗</a></div>
+</li>
+<li id="sec_fifth-examplesB-9-1-3-1-4">
+<div class="para" id="p-derived-sec_fifth-examplesB-9-1-3-1-4">If refracted, what is the angle of refraction as it emerges from the prism?</div>
+<div class="autopermalink" data-description="Item d"><a href="#sec_fifth-examplesB-9-1-3-1-4" title="Copy heading and permalink for Item d">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_fifth-examplesB-9-1-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec_fifth-examplesB-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/fig68.png" class="contained"></div>
+<div class="para logical" id="sec_fifth-examplesB-9-2-2">
+<ol class="lower-alpha ol-marker-2" id="sec_fifth-examplesB-9-2-2-1">
+<li id="sec_fifth-examplesB-9-2-2-1-1">
+<div class="para" id="p-derived-sec_fifth-examplesB-9-2-2-1-1">
+<div class="displaymath process-math">
+\begin{equation*}
+n_{1} \sin \theta_{1}  = n \sin \theta_{exit} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+or,\quad  1.5 \sin 60^{o}  = n \sin 90^{o} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Rightarrow n = 1.3 
+\end{equation*}
+</div>
+</div>
+<div class="autopermalink" data-description="Item a"><a href="#sec_fifth-examplesB-9-2-2-1-1" title="Copy heading and permalink for Item a">🔗</a></div>
+</li>
+<li id="sec_fifth-examplesB-9-2-2-1-2">
+<div class="para" id="p-derived-sec_fifth-examplesB-9-2-2-1-2">
+<div class="displaymath process-math">
+\begin{equation*}
+\theta_{1} = \theta_{2} = 60^{o} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{but}\quad \theta_{1} =\theta+\theta_{3} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+or,\quad 60^{o} = 30^{o}+\theta_{3} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\therefore\quad \theta_{3} = 30^{o}
+\end{equation*}
+</div>
+</div>
+<div class="autopermalink" data-description="Item b"><a href="#sec_fifth-examplesB-9-2-2-1-2" title="Copy heading and permalink for Item b">🔗</a></div>
+</li>
+<li id="sec_fifth-examplesB-9-2-2-1-3">
+<div class="para" id="p-derived-sec_fifth-examplesB-9-2-2-1-3">
+<span class="process-math">\(\because \)</span> \quad  <span class="process-math">\(\theta_{3} \lt \theta_{crit}\)</span> then the ray will be refracted.</div>
+<div class="autopermalink" data-description="Item c"><a href="#sec_fifth-examplesB-9-2-2-1-3" title="Copy heading and permalink for Item c">🔗</a></div>
+</li>
+<li id="sec_fifth-examplesB-9-2-2-1-4">
+<div class="para" id="p-derived-sec_fifth-examplesB-9-2-2-1-4">
+<div class="displaymath process-math">
+\begin{equation*}
+$n_{3} \sin \theta_{3}  = n_{4} \sin \theta_{5} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+or,\quad 1.5 \sin 30^{o}  = 1 \sin \theta_{5} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Rightarrow \theta_{5} = 48.6^{o}
+\end{equation*}
+</div>
+</div>
+<div class="autopermalink" data-description="Item d"><a href="#sec_fifth-examplesB-9-2-2-1-4" title="Copy heading and permalink for Item d">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_fifth-examplesB-9-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.5.8.1"><a href="#sec_fifth-examplesB-9-2" title="Copy heading and permalink for Solution 5.5.8.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 5.5.8"><a href="#sec_fifth-examplesB-9" title="Copy heading and permalink for Example 5.5.8">🔗</a></div></article></details><details id="sec_fifth-examplesB-10" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.5.9</span><span class="period">.</span>
+</h3></summary><article class="example example-like knowl__content"><div class="para logical" id="sec_fifth-examplesB-10-1-1">
+<div class="para">Light of wavelength 500 nm is incident normally on a glass plate coated with a thin coating of anti-reflecting material. If the glass has an index of refraction of 1.66 and the coating has an index of refraction of 1.58, find</div>
+<ol class="lower-alpha ol-marker-2" id="sec_fifth-examplesB-10-1-1-1">
+<li id="sec_fifth-examplesB-10-1-1-1-1">
+<div class="para" id="p-derived-sec_fifth-examplesB-10-1-1-1-1">the wavelength of the light in the glass,</div>
+<div class="autopermalink" data-description="Item a"><a href="#sec_fifth-examplesB-10-1-1-1-1" title="Copy heading and permalink for Item a">🔗</a></div>
+</li>
+<li id="sec_fifth-examplesB-10-1-1-1-2">
+<div class="para" id="p-derived-sec_fifth-examplesB-10-1-1-1-2">in the coating.</div>
+<div class="autopermalink" data-description="Item b"><a href="#sec_fifth-examplesB-10-1-1-1-2" title="Copy heading and permalink for Item b">🔗</a></div>
+</li>
+<li id="sec_fifth-examplesB-10-1-1-1-3">
+<div class="para" id="p-derived-sec_fifth-examplesB-10-1-1-1-3">What is the minimum thickness of the coating that will produce destructive interference of the reflected light rays from the two surfaces of the coating?</div>
+<div class="autopermalink" data-description="Item c"><a href="#sec_fifth-examplesB-10-1-1-1-3" title="Copy heading and permalink for Item c">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_fifth-examplesB-10-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec_fifth-examplesB-10-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="sec_fifth-examplesB-10-2-1">Given: <span class="process-math">\(\lambda_{o} =5.00\times10^{-7}\, m; \quad n_{g} = 1.66 \quad n_{c} = 1.58 \)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_fifth-examplesB-10-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec_fifth-examplesB-10-2-2">
+<ol class="lower-alpha ol-marker-2" id="sec_fifth-examplesB-10-2-2-1">
+<li id="sec_fifth-examplesB-10-2-2-1-1">
+<div class="para" id="p-derived-sec_fifth-examplesB-10-2-2-1-1"><div class="displaymath process-math">
+\begin{equation*}
+\lambda_{g}=\frac{\lambda_{o}}{n_{g}}\Rightarrow \lambda_{g} = 3.01\times10^{-7} \,m
+\end{equation*}
+</div></div>
+<div class="autopermalink" data-description="Item a"><a href="#sec_fifth-examplesB-10-2-2-1-1" title="Copy heading and permalink for Item a">🔗</a></div>
+</li>
+<li id="sec_fifth-examplesB-10-2-2-1-2">
+<div class="para" id="p-derived-sec_fifth-examplesB-10-2-2-1-2"><div class="displaymath process-math">
+\begin{equation*}
+\lambda_{c}=\frac{\lambda_{o}}{n_{c}}\Rightarrow \lambda_{c} = 3.16\times10^{-7} \,m
+\end{equation*}
+</div></div>
+<div class="autopermalink" data-description="Item b"><a href="#sec_fifth-examplesB-10-2-2-1-2" title="Copy heading and permalink for Item b">🔗</a></div>
+</li>
+<li id="sec_fifth-examplesB-10-2-2-1-3">
+<div class="para" id="p-derived-sec_fifth-examplesB-10-2-2-1-3"><div class="displaymath process-math">
+\begin{equation*}
+2d =\frac{\lambda_{c}}{2}\Rightarrow d = 7.91\times10^{-8} \,m. 
+\end{equation*}
+</div></div>
+<div class="autopermalink" data-description="Item c"><a href="#sec_fifth-examplesB-10-2-2-1-3" title="Copy heading and permalink for Item c">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_fifth-examplesB-10-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.5.9.1"><a href="#sec_fifth-examplesB-10-2" title="Copy heading and permalink for Solution 5.5.9.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 5.5.9"><a href="#sec_fifth-examplesB-10" title="Copy heading and permalink for Example 5.5.9">🔗</a></div></article></details><details id="sec_fifth-examplesB-11" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.5.10</span><span class="period">.</span>
+</h3></summary><article class="example example-like knowl__content"><div class="para logical" id="sec_fifth-examplesB-11-1-1">
+<div class="para">A thin double concave lens has a radius of curvature of 10 cm on both sides and is made of glass of index of refraction 1.5. A light bulb 2 cm high is located 50 cm in front of the lens along its principle axis.</div>
+<ol class="lower-alpha ol-marker-2" id="sec_fifth-examplesB-11-1-1-1">
+<li id="sec_fifth-examplesB-11-1-1-1-1">
+<div class="para" id="p-derived-sec_fifth-examplesB-11-1-1-1-1">What is the focal length of the lens? Is it converging or diverging?</div>
+<div class="autopermalink" data-description="Item a"><a href="#sec_fifth-examplesB-11-1-1-1-1" title="Copy heading and permalink for Item a">🔗</a></div>
+</li>
+<li id="sec_fifth-examplesB-11-1-1-1-2">
+<div class="para" id="p-derived-sec_fifth-examplesB-11-1-1-1-2">Where is the image of the light bulb located? Is the image real or virtual?</div>
+<div class="autopermalink" data-description="Item b"><a href="#sec_fifth-examplesB-11-1-1-1-2" title="Copy heading and permalink for Item b">🔗</a></div>
+</li>
+<li id="sec_fifth-examplesB-11-1-1-1-3">
+<div class="para" id="p-derived-sec_fifth-examplesB-11-1-1-1-3">What is the height of the image? Is the image enlarged or reduced? Erect or inverted?</div>
+<div class="autopermalink" data-description="Item c"><a href="#sec_fifth-examplesB-11-1-1-1-3" title="Copy heading and permalink for Item c">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_fifth-examplesB-11-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec_fifth-examplesB-11-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="sec_fifth-examplesB-11-2-1">
+<ol class="lower-alpha ol-marker-2" id="sec_fifth-examplesB-11-2-1-1">
+<li id="sec_fifth-examplesB-11-2-1-1-1">
+<div class="para" id="p-derived-sec_fifth-examplesB-11-2-1-1-1">
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{1}{f} = (n-1)\left(\frac{1}{R_{1}}-\frac{1}{R_{2}}\right)
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+or,\quad \frac{1}{f} = (1.5-1)\left(\frac{1}{-10}-\frac{1}{10}\right)
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Rightarrow f=-10\,cm \quad\text{diverging.}
+\end{equation*}
+</div>
+</div>
+<div class="autopermalink" data-description="Item a"><a href="#sec_fifth-examplesB-11-2-1-1-1" title="Copy heading and permalink for Item a">🔗</a></div>
+</li>
+<li id="sec_fifth-examplesB-11-2-1-1-2">
+<div class="para" id="p-derived-sec_fifth-examplesB-11-2-1-1-2">
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{1}{s}+\frac{1}{s'}=\frac{1}{f} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+or,\quad \frac{1}{50}+ \frac{n'}{s'}= \frac{1}{-10} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Rightarrow s' = -12.5 \,cm \quad \text{virtual.}
+\end{equation*}
+</div>
+</div>
+<div class="autopermalink" data-description="Item b"><a href="#sec_fifth-examplesB-11-2-1-1-2" title="Copy heading and permalink for Item b">🔗</a></div>
+</li>
+<li id="sec_fifth-examplesB-11-2-1-1-3">
+<div class="para" id="p-derived-sec_fifth-examplesB-11-2-1-1-3">
+<div class="displaymath process-math">
+\begin{equation*}
+m=\frac{y'}{y}=-\frac{s'}{s}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+or,\quad \frac{y'}{2} =-\frac{-12.5}{50}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Rightarrow y' =0.5\, cm; \quad \text{reduced erect.}
+\end{equation*}
+</div>
+</div>
+<div class="autopermalink" data-description="Item c"><a href="#sec_fifth-examplesB-11-2-1-1-3" title="Copy heading and permalink for Item c">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_fifth-examplesB-11-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.5.10.1"><a href="#sec_fifth-examplesB-11-2" title="Copy heading and permalink for Solution 5.5.10.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 5.5.10"><a href="#sec_fifth-examplesB-11" title="Copy heading and permalink for Example 5.5.10">🔗</a></div></article></details><details id="sec_fifth-examplesB-12" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.5.11</span><span class="period">.</span>
+</h3></summary><article class="example example-like knowl__content"><div class="para" id="sec_fifth-examplesB-12-1-1">Calculate the focal length of a double convex lens of radius of curvature of each surface is 30 cm and refractive index of glass is 1.5.<div class="autopermalink" data-description="Paragraph"><a href="#sec_fifth-examplesB-12-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec_fifth-examplesB-12-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="sec_fifth-examplesB-12-2-1">Given: <span class="process-math">\(n=1.5, \quad R_{1}=30 \,cm, \quad R_{2}=-30 \,cm.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_fifth-examplesB-12-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec_fifth-examplesB-12-2-2">
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{1}{f}=(n-1) \left(\frac{1}{R_{1}}-\frac{1}{R_{2}} \right) = (1.5-1) \left(\frac{1}{30}+\frac{1}{30} \right) = \frac{1}{30}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\therefore\quad f=30\, cm
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_fifth-examplesB-12-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.5.11.1"><a href="#sec_fifth-examplesB-12-2" title="Copy heading and permalink for Solution 5.5.11.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 5.5.11"><a href="#sec_fifth-examplesB-12" title="Copy heading and permalink for Example 5.5.11">🔗</a></div></article></details><details id="sec_fifth-examplesB-13" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.5.12</span><span class="period">.</span>
+</h3></summary><article class="example example-like knowl__content"><div class="para" id="sec_fifth-examplesB-13-1-1">Calculate the focal length of a plano convex lens, the radius of curvature of convex surface is 40 cm and refractive index of glass is 1.5<div class="autopermalink" data-description="Paragraph"><a href="#sec_fifth-examplesB-13-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec_fifth-examplesB-13-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="sec_fifth-examplesB-13-2-1">Given: <span class="process-math">\(n=1.5, \quad R_{1}=\infty,\quad R_{2}=-20 \,cm.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_fifth-examplesB-13-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec_fifth-examplesB-13-2-2">
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{1}{f}=(n-1) \left(\frac{1}{R_{1}}-\frac{1}{R_{2}} \right) = (1.5-1) \left(\frac{1}{\infty}+\frac{1}{40} \right) = \frac{1}{80}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\therefore\quad f=80\, cm
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_fifth-examplesB-13-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.5.12.1"><a href="#sec_fifth-examplesB-13-2" title="Copy heading and permalink for Solution 5.5.12.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 5.5.12"><a href="#sec_fifth-examplesB-13" title="Copy heading and permalink for Example 5.5.12">🔗</a></div></article></details><details id="sec_fifth-examplesB-14" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.5.13</span><span class="period">.</span>
+</h3></summary><article class="example example-like knowl__content"><div class="para" id="sec_fifth-examplesB-14-1-1">A convex lens of focal length 24 cm and refractive index of glass is 1.5. Find the focal length of this lens if it is totally submerged into water of refractive index 1.33.<div class="autopermalink" data-description="Paragraph"><a href="#sec_fifth-examplesB-14-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec_fifth-examplesB-14-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="sec_fifth-examplesB-14-2-1">Given: <span class="process-math">\(^{a}n_{g}=1.5,\quad ^{a}n_{w}=1.33, \quad f_{a}=24 \,cm, \quad f_{b}=?\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_fifth-examplesB-14-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec_fifth-examplesB-14-2-2">
+<div class="para">In air,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lensw1.html">
+\begin{equation*}
+\frac{1}{f_{a}}=(^{a}n_{g}-1) \left(\frac{1}{R_{1}}-\frac{1}{R_{2}} \right)
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lensw1.html" id="eqn-lensw1">
+\begin{equation}
+or, \quad \left(\frac{1}{R_{1}}-\frac{1}{R_{2}} \right) = \frac{1}{f_{a}(^{a}n_{g}-1)} =\frac{1}{24(1.5-1)}  = \frac{1}{12}  \tag{5.5.1}
+\end{equation}
+</div>
+<div class="para">In water,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lensw1.html">
+\begin{equation*}
+\frac{1}{f_{b}}=(^{w}n_{g}-1) \left(\frac{1}{R_{1}}-\frac{1}{R_{2}} \right)
+\end{equation*}
+</div>
+<div class="para">From the principle of reversibility of light,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lensw1.html">
+\begin{equation*}
+^{w}n_{g}=^{w}n_{a}\times ^{a}n_{g} =\frac{^{a}n_{g}}{^{a}n_{w}} =\frac{1.5}{1.33} =1.125
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lensw1.html">
+\begin{equation*}
+\therefore \quad \frac{1}{f_{b}}=(1.125-1) \left( \frac{1}{12}\right) = \frac{12}{0.125}
+\end{equation*}
+</div>
+<div class="para">using eqn. <a href="sec_fifth-examplesB.html#eqn-lensw1" class="xref" data-knowl="./knowl/xref/eqn-lensw1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 5.5.1">(5.5.1)</a>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-lensw1.html">
+\begin{equation*}
+\therefore\quad f_{b} = 96\, cm
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_fifth-examplesB-14-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.5.13.1"><a href="#sec_fifth-examplesB-14-2" title="Copy heading and permalink for Solution 5.5.13.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 5.5.13"><a href="#sec_fifth-examplesB-14" title="Copy heading and permalink for Example 5.5.13">🔗</a></div></article></details><details id="sec_fifth-examplesB-15" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.5.14</span><span class="period">.</span>
+</h3></summary><article class="example example-like knowl__content"><div class="para" id="sec_fifth-examplesB-15-1-1">A concavo-convex lens has refractive index of 1.5 and radii of curvature of its surfaces are 10cm and 20 cm. The concave surface is upwards and is filled with oil of refractive index 1.6. Calculate the focal length of the oil-glass combination.<div class="autopermalink" data-description="Paragraph"><a href="#sec_fifth-examplesB-15-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec_fifth-examplesB-15-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="sec_fifth-examplesB-15-2-1">Given: <span class="process-math">\(n_{g}=1.5,\quad n_{o}=1.6.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_fifth-examplesB-15-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec_fifth-examplesB-15-2-2">
+<div class="para">Remember higher curvature means smaller radius of curvature. For the glass lens,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{1}{f_{1}}=(^{a}n_{g}-1) \left(\frac{1}{R_{1}}-\frac{1}{R_{2}} \right) = (1.5-1) \left(\frac{1}{10}-\frac{1}{20}\right) = \frac{1}{40}
+\end{equation*}
+</div>
+<div class="para">For the oil lens,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{1}{f_{2}}=(^{a}n_{o}-1) \left(\frac{1}{R_{1}}-\frac{1}{R_{2}} \right) = (1.6-1) \left(\frac{1}{\infty}+\frac{1}{20}\right) = \frac{3}{100}
+\end{equation*}
+</div>
+<div class="para">Therefore the equivalent focal length of the combination is given by,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{1}{F}=\frac{1}{f_{1}}+\frac{1}{f_{2}}= \frac{1}{40}+\frac{3}{100} = \frac{11}{200}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\therefore\quad F = 18.18 \,cm
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_fifth-examplesB-15-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.5.14.1"><a href="#sec_fifth-examplesB-15-2" title="Copy heading and permalink for Solution 5.5.14.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 5.5.14"><a href="#sec_fifth-examplesB-15" title="Copy heading and permalink for Example 5.5.14">🔗</a></div></article></details><details id="sec_fifth-examplesB-16" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.5.15</span><span class="period">.</span>
+</h3></summary><article class="example example-like knowl__content"><div class="para" id="sec_fifth-examplesB-16-1-1">The objective glass lens of a telescope is an achromat of focal length 90 cm. If the dispersive powers of the materials of the lenses are 0.024 and 0.036, calculate their focal lengths.<div class="autopermalink" data-description="Paragraph"><a href="#sec_fifth-examplesB-16-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec_fifth-examplesB-16-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="sec_fifth-examplesB-16-2-1">Given: <span class="process-math">\(\omega_{1} =0.024,\quad \omega_{2}=0.036,\quad F = 90 \,cm.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_fifth-examplesB-16-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec_fifth-examplesB-16-2-2">
+<div class="para">At achromatic condition,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{\omega_{1}}{f_{1}} + \frac{\omega_{2}}{f_{2}} =0
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+or,\quad \frac{1}{f_{2}} = -\frac{\omega_{1}}{f_{1}\omega_{2}} = - \frac{2}{3f_{1}}
+\end{equation*}
+</div>
+<div class="para">Also,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{1}{F}=\frac{1}{f_{1}}+\frac{1}{f_{2}}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+or,\quad \frac{1}{90}=\frac{1}{f_{1}}-\frac{2}{3f_{1}} =\frac{1}{3f_{1}}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\therefore\quad f_{1}=\frac{90}{3}=30 cm;\quad f_{2}= -\frac{3f_{1}}{2} =-45\,cm
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_fifth-examplesB-16-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.5.15.1"><a href="#sec_fifth-examplesB-16-2" title="Copy heading and permalink for Solution 5.5.15.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 5.5.15"><a href="#sec_fifth-examplesB-16" title="Copy heading and permalink for Example 5.5.15">🔗</a></div></article></details><details id="sec_fifth-examplesB-17" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.5.16</span><span class="period">.</span>
+</h3></summary><article class="example example-like knowl__content"><div class="para" id="sec_fifth-examplesB-17-1-1">Find the dispersive power of crown and flint glass from the following data.<div class="autopermalink" data-description="Paragraph"><a href="#sec_fifth-examplesB-17-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r0 l0 t0 lines"></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(n_{r}\)</span></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(n\)</span></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(n_{b}\)</span></th>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Crown</td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(1.5145\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(1.5170 \)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(1.5230 \)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Flint</td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(1.6444\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(1.652\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(1.6637\)</span></td>
+</tr>
+</table></div>
+<div class="solutions"><details id="sec_fifth-examplesB-17-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="sec_fifth-examplesB-17-2-1">
+<div class="displaymath process-math">
+\begin{equation*}
+\omega=\frac{n_{b}-n_{r}}{n-1}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\therefore\quad \omega_{c} = \frac{1.523-1.5145}{1.517-1} = 0.0164;
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{and}\quad \omega_{f} = \frac{1.6637-1.6444}{1.652-1} = 0.0296.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_fifth-examplesB-17-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.5.16.1"><a href="#sec_fifth-examplesB-17-2" title="Copy heading and permalink for Solution 5.5.16.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 5.5.16"><a href="#sec_fifth-examplesB-17" title="Copy heading and permalink for Example 5.5.16">🔗</a></div></article></details><details id="sec_fifth-examplesB-18" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.5.17</span><span class="period">.</span>
+</h3></summary><article class="example example-like knowl__content"><div class="para logical" id="sec_fifth-examplesB-18-1-1">
+<div class="para">In vacuum, an electromagnetic wave has speed <span class="process-math">\(c= 3 \times10^{8} \,m/s\)</span> and frequency <span class="process-math">\(f = 6.0 \times 10^{14} \,Hz.\)</span>  It enters a material whose index of refraction is n = 1.40.</div>
+<ol class="lower-alpha ol-marker-2" id="sec_fifth-examplesB-18-1-1-3">
+<li id="sec_fifth-examplesB-18-1-1-3-1">
+<div class="para" id="p-derived-sec_fifth-examplesB-18-1-1-3-1">Find the speed of the wave in the material.</div>
+<div class="autopermalink" data-description="Item a"><a href="#sec_fifth-examplesB-18-1-1-3-1" title="Copy heading and permalink for Item a">🔗</a></div>
+</li>
+<li id="sec_fifth-examplesB-18-1-1-3-2">
+<div class="para" id="p-derived-sec_fifth-examplesB-18-1-1-3-2">Find the frequency of the wave in the material.</div>
+<div class="autopermalink" data-description="Item b"><a href="#sec_fifth-examplesB-18-1-1-3-2" title="Copy heading and permalink for Item b">🔗</a></div>
+</li>
+<li id="sec_fifth-examplesB-18-1-1-3-3">
+<div class="para" id="p-derived-sec_fifth-examplesB-18-1-1-3-3">Find the wavelength of the wave in the material.</div>
+<div class="autopermalink" data-description="Item c"><a href="#sec_fifth-examplesB-18-1-1-3-3" title="Copy heading and permalink for Item c">🔗</a></div>
+</li>
+<li id="sec_fifth-examplesB-18-1-1-3-4">
+<div class="para" id="p-derived-sec_fifth-examplesB-18-1-1-3-4">Human can see electromagnetic wave in the range of wavelength from 390 nm to 750 nm in vacuum. Is the electromagnetic wave of frequency <span class="process-math">\(f = 8.50 \times 10^{14} \,Hz\)</span> in vacuum visible light, infrared, or ultraviolet?</div>
+<div class="autopermalink" data-description="Item d"><a href="#sec_fifth-examplesB-18-1-1-3-4" title="Copy heading and permalink for Item d">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_fifth-examplesB-18-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec_fifth-examplesB-18-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="sec_fifth-examplesB-18-2-1">
+<ol class="lower-alpha ol-marker-2" id="sec_fifth-examplesB-18-2-1-1">
+<li id="sec_fifth-examplesB-18-2-1-1-1">
+<div class="para" id="p-derived-sec_fifth-examplesB-18-2-1-1-1"><div class="displaymath process-math">
+\begin{equation*}
+n=\frac{c}{v} \Rightarrow v=\frac{c}{n} =\frac{3 \times10^{8} \,m/s}{1.4}= 2.14\times 10^{8} \,m/s
+\end{equation*}
+</div></div>
+<div class="autopermalink" data-description="Item a"><a href="#sec_fifth-examplesB-18-2-1-1-1" title="Copy heading and permalink for Item a">🔗</a></div>
+</li>
+<li id="sec_fifth-examplesB-18-2-1-1-2">
+<div class="para" id="p-derived-sec_fifth-examplesB-18-2-1-1-2">Frequency does not change as the wave goes from one medium to another. Therefore <span class="process-math">\(f_{a}=f_{b}=6.0 \times 10^{14} \,Hz.\)</span>
+</div>
+<div class="autopermalink" data-description="Item b"><a href="#sec_fifth-examplesB-18-2-1-1-2" title="Copy heading and permalink for Item b">🔗</a></div>
+</li>
+<li id="sec_fifth-examplesB-18-2-1-1-3">
+<div class="para" id="p-derived-sec_fifth-examplesB-18-2-1-1-3"><div class="displaymath process-math">
+\begin{equation*}
+v=f\lambda \Rightarrow \lambda = \frac{v}{f}= \frac{2.14\times 10^{8} \,m/s}{6.0 \times 10^{14}\, Hz} = 356 \,nm
+\end{equation*}
+</div></div>
+<div class="autopermalink" data-description="Item c"><a href="#sec_fifth-examplesB-18-2-1-1-3" title="Copy heading and permalink for Item c">🔗</a></div>
+</li>
+<li id="sec_fifth-examplesB-18-2-1-1-4">
+<div class="para" id="p-derived-sec_fifth-examplesB-18-2-1-1-4"><div class="displaymath process-math">
+\begin{equation*}
+\lambda = \frac{c}{f} = \frac{3 \times10^{8} \,m/s}{8.50 \times 10^{14} \,Hz} = 352 \,nm \quad (UV light.)
+\end{equation*}
+</div></div>
+<div class="autopermalink" data-description="Item d"><a href="#sec_fifth-examplesB-18-2-1-1-4" title="Copy heading and permalink for Item d">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_fifth-examplesB-18-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.5.17.1"><a href="#sec_fifth-examplesB-18-2" title="Copy heading and permalink for Solution 5.5.17.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 5.5.17"><a href="#sec_fifth-examplesB-18" title="Copy heading and permalink for Example 5.5.17">🔗</a></div></article></details><div class="autopermalink" data-description="Section 5.5: Examples B"><a href="#sec_fifth-examplesB" title="Copy heading and permalink for Section 5.5: Examples B">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="sec_fifth-examplesA.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec_fifth-opinst.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
